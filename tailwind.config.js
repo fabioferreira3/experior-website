@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -16,6 +18,11 @@ module.exports = {
         main: "#080B53",
         secondary: "#EA2088",
       },
+    },
+    fontFamily: {
+      sans: ["Avenir Regular", ...defaultTheme.fontFamily.sans],
+      bold: ['"Avenir Black"'],
+      thin: ['"Avenir Light"'],
     },
   },
   plugins: [],
