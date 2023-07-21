@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -23,12 +21,12 @@ module.exports = {
       sans: ["var(--font-avenir)"],
     },
     animation: {
-      ["infinite-slider"]: "infiniteSlider 120s linear infinite",
+      "carousel-slide": "carousel-slide 240s linear infinite",
     },
     keyframes: {
-      infiniteSlider: {
+      "carousel-slide": {
         "0%": { transform: "translateX(0)" },
-        "100%": { transform: "translateX(calc(-250px * 5))" },
+        "100%": { transform: "translateX(-100%)" },
       },
     },
   },

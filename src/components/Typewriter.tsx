@@ -36,7 +36,7 @@ const Typewriter = ({ words }: { words: string[] }) => {
       setTimeout(() => {
         setDirection(-1);
         setWait(false);
-      }, 1500); // wait for 2 seconds
+      }, 500);
     } else if (currentCharIndex === 0 && direction === -1) {
       // reached the start of the word, switch direction to forward and proceed to next word
       setDirection(1);

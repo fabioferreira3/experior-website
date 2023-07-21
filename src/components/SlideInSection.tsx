@@ -1,9 +1,8 @@
-"useClient";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-function FadeInSection(props: any) {
-  const { ref, inView, entry } = useInView({
+const SlideInSection = (props: any) => {
+  const { ref, inView } = useInView({
     threshold: 0,
   });
 
@@ -17,13 +16,17 @@ function FadeInSection(props: any) {
   return (
     <div
       ref={ref}
-      className={`transition-opacity duration-1000 ${
-        hasEntered ? "opacity-100" : "opacity-0"
+      className={`transition-all duration-[1500ms] ease-in-out transform ${
+        hasEntered
+          ? `translate-x-0 opacity-100`
+          : `${
+              props.fromRight ? "translate-x-full" : "-translate-x-full"
+            } opacity-0`
       }`}
     >
       {props.children}
     </div>
   );
-}
+};
 
-export default FadeInSection;
+export default SlideInSection;
