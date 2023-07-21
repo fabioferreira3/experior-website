@@ -55,3 +55,16 @@ body {
 .animate-slide-out-right-to-left {
   animation: slideOutRightToLeft 0.5s ease-out forwards;
 }
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.animate {
+  animation: scroll 15s linear infinite;
+}

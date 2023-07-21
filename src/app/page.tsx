@@ -7,6 +7,8 @@ import {
   RxCross2 as CrossIcon,
 } from "react-icons/rx";
 import { FaRobot as RobotIcon } from "react-icons/fa6";
+import Carousel from "@/components/Carousel";
+import FadeInSection from "@/components/FadeInSection";
 
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -55,12 +57,39 @@ export default function Home() {
           <div className="text-gray-100 mt-6">Eita peste</div>
         </div>
         <div className="w-full">
-          <button className="w-full bg-secondary rounded-full flex items-center gap-6 py-3 px-5">
-            <RobotIcon className="text-4xl" />
-            <div className="text-2xl font-bold">Try Experior Free</div>
+          <button className="w-full md:w-1/3 bg-secondary rounded-full flex items-center md:justify-center gap-6 py-3 px-5">
+            <RobotIcon className="text-4xl md:text-2xl" />
+            <div className="text-2xl md:text-xl font-bold font-avenir">
+              Try Experior Free
+            </div>
           </button>
         </div>
       </div>
+      <div className="w-full mt-4">
+        <div className="hidden md:block">
+          <Carousel
+            title="Trusted by"
+            images={[
+              "/brands/algolia-logo.webp",
+              "/brands/ineco-logo.webp",
+              "/brands/iqvia-logo.webp",
+              "/brands/nhs-logo.webp",
+              "/brands/philips-logo.webp",
+            ]}
+          />
+        </div>
+      </div>
+      {/* <div className="mt-32 space-y-12">
+        <FadeInSection>
+          <div className="h-64 w-full bg-blue-500">Content 1</div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="h-64 w-full bg-red-500">Content 2</div>
+        </FadeInSection>
+        <FadeInSection>
+          <div className="h-64 w-full bg-green-500">Content 3</div>
+        </FadeInSection>
+      </div> */}
 
       {openMenu && (
         <div

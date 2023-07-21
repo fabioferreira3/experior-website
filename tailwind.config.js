@@ -20,10 +20,17 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Avenir Regular", ...defaultTheme.fontFamily.sans],
-      bold: ['"Avenir Black"'],
-      thin: ['"Avenir Light"'],
+      sans: ["var(--font-avenir)"],
+    },
+    animation: {
+      ["infinite-slider"]: "infiniteSlider 120s linear infinite",
+    },
+    keyframes: {
+      infiniteSlider: {
+        "0%": { transform: "translateX(0)" },
+        "100%": { transform: "translateX(calc(-250px * 5))" },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
