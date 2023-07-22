@@ -6,12 +6,18 @@ import {
   RxCross2 as CrossIcon,
 } from "react-icons/rx";
 import { FaRobot as RobotIcon } from "react-icons/fa6";
+import { FaPencilAlt as PencilIcon } from "react-icons/fa";
+import { AiFillAudio as FillAudioIcon } from "react-icons/ai";
+import { BsChatRightTextFill as ChatIcon } from "react-icons/bs";
+import { FaHashtag as HashIcon } from "react-icons/fa";
+import { TbSwitch2 as SwitchIcon } from "react-icons/tb";
 
 import FadeInSection from "@/components/FadeInSection";
 import TrustedBrands from "@/components/TrustedBrands";
 import Typewriter from "@/components/Typewriter";
 import SlideInSection from "@/components/SlideInSection";
 import SlideInFromBottom from "@/components/SlideInFromBottom";
+import Feature from "@/components/Feature";
 
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -72,7 +78,7 @@ export default function Home() {
         <div className="w-full md:m-auto md:w-1/3 flex justify-center ">
           <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
-            <div className="text-2xl font-bold font-avenir">
+            <div className="text-xl md:text-2xl font-bold font-avenir">
               Try Experior for Free
             </div>
           </button>
@@ -85,37 +91,58 @@ export default function Home() {
       </div>
       <div className="">
         <FadeInSection>
-          <div className="h-64 w-full flex items-center justify-center p-12">
-            <div className="flex flex-col items-center">
-              <SlideInFromBottom>
-                <h2 className="gradient-text-vertical from-gray-800 to-main text-7xl font-bold">
-                  CONTENT
-                </h2>
-              </SlideInFromBottom>
-              <SlideInFromBottom>
-                <div className="text-3xl text-gray-100">
-                  Experience the Power of AI in Content Creation
-                </div>
-              </SlideInFromBottom>
-
-              <div>
+          <div className="w-full gap-4 flex flex-col items-center justify-center p-12">
+            <SlideInFromBottom>
+              <div className="text-3xl text-gray-100 text-center font-bold">
+                Experience the Power of AI in Content Creation
+              </div>
+            </SlideInFromBottom>
+            <SlideInFromBottom>
+              <div className="text-center text-xl">
                 From SEO optimized blog posts to engaging social media content,
                 Experior takes your ideas and transforms them into captivating
                 narratives.
               </div>
+            </SlideInFromBottom>
+            <div className="flex flex-col md:grid md:grid-cols-3 items-center space-y-12 md:space-y-0 md:gap-12 mt-8">
+              <FadeInSection duration="2000ms">
+                <Feature icon={PencilIcon} title="Blog Post">
+                  text
+                </Feature>
+              </FadeInSection>
+              <FadeInSection duration="2000ms">
+                <Feature icon={HashIcon} title="Social Media">
+                  text
+                </Feature>
+              </FadeInSection>
+              <FadeInSection duration="2000ms">
+                <Feature icon={FillAudioIcon} title="Text to Audio">
+                  text
+                </Feature>
+              </FadeInSection>
+              <FadeInSection duration="2000ms">
+                <Feature icon={SwitchIcon} title="Paraphraser">
+                  text
+                </Feature>
+              </FadeInSection>
+              <FadeInSection duration="2000ms">
+                <Feature icon={ChatIcon} title="Text Transcription">
+                  text
+                </Feature>
+              </FadeInSection>
             </div>
           </div>
         </FadeInSection>
         <FadeInSection>
-          <div className="h-64 w-full flex items-center justify-center p-12">
+          <div className="w-full flex items-center justify-center p-12">
             <div className="flex flex-col items-center">
               <SlideInFromBottom>
-                <h2 className="gradient-text-vertical from-gray-800 to-main text-7xl font-bold">
-                  TEXT TO AUDIO
+                <h2 className="text-gray-100 text-4xl md:text-7xl font-bold">
+                  Text to Audio
                 </h2>
               </SlideInFromBottom>
               <SlideInFromBottom>
-                <div className="text-3xl text-gray-100">
+                <div className="text-3xl text-gray-100 text-center">
                   Transform Texts to Audios Instantly
                 </div>
               </SlideInFromBottom>
@@ -127,15 +154,15 @@ export default function Home() {
           </div>
         </FadeInSection>
         <FadeInSection>
-          <div className="h-64 w-full flex items-center justify-center p-12">
+          <div className="w-full flex items-center justify-center p-12">
             <div className="flex flex-col items-center">
               <SlideInFromBottom>
-                <h2 className="gradient-text-vertical from-gray-800 to-main text-7xl font-bold">
-                  TRANSFORM
+                <h2 className="text-gray-100 text-4xl md:text-7xl font-bold">
+                  Transform
                 </h2>
               </SlideInFromBottom>
               <SlideInFromBottom>
-                <div className="text-3xl text-gray-100">
+                <div className="text-3xl text-gray-100 text-center">
                   Rephrase, Transcribe, and Engage Better
                 </div>
               </SlideInFromBottom>

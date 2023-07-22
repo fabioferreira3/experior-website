@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 function FadeInSection(props: any) {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
   });
 
@@ -17,7 +17,7 @@ function FadeInSection(props: any) {
   return (
     <div
       ref={ref}
-      className={`transition-opacity duration-1000 ${
+      className={`transition-opacity duration-[${props.duration ?? "1000ms"}] ${
         hasEntered ? "opacity-100" : "opacity-0"
       }`}
     >
