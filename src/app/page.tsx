@@ -34,7 +34,7 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-gradient-to-r from-main to-[#22267a] min-h-screen flex flex-col">
+    <main className="bg-main min-h-screen flex flex-col">
       <header className="flex items-center justify-between p-8">
         <div className="">
           <Image
@@ -88,11 +88,21 @@ export default function Home() {
           <div className="h-64 w-full flex items-center justify-center p-12">
             <div className="flex flex-col items-center">
               <SlideInFromBottom>
-                <h2 className="text-gray-100 text-6xl font-bold">Title</h2>
+                <h2 className="gradient-text-vertical from-gray-800 to-main text-7xl font-bold">
+                  CONTENT
+                </h2>
               </SlideInFromBottom>
               <SlideInFromBottom>
-                <div className="text-3xl text-gray-100">Subtitle</div>
+                <div className="text-3xl text-gray-100">
+                  Experience the Power of AI in Content Creation
+                </div>
               </SlideInFromBottom>
+
+              <div>
+                From SEO optimized blog posts to engaging social media content,
+                Experior takes your ideas and transforms them into captivating
+                narratives.
+              </div>
             </div>
           </div>
         </FadeInSection>
@@ -100,11 +110,19 @@ export default function Home() {
           <div className="h-64 w-full flex items-center justify-center p-12">
             <div className="flex flex-col items-center">
               <SlideInFromBottom>
-                <h2 className="text-gray-100 text-6xl font-bold">Title</h2>
+                <h2 className="gradient-text-vertical from-gray-800 to-main text-7xl font-bold">
+                  TEXT TO AUDIO
+                </h2>
               </SlideInFromBottom>
               <SlideInFromBottom>
-                <div className="text-3xl text-gray-100">Subtitle</div>
+                <div className="text-3xl text-gray-100">
+                  Transform Texts to Audios Instantly
+                </div>
               </SlideInFromBottom>
+              <div>
+                Elevate your content strategy. Turn your texts into high-quality
+                audio with Experior's AI-powered text-to-speech capabilities.
+              </div>
             </div>
           </div>
         </FadeInSection>
@@ -112,11 +130,20 @@ export default function Home() {
           <div className="h-64 w-full flex items-center justify-center p-12">
             <div className="flex flex-col items-center">
               <SlideInFromBottom>
-                <h2 className="text-gray-100 text-6xl font-bold">Title</h2>
+                <h2 className="gradient-text-vertical from-gray-800 to-main text-7xl font-bold">
+                  TRANSFORM
+                </h2>
               </SlideInFromBottom>
               <SlideInFromBottom>
-                <div className="text-3xl text-gray-100">Subtitle</div>
+                <div className="text-3xl text-gray-100">
+                  Rephrase, Transcribe, and Engage Better
+                </div>
               </SlideInFromBottom>
+              <div>
+                Experior is not just about creating content; it&apos;s about
+                refining it. Paraphrase texts, transcribe YouTube videos, and
+                engage your audience like never before.
+              </div>
             </div>
           </div>
         </FadeInSection>

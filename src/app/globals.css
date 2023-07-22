@@ -48,14 +48,6 @@ body {
   }
 }
 
-.animate-slide-in-right-to-left {
-  animation: slideInRightToLeft 0.5s ease-out forwards;
-}
-
-.animate-slide-out-right-to-left {
-  animation: slideOutRightToLeft 0.5s ease-out forwards;
-}
-
 @keyframes scroll {
   0% {
     left: 0;
@@ -63,6 +55,29 @@ body {
   100% {
     left: -100%;
   }
+}
+
+@layer components {
+  .gradient-text-linear {
+    background: linear-gradient(to right, var(--tw-gradient-stops));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text-vertical {
+    background: linear-gradient(to bottom, var(--tw-gradient-stops));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.animate-slide-in-right-to-left {
+  animation: slideInRightToLeft 0.5s ease-out forwards;
+}
+
+.animate-slide-out-right-to-left {
+  animation: slideOutRightToLeft 0.5s ease-out forwards;
 }
 
 .animate {
