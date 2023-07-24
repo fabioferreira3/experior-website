@@ -21,7 +21,7 @@ import Feature from "@/components/Feature";
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false);
   const [closing, setClosing] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<any>(null);
 
   useEffect(() => {
     if (menuRef.current) {
