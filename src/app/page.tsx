@@ -15,7 +15,6 @@ import { TbSwitch2 as SwitchIcon } from "react-icons/tb";
 import FadeInSection from "@/components/FadeInSection";
 import TrustedBrands from "@/components/TrustedBrands";
 import Typewriter from "@/components/Typewriter";
-import SlideInSection from "@/components/SlideInSection";
 import SlideInFromBottom from "@/components/SlideInFromBottom";
 import Feature from "@/components/Feature";
 
@@ -148,7 +147,8 @@ export default function Home() {
               </SlideInFromBottom>
               <div>
                 Elevate your content strategy. Turn your texts into high-quality
-                audio with Experior's AI-powered text-to-speech capabilities.
+                audio with Experior&apos;s AI-powered text-to-speech
+                capabilities.
               </div>
             </div>
           </div>
