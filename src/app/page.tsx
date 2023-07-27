@@ -226,7 +226,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center md:justify-end py-4 font-bold text-sm">
-            © 2025 Experior. All rights reserved
+            © 2023 Experior. All rights reserved
           </div>
         </footer>
       </div>
