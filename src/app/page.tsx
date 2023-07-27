@@ -57,9 +57,12 @@ export default function Home() {
           <div className="w-full md:m-auto md:w-1/3 flex justify-center ">
             <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
               <RobotIcon className="text-4xl md:text-3xl" />
-              <div className="text-xl lg:text-2xl font-bold font-avenir">
+              <a
+                href="https://go.experior.ai/register"
+                className="text-xl lg:text-2xl font-bold font-avenir"
+              >
                 Join the private beta!
-              </div>
+              </a>
             </button>
           </div>
         </div>
@@ -206,22 +209,22 @@ export default function Home() {
                 src={"/logo.png"}
               />
               <div className="flex items-center ml-6 mt-4 gap-4">
-                <Link
+                <a
                   target="_blank"
                   href="https://linkedin.com/company/experior-ai"
                 >
                   <LinkedinIcon className="text-gray-400 text-2xl" />
-                </Link>
+                </a>
                 <FacebookIcon className="text-gray-400 text-2xl" />
-                <Link target="_blank" href="https://twitter.com/experior_ai">
+                <a target="_blank" href="https://twitter.com/experior_ai">
                   <TwitterIcon className="text-gray-400 text-2xl" />
-                </Link>
-                <Link
+                </a>
+                <a
                   target="_blank"
                   href="https://www.instagram.com/experior.ai/"
                 >
                   <InstagramIcon className="text-gray-400 text-2xl" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
