@@ -133,33 +133,38 @@ export default function Home() {
                 narratives.
               </div>
             </SlideInFromBottom>
-            <div className="flex flex-col md:grid md:grid-cols-2 items-center md:space-y-0 md:gap-12 mt-8">
-              <Solution icon={PencilIcon} title="Blog Post" inverse>
+            <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 items-center md:space-y-0 md:gap-12 mt-8">
+              <Solution icon={PencilIcon} title="Blog Post" inverse order={1}>
                 Experior leverages the power of AI to craft SEO-optimized blog
                 posts, transforming your ideas into compelling narratives that
                 engage and captivate readers.
               </Solution>
-              <Solution icon={HashIcon} title="Social Media">
+              <Solution icon={HashIcon} title="Social Media" order={2}>
                 AI-driven Experior transforms social media content. Engage
                 LinkedIn, Facebook, Instagram, TikTok with tailored, engaging
                 posts. Elevate your online presence easily.
               </Solution>
-              <Solution icon={FillAudioIcon} title="Text to Audio">
+              <Solution icon={FillAudioIcon} title="Text to Audio" order={3}>
                 Experior converts text to audio, enriching accessibility and
                 content variety. From blogs to social media, create immersive
                 audio experiences.
               </Solution>
-              <Solution icon={SwitchIcon} title="Paraphraser" inverse>
+              <Solution icon={SwitchIcon} title="Paraphraser" inverse order={4}>
                 Experior&apos;s AI rephrases with precision, creativity, and
                 uniqueness. Enhance readability, engage your audience
                 effectively.
               </Solution>
-              <Solution icon={ChatIcon} title="Text Transcription" inverse>
+              <Solution
+                icon={ChatIcon}
+                title="Text Transcription"
+                inverse
+                order={5}
+              >
                 Experior&apos;s advanced transcription converts audio to
                 precise, timestamped text. Unlock content potential for wider
                 audience access.
               </Solution>
-              <Solution icon={LanguageIcon} title="Multi-language">
+              <Solution icon={LanguageIcon} title="Multi-language" order={6}>
                 Multilingual powerhouse, 14 languages. Break barriers, captivate
                 global audiences. Universal content creation.
               </Solution>
