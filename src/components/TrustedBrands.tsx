@@ -12,7 +12,7 @@ const images = [
 
 const TrustedBrands = () => {
   return (
-    <div className="bg-gray-900 border-t border-b border-gray-800">
+    <div className="bg-gray-900 border border-gray-800 md:rounded-xl md:overflow-auto">
       <div className="text-center py-6 md:py-4 text-2xl font-bold text-gray-200 border-gray-800">
         Trusted By
       </div>

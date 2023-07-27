@@ -36,14 +36,14 @@ export const Header = () => {
             src={"/logo.png"}
           />
         </div>
-        <nav>
+        {/* <nav>
           <HamburgerIcon
             className="text-3xl cursor-pointer"
             onClick={() => setOpenMenu(true)}
           />
-        </nav>
+        </nav> */}
       </header>
-      {openMenu && (
+      {/* {openMenu && (
         <div
           ref={menuRef}
           className={`p-8 flex flex-col justify-between bg-white fixed top-0 right-0 inset-0 w-full z-40 ${
@@ -81,7 +81,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
