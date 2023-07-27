@@ -1,13 +1,18 @@
 "use client";
-import { FaRobot as RobotIcon } from "react-icons/fa6";
+import { FaRobot as RobotIcon, FaCrop as CropIcon } from "react-icons/fa6";
 import {
   FaHashtag as HashIcon,
   FaCalendarTimes as CalendarTimesIcon,
   FaPencilAlt as PencilIcon,
 } from "react-icons/fa";
 import { AiFillAudio as FillAudioIcon } from "react-icons/ai";
-import { BsChatRightTextFill as ChatIcon } from "react-icons/bs";
+import {
+  BsChatRightTextFill as ChatIcon,
+  BsBookmarkXFill as BookmarkIcon,
+} from "react-icons/bs";
 import { TbSwitch2 as SwitchIcon } from "react-icons/tb";
+import { IoLanguage as LanguageIcon } from "react-icons/io5";
+import { MdMoneyOff as MoneyOffIcon } from "react-icons/md";
 
 import FadeInSection from "@/components/FadeInSection";
 import TrustedBrands from "@/components/TrustedBrands";
@@ -70,75 +75,61 @@ export default function Home() {
           </div>
         </div>
       </FadeInSection>
-      <div className="flex flex-col md:grid md:grid-cols-3">
+      <div className="flex flex-col md:grid md:grid-cols-2">
         <PainPoint inverse icon={CalendarTimesIcon} title="Time Constraints">
-          Managing a content-rich website, blog, or social media account can be
-          incredibly time-consuming. Researching, writing, editing, and
-          optimizing posts, not to mention creating audio content, takes up
-          hours that could be spent on other crucial areas of your business or
-          personal life.
+          Maintaining a website, blog, or social media takes a lot of time due
+          to tasks like research, writing, and editing. This can prevent you
+          from focusing on other important things in your business or life.
         </PainPoint>
-        <PainPoint
-          shouldSlide={false}
-          icon={CalendarTimesIcon}
-          title="Content Variety and Volume"
-        >
-          Managing a content-rich website, blog, or social media account can be
-          incredibly time-consuming. Researching, writing, editing, and
-          optimizing posts, not to mention creating audio content, takes up
-          hours that could be spent on other crucial areas of your business or
-          personal life.
+        <PainPoint fromRight icon={CropIcon} title="Content Variety and Volume">
+          The digital landscape requires a lot of diverse content, which can be
+          overwhelming to keep up with. Constantly producing fresh and relevant
+          content for multiple platforms can leave you feeling stretched thin.
+        </PainPoint>
+        <PainPoint icon={BookmarkIcon} title="SEO Optimized?">
+          Creating content is not enough; ensuring your target audience can find
+          it is crucial. SEO optimization involves understanding ever-changing
+          search engine algorithms and applying this knowledge to your content
+          creation, which can be challenging.
         </PainPoint>
         <PainPoint
           inverse
           fromRight
-          icon={CalendarTimesIcon}
-          title="SEO Optimized?"
+          icon={HashIcon}
+          title="Social Media (In)Compatibility"
         >
-          Managing a content-rich website, blog, or social media account can be
-          incredibly time-consuming. Researching, writing, editing, and
-          optimizing posts, not to mention creating audio content, takes up
-          hours that could be spent on other crucial areas of your business or
-          personal life.
+          Each social media platform has its unique audience, language, and
+          format. Crafting content that fits each platform&apos;s specific
+          requirements and resonates with its user base can be a challenging
+          task.
         </PainPoint>
-        <PainPoint icon={CalendarTimesIcon} title="Social Media Compatibility">
-          Managing a content-rich website, blog, or social media account can be
-          incredibly time-consuming. Researching, writing, editing, and
-          optimizing posts, not to mention creating audio content, takes up
-          hours that could be spent on other crucial areas of your business or
-          personal life.
+        <PainPoint inverse icon={LanguageIcon} title="Language Barriers">
+          The internet removes geographical boundaries, making your audience
+          global. However, the challenge is to create content that connects with
+          diverse language speakers while preserving its original meaning during
+          translation.
         </PainPoint>
         <PainPoint
-          inverse
-          shouldSlide={false}
-          icon={CalendarTimesIcon}
-          title="Language Barriers"
+          fromRight
+          icon={MoneyOffIcon}
+          title="Inadequate Pricing Models"
         >
-          Managing a content-rich website, blog, or social media account can be
-          incredibly time-consuming. Researching, writing, editing, and
-          optimizing posts, not to mention creating audio content, takes up
-          hours that could be spent on other crucial areas of your business or
-          personal life.
-        </PainPoint>
-        <PainPoint fromRight icon={CalendarTimesIcon} title="Pricing Model">
-          Managing a content-rich website, blog, or social media account can be
-          incredibly time-consuming. Researching, writing, editing, and
-          optimizing posts, not to mention creating audio content, takes up
-          hours that could be spent on other crucial areas of your business or
-          personal life.
+          Numerous content creation tools demand monthly subscriptions,
+          irrespective of your actual usage. This can deter smaller businesses
+          or individuals who don&apos;t require the tool regularly.
         </PainPoint>
       </div>
 
-      <div className="">
+      <div className="mt-8">
         <FadeInSection>
           <div className="w-full gap-4 flex flex-col items-center justify-center p-12">
             <SlideInFromBottom>
-              <div className="text-3xl text-gray-100 text-center font-bold">
+              <div className="text-5xl text-gray-100 text-center font-bold">
                 Experience the Power of AI in Content Creation
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom>
-              <div className="text-center text-xl">
+              <div className="text-center text-xl mt-4">
                 From SEO optimized blog posts to engaging social media content,
                 Experior takes your ideas and transforms them into captivating
                 narratives.
@@ -147,51 +138,45 @@ export default function Home() {
             <div className="flex flex-col md:grid md:grid-cols-3 items-center space-y-12 md:space-y-0 md:gap-12 mt-8">
               <FadeInSection duration="2000ms">
                 <Feature icon={PencilIcon} title="Blog Post">
-                  text
+                  Experior leverages the power of AI to craft SEO-optimized blog
+                  posts, transforming your ideas into compelling narratives that
+                  engage and captivate readers.
                 </Feature>
               </FadeInSection>
               <FadeInSection duration="2000ms">
                 <Feature icon={HashIcon} title="Social Media">
-                  text
+                  AI-driven Experior transforms social media content. Engage
+                  LinkedIn, Facebook, Instagram, TikTok with tailored, engaging
+                  posts. Elevate your online presence easily.
                 </Feature>
               </FadeInSection>
               <FadeInSection duration="2000ms">
                 <Feature icon={FillAudioIcon} title="Text to Audio">
-                  text
+                  Experior converts text to audio, enriching accessibility and
+                  content variety. From blogs to social media, create immersive
+                  audio experiences.
                 </Feature>
               </FadeInSection>
               <FadeInSection duration="2000ms">
                 <Feature icon={SwitchIcon} title="Paraphraser">
-                  text
+                  Experior&apos;s AI rephrases with precision, creativity, and
+                  uniqueness. Enhance readability, engage your audience
+                  effectively.
                 </Feature>
               </FadeInSection>
               <FadeInSection duration="2000ms">
                 <Feature icon={ChatIcon} title="Text Transcription">
-                  text
+                  Experior&apos;s advanced transcription converts audio to
+                  precise, timestamped text. Unlock content potential for wider
+                  audience access.
                 </Feature>
               </FadeInSection>
-            </div>
-          </div>
-        </FadeInSection>
-
-        <FadeInSection>
-          <div className="w-full flex items-center justify-center p-12">
-            <div className="flex flex-col items-center">
-              <SlideInFromBottom>
-                <h2 className="text-gray-100 text-4xl md:text-7xl font-bold">
-                  Transform
-                </h2>
-              </SlideInFromBottom>
-              <SlideInFromBottom>
-                <div className="text-3xl text-gray-100 text-center">
-                  Rephrase, Transcribe, and Engage Better
-                </div>
-              </SlideInFromBottom>
-              <div>
-                Experior is not just about creating content; it&apos;s about
-                refining it. Paraphrase texts, transcribe YouTube videos, and
-                engage your audience like never before.
-              </div>
+              <FadeInSection duration="2000ms">
+                <Feature icon={LanguageIcon} title="Multi-language">
+                  Multilingual powerhouse, 14 languages. Break barriers,
+                  captivate global audiences. Universal content creation.
+                </Feature>
+              </FadeInSection>
             </div>
           </div>
         </FadeInSection>

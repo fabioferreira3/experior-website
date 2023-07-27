@@ -38,7 +38,7 @@ export const Header = () => {
         </div>
         <nav>
           <HamburgerIcon
-            className="text-3xl"
+            className="text-3xl cursor-pointer"
             onClick={() => setOpenMenu(true)}
           />
         </nav>
@@ -46,7 +46,7 @@ export const Header = () => {
       {openMenu && (
         <div
           ref={menuRef}
-          className={`p-8 flex flex-col justify-between bg-white fixed top-0 right-0 inset-0 w-full ${
+          className={`p-8 flex flex-col justify-between bg-white fixed top-0 right-0 inset-0 w-full z-40 ${
             closing
               ? "animate-slide-out-right-to-left"
               : "animate-slide-in-right-to-left"
