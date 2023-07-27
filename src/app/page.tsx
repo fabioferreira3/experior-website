@@ -58,7 +58,7 @@ export default function Home() {
             <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
               <RobotIcon className="text-4xl md:text-3xl" />
               <a
-                href="https://go.experior.ai/register"
+                href="https://go.experior.ai/login"
                 className="text-xl lg:text-2xl font-bold font-avenir"
               >
                 Join the private beta!
