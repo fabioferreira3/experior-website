@@ -196,8 +196,8 @@ export default function Home() {
             </div>
           </FadeInSection>
         </div>
-        <footer className="md:px-12 md:py-4">
-          <div className="md:grid md:grid-cols-3 border-b border-gray-500 pb-8">
+        <footer className="p-8 md:px-12 md:py-4">
+          <div className="flex justify-center md:grid md:grid-cols-3 border-b border-gray-500 pb-8">
             <div className="flex flex-col">
               <Image
                 alt="Experior logo"
@@ -225,7 +225,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-end py-4 font-bold text-sm">
+          <div className="flex justify-center md:justify-end py-4 font-bold text-sm">
             © 2025 Experior. All rights reserved
           </div>
         </footer>
