@@ -1,15 +1,12 @@
 "use client";
-import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
-import {
-  RxHamburgerMenu as HamburgerIcon,
-  RxCross2 as CrossIcon,
-} from "react-icons/rx";
 import { FaRobot as RobotIcon } from "react-icons/fa6";
-import { FaPencilAlt as PencilIcon } from "react-icons/fa";
+import {
+  FaHashtag as HashIcon,
+  FaCalendarTimes as CalendarTimesIcon,
+  FaPencilAlt as PencilIcon,
+} from "react-icons/fa";
 import { AiFillAudio as FillAudioIcon } from "react-icons/ai";
 import { BsChatRightTextFill as ChatIcon } from "react-icons/bs";
-import { FaHashtag as HashIcon } from "react-icons/fa";
 import { TbSwitch2 as SwitchIcon } from "react-icons/tb";
 
 import FadeInSection from "@/components/FadeInSection";
@@ -17,45 +14,13 @@ import TrustedBrands from "@/components/TrustedBrands";
 import Typewriter from "@/components/Typewriter";
 import SlideInFromBottom from "@/components/SlideInFromBottom";
 import Feature from "@/components/Feature";
+import { Header } from "@/components/Header";
+import { PainPoint } from "@/components/PainPoint";
 
 export default function Home() {
-  const [openMenu, setOpenMenu] = useState(false);
-  const [closing, setClosing] = useState(false);
-  const menuRef = useRef<any>(null);
-
-  useEffect(() => {
-    if (menuRef.current) {
-      menuRef.current.addEventListener("animationend", () => {
-        if (closing) {
-          setOpenMenu(false);
-          setClosing(false);
-        }
-      });
-    }
-  }, [closing]);
-
-  const handleCloseMenu = () => {
-    setClosing(true);
-  };
-
   return (
     <main className="bg-main min-h-screen flex flex-col">
-      <header className="flex items-center justify-between p-8">
-        <div className="">
-          <Image
-            alt="Experior logo"
-            width={250}
-            height={50}
-            src={"/logo.png"}
-          />
-        </div>
-        <nav>
-          <HamburgerIcon
-            className="text-3xl"
-            onClick={() => setOpenMenu(true)}
-          />
-        </nav>
-      </header>
+      <Header />
       <div className="flex flex-col p-8">
         <h1 className="text-6xl font-bold text-start md:text-center">
           Enhancing Your Digital
@@ -77,7 +42,7 @@ export default function Home() {
         <div className="w-full md:m-auto md:w-1/3 flex justify-center ">
           <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
-            <div className="text-xl md:text-2xl font-bold font-avenir">
+            <div className="text-xl lg:text-2xl font-bold font-avenir">
               Try Experior for Free
             </div>
           </button>
@@ -88,6 +53,82 @@ export default function Home() {
           <TrustedBrands />
         </div>
       </div>
+
+      <FadeInSection>
+        <div className="w-full flex items-center justify-center p-12">
+          <div className="flex flex-col items-center">
+            <SlideInFromBottom>
+              <h2 className="text-gray-100 text-center text-5xl md:text-7xl font-bold">
+                We feel your <span className="text-secondary">pain</span>
+              </h2>
+            </SlideInFromBottom>
+            <SlideInFromBottom>
+              <div className="text-2xl font-bold md:text-3xl text-gray-100 text-center mt-5">
+                Content Creation Can Be a Grind
+              </div>
+            </SlideInFromBottom>
+          </div>
+        </div>
+      </FadeInSection>
+      <div className="flex flex-col md:grid md:grid-cols-3">
+        <PainPoint inverse icon={CalendarTimesIcon} title="Time Constraints">
+          Managing a content-rich website, blog, or social media account can be
+          incredibly time-consuming. Researching, writing, editing, and
+          optimizing posts, not to mention creating audio content, takes up
+          hours that could be spent on other crucial areas of your business or
+          personal life.
+        </PainPoint>
+        <PainPoint
+          shouldSlide={false}
+          icon={CalendarTimesIcon}
+          title="Content Variety and Volume"
+        >
+          Managing a content-rich website, blog, or social media account can be
+          incredibly time-consuming. Researching, writing, editing, and
+          optimizing posts, not to mention creating audio content, takes up
+          hours that could be spent on other crucial areas of your business or
+          personal life.
+        </PainPoint>
+        <PainPoint
+          inverse
+          fromRight
+          icon={CalendarTimesIcon}
+          title="SEO Optimized?"
+        >
+          Managing a content-rich website, blog, or social media account can be
+          incredibly time-consuming. Researching, writing, editing, and
+          optimizing posts, not to mention creating audio content, takes up
+          hours that could be spent on other crucial areas of your business or
+          personal life.
+        </PainPoint>
+        <PainPoint icon={CalendarTimesIcon} title="Social Media Compatibility">
+          Managing a content-rich website, blog, or social media account can be
+          incredibly time-consuming. Researching, writing, editing, and
+          optimizing posts, not to mention creating audio content, takes up
+          hours that could be spent on other crucial areas of your business or
+          personal life.
+        </PainPoint>
+        <PainPoint
+          inverse
+          shouldSlide={false}
+          icon={CalendarTimesIcon}
+          title="Language Barriers"
+        >
+          Managing a content-rich website, blog, or social media account can be
+          incredibly time-consuming. Researching, writing, editing, and
+          optimizing posts, not to mention creating audio content, takes up
+          hours that could be spent on other crucial areas of your business or
+          personal life.
+        </PainPoint>
+        <PainPoint fromRight icon={CalendarTimesIcon} title="Pricing Model">
+          Managing a content-rich website, blog, or social media account can be
+          incredibly time-consuming. Researching, writing, editing, and
+          optimizing posts, not to mention creating audio content, takes up
+          hours that could be spent on other crucial areas of your business or
+          personal life.
+        </PainPoint>
+      </div>
+
       <div className="">
         <FadeInSection>
           <div className="w-full gap-4 flex flex-col items-center justify-center p-12">
@@ -132,27 +173,7 @@ export default function Home() {
             </div>
           </div>
         </FadeInSection>
-        <FadeInSection>
-          <div className="w-full flex items-center justify-center p-12">
-            <div className="flex flex-col items-center">
-              <SlideInFromBottom>
-                <h2 className="text-gray-100 text-4xl md:text-7xl font-bold">
-                  Text to Audio
-                </h2>
-              </SlideInFromBottom>
-              <SlideInFromBottom>
-                <div className="text-3xl text-gray-100 text-center">
-                  Transform Texts to Audios Instantly
-                </div>
-              </SlideInFromBottom>
-              <div>
-                Elevate your content strategy. Turn your texts into high-quality
-                audio with Experior&apos;s AI-powered text-to-speech
-                capabilities.
-              </div>
-            </div>
-          </div>
-        </FadeInSection>
+
         <FadeInSection>
           <div className="w-full flex items-center justify-center p-12">
             <div className="flex flex-col items-center">
@@ -175,46 +196,6 @@ export default function Home() {
           </div>
         </FadeInSection>
       </div>
-
-      {openMenu && (
-        <div
-          ref={menuRef}
-          className={`p-8 flex flex-col justify-between bg-white fixed top-0 right-0 inset-0 w-full ${
-            closing
-              ? "animate-slide-out-right-to-left"
-              : "animate-slide-in-right-to-left"
-          }`}
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <Image
-                alt="Experior logo"
-                width={250}
-                height={50}
-                src={"/logo-black.png"}
-              />
-            </div>
-            <div>
-              <CrossIcon
-                className="text-gray-700 text-3xl"
-                onClick={handleCloseMenu}
-              />
-            </div>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="text-gray-700">Item 1</div>
-            <div className="text-gray-700">Item 2</div>
-          </div>
-          <div className="flex items-center justify-between gap-4 p-4">
-            <div className="bg-main py-2 px-8 rounded-lg w-1/2 text-center">
-              Sign in
-            </div>
-            <div className="bg-secondary py-2 px-8 rounded-lg w-1/2 text-center">
-              Sign up
-            </div>
-          </div>
-        </div>
-      )}
     </main>
   );
 }

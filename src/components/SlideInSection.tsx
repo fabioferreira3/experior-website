@@ -13,7 +13,7 @@ const SlideInSection = (props: any) => {
     }
   }, [inView]);
 
-  return (
+  return props.active ? (
     <div
       ref={ref}
       className={`transition-all duration-[1500ms] ease-in-out transform ${
@@ -26,6 +26,8 @@ const SlideInSection = (props: any) => {
     >
       {props.children}
     </div>
+  ) : (
+    props.children
   );
 };
 
