@@ -120,20 +120,20 @@ export default function Home() {
 
       <div className="mt-8">
         <FadeInSection>
-          <div className="w-full gap-4 flex flex-col items-center justify-center p-12">
+          <div className="w-full md:gap-4 flex flex-col items-center justify-center md:p-12">
             <SlideInFromBottom>
-              <div className="text-5xl text-gray-100 text-center font-bold">
+              <div className="text-5xl text-gray-100 text-center font-bold p-12 md:p-0">
                 Experience the Power of AI in Content Creation
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom>
-              <div className="text-center text-xl mt-4">
+              <div className="text-center text-xl md:mt-4 md:p-0 p-4">
                 From SEO optimized blog posts to engaging social media content,
                 Experior takes your ideas and transforms them into captivating
                 narratives.
               </div>
             </SlideInFromBottom>
-            <div className="flex flex-col md:grid md:grid-cols-2 items-center space-y-12 md:space-y-0 md:gap-12 mt-8">
+            <div className="flex flex-col md:grid md:grid-cols-2 items-center md:space-y-0 md:gap-12 mt-8">
               <Solution icon={PencilIcon} title="Blog Post" inverse>
                 Experior leverages the power of AI to craft SEO-optimized blog
                 posts, transforming your ideas into compelling narratives that
