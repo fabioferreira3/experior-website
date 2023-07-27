@@ -21,6 +21,7 @@ import SlideInFromBottom from "@/components/SlideInFromBottom";
 import Feature from "@/components/Feature";
 import { Header } from "@/components/Header";
 import { PainPoint } from "@/components/PainPoint";
+import { Solution } from "@/components/Solution";
 
 export default function Home() {
   return (
@@ -78,19 +79,16 @@ export default function Home() {
       <div className="flex flex-col md:grid md:grid-cols-2">
         <PainPoint inverse icon={CalendarTimesIcon} title="Time Constraints">
           Maintaining a website, blog, or social media takes a lot of time due
-          to tasks like research, writing, and editing. This can prevent you
-          from focusing on other important things in your business or life.
+          to tasks like research, writing, and editing.
         </PainPoint>
         <PainPoint fromRight icon={CropIcon} title="Content Variety and Volume">
           The digital landscape requires a lot of diverse content, which can be
-          overwhelming to keep up with. Constantly producing fresh and relevant
-          content for multiple platforms can leave you feeling stretched thin.
+          overwhelming to keep up with.
         </PainPoint>
         <PainPoint icon={BookmarkIcon} title="SEO Optimized?">
           Creating content is not enough; ensuring your target audience can find
           it is crucial. SEO optimization involves understanding ever-changing
-          search engine algorithms and applying this knowledge to your content
-          creation, which can be challenging.
+          search engine algorithms, which can be challenging.
         </PainPoint>
         <PainPoint
           inverse
@@ -105,8 +103,8 @@ export default function Home() {
         </PainPoint>
         <PainPoint inverse icon={LanguageIcon} title="Language Barriers">
           The internet removes geographical boundaries, making your audience
-          global. However, the challenge is to create content that connects with
-          diverse language speakers while preserving its original meaning during
+          global. The challenge is to create content that connects with diverse
+          language speakers while preserving its original meaning during
           translation.
         </PainPoint>
         <PainPoint
@@ -135,48 +133,36 @@ export default function Home() {
                 narratives.
               </div>
             </SlideInFromBottom>
-            <div className="flex flex-col md:grid md:grid-cols-3 items-center space-y-12 md:space-y-0 md:gap-12 mt-8">
-              <FadeInSection duration="2000ms">
-                <Feature icon={PencilIcon} title="Blog Post">
-                  Experior leverages the power of AI to craft SEO-optimized blog
-                  posts, transforming your ideas into compelling narratives that
-                  engage and captivate readers.
-                </Feature>
-              </FadeInSection>
-              <FadeInSection duration="2000ms">
-                <Feature icon={HashIcon} title="Social Media">
-                  AI-driven Experior transforms social media content. Engage
-                  LinkedIn, Facebook, Instagram, TikTok with tailored, engaging
-                  posts. Elevate your online presence easily.
-                </Feature>
-              </FadeInSection>
-              <FadeInSection duration="2000ms">
-                <Feature icon={FillAudioIcon} title="Text to Audio">
-                  Experior converts text to audio, enriching accessibility and
-                  content variety. From blogs to social media, create immersive
-                  audio experiences.
-                </Feature>
-              </FadeInSection>
-              <FadeInSection duration="2000ms">
-                <Feature icon={SwitchIcon} title="Paraphraser">
-                  Experior&apos;s AI rephrases with precision, creativity, and
-                  uniqueness. Enhance readability, engage your audience
-                  effectively.
-                </Feature>
-              </FadeInSection>
-              <FadeInSection duration="2000ms">
-                <Feature icon={ChatIcon} title="Text Transcription">
-                  Experior&apos;s advanced transcription converts audio to
-                  precise, timestamped text. Unlock content potential for wider
-                  audience access.
-                </Feature>
-              </FadeInSection>
-              <FadeInSection duration="2000ms">
-                <Feature icon={LanguageIcon} title="Multi-language">
-                  Multilingual powerhouse, 14 languages. Break barriers,
-                  captivate global audiences. Universal content creation.
-                </Feature>
-              </FadeInSection>
+            <div className="flex flex-col md:grid md:grid-cols-2 items-center space-y-12 md:space-y-0 md:gap-12 mt-8">
+              <Solution icon={PencilIcon} title="Blog Post" inverse>
+                Experior leverages the power of AI to craft SEO-optimized blog
+                posts, transforming your ideas into compelling narratives that
+                engage and captivate readers.
+              </Solution>
+              <Solution icon={HashIcon} title="Social Media">
+                AI-driven Experior transforms social media content. Engage
+                LinkedIn, Facebook, Instagram, TikTok with tailored, engaging
+                posts. Elevate your online presence easily.
+              </Solution>
+              <Solution icon={FillAudioIcon} title="Text to Audio">
+                Experior converts text to audio, enriching accessibility and
+                content variety. From blogs to social media, create immersive
+                audio experiences.
+              </Solution>
+              <Solution icon={SwitchIcon} title="Paraphraser" inverse>
+                Experior&apos;s AI rephrases with precision, creativity, and
+                uniqueness. Enhance readability, engage your audience
+                effectively.
+              </Solution>
+              <Solution icon={ChatIcon} title="Text Transcription" inverse>
+                Experior&apos;s advanced transcription converts audio to
+                precise, timestamped text. Unlock content potential for wider
+                audience access.
+              </Solution>
+              <Solution icon={LanguageIcon} title="Multi-language">
+                Multilingual powerhouse, 14 languages. Break barriers, captivate
+                global audiences. Universal content creation.
+              </Solution>
             </div>
           </div>
         </FadeInSection>

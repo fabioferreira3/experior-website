@@ -1,8 +1,12 @@
-const Feature = ({ icon: Icon, title, children }: any) => {
+const Feature = ({ icon: Icon, title, children, inverse }: any) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col justify-center h-full gap-4">
       <div className="flex justify-center">
-        <div className="rounded-full bg-secondary text-gray-100 w-20 h-20 flex items-center justify-center">
+        <div
+          className={`${
+            inverse ? "bg-main" : "bg-secondary"
+          } rounded-full text-gray-100 w-20 h-20 flex items-center justify-center`}
+        >
           <Icon className="text-4xl" />
         </div>
       </div>
