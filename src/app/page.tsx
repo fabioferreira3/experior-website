@@ -29,14 +29,13 @@ import { Header } from "@/components/Header";
 import { PainPoint } from "@/components/PainPoint";
 import { Solution } from "@/components/Solution";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="bg-main min-h-screen flex flex-col">
-      <div className="md:max-w-6xl md:m-auto">
+      <div>
         <Header />
-        <div className="flex flex-col p-8">
+        <div className="md:max-w-6xl m-auto flex flex-col p-8">
           <h1 className="text-6xl font-bold text-start md:text-center">
             Enhancing Your Digital
           </h1>
@@ -66,37 +65,39 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-full mt-4">
+        <div className="xl:max-w-6xl xl:m-auto mt-4">
           <TrustedBrands />
         </div>
-        <FadeInSection>
-          <div className="w-full flex items-center justify-center p-12">
-            <div className="flex flex-col items-center">
-              <SlideInFromBottom>
-                <div className="flex flex-col h-24 md:h-36 text-center text-5xl md:text-7xl font-bold">
-                  <span className="text-gray-100">We feel your </span>
-                  <span className="text-secondary">
-                    <Typewriter
-                      words={[
-                        "pain",
-                        "struggles",
-                        "challenges",
-                        "burdens",
-                        "hardships",
-                      ]}
-                    />
-                  </span>
-                </div>
-              </SlideInFromBottom>
-              <SlideInFromBottom>
-                <div className="text-2xl font-bold md:text-3xl text-gray-100 text-center mt-5">
-                  Content Creation Can Be a Grind...
-                </div>
-              </SlideInFromBottom>
+        <div className="md:max-w-6xl m-auto">
+          <FadeInSection>
+            <div className="w-full flex items-center justify-center p-12">
+              <div className="flex flex-col items-center">
+                <SlideInFromBottom>
+                  <div className="flex flex-col h-24 md:h-36 text-center text-5xl md:text-7xl font-bold">
+                    <span className="text-gray-100">We feel your </span>
+                    <span className="text-secondary">
+                      <Typewriter
+                        words={[
+                          "pain",
+                          "struggles",
+                          "challenges",
+                          "burdens",
+                          "hardships",
+                        ]}
+                      />
+                    </span>
+                  </div>
+                </SlideInFromBottom>
+                <SlideInFromBottom>
+                  <div className="text-2xl font-bold md:text-3xl text-gray-100 text-center mt-5">
+                    Content Creation Can Be a Grind...
+                  </div>
+                </SlideInFromBottom>
+              </div>
             </div>
-          </div>
-        </FadeInSection>
-        <div className="flex flex-col md:grid md:grid-cols-2 md:rounded-xl md:overflow-auto">
+          </FadeInSection>
+        </div>
+        <div className="md:max-w-6xl m-auto flex flex-col md:grid md:grid-cols-2 md:rounded-xl md:overflow-auto">
           <PainPoint inverse icon={CalendarTimesIcon} title="Time Constraints">
             Maintaining a website, blog, or social media takes a lot of time due
             to tasks like research, writing, and editing.
@@ -140,7 +141,7 @@ export default function Home() {
             or individuals who don&apos;t require the tool regularly.
           </PainPoint>
         </div>
-        <div className="mt-8">
+        <div className="md:max-w-6xl m-auto mt-8">
           <FadeInSection>
             <div className="w-full md:gap-4 flex flex-col items-center justify-center md:p-12">
               <SlideInFromBottom>
@@ -199,7 +200,7 @@ export default function Home() {
             </div>
           </FadeInSection>
         </div>
-        <footer className="p-8 md:px-12 md:py-4">
+        <footer className="md:max-w-6xl m-auto p-8 md:px-12 md:py-4">
           <div className="flex justify-center md:grid md:grid-cols-3 border-b border-gray-500 pb-8">
             <div className="flex flex-col">
               <Image
