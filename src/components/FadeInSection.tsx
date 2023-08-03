@@ -17,9 +17,9 @@ function FadeInSection(props: any) {
   return (
     <div
       ref={ref}
-      className={`transition-opacity duration-[${props.duration ?? "1000ms"}] ${
-        hasEntered ? "opacity-100" : "opacity-0"
-      }`}
+      className={`overflow-hidden transition-opacity duration-[${
+        props.duration ?? "1000ms"
+      }] ${hasEntered ? "opacity-100" : "opacity-0"}`}
     >
       {props.children}
     </div>

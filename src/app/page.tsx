@@ -68,7 +68,7 @@ export default function Home() {
         <div className="xl:max-w-6xl xl:m-auto mt-4">
           <TrustedBrands />
         </div>
-        <div className="md:max-w-6xl m-auto">
+        <div className="md:max-w-6xl">
           <FadeInSection>
             <div className="w-full flex items-center justify-center p-12">
               <div className="flex flex-col items-center">
