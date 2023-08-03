@@ -65,7 +65,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="xl:max-w-6xl xl:m-auto mt-4">
+        <div className="2xl:max-w-6xl xl:m-auto mt-4">
           <TrustedBrands />
         </div>
         <div className="md:max-w-6xl">
