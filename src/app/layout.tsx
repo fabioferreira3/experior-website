@@ -1,7 +1,9 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { Suspense } from "react";
+
+import Analytics from "@/components/Analytics";
+import "./globals.css";
 
 const avenir = localFont({
   src: [
@@ -33,7 +35,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${avenir.variable} font-sans`}>{children}</body>
+      <body className={`${avenir.variable} font-sans`}>
+        <Suspense>
+          <Analytics />
+        </Suspense>
+        {children}
+      </body>
     </html>
   );
 }
