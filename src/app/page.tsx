@@ -200,8 +200,22 @@ export default function Home() {
             </div>
           </FadeInSection>
         </div>
+        <div className="md:max-w-6xl m-auto">
+          <div className="md:p-12 flex justify-center">
+            <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
+              <RobotIcon className="text-4xl md:text-3xl" />
+              <a
+                href="https://go.experior.ai/login"
+                className="text-xl lg:text-2xl font-bold font-avenir"
+              >
+                <Typewriter speed={70} words={["Join", "Try", "Experiment"]} />{" "}
+                the private beta!
+              </a>
+            </button>
+          </div>
+        </div>
         <footer className="md:max-w-6xl m-auto p-8 md:px-12 md:py-4">
-          <div className="flex justify-center md:grid md:grid-cols-3 border-b border-gray-500 pb-8">
+          <div className="flex justify-center border-b border-gray-500 pb-8">
             <div className="flex flex-col">
               <Image
                 alt="Experior logo"

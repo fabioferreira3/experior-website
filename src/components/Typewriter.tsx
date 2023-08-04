@@ -1,14 +1,19 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-const Typewriter = ({ words }: { words: string[] }) => {
+const Typewriter = ({
+  words,
+  speed = 100,
+}: {
+  words: string[];
+  speed?: number;
+}) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
   const [wait, setWait] = useState(false);
 
-  // Using useRef to hold the timeoutId to avoid cleaning up and re-creating timer on every render
   const timeoutId = useRef<any>();
 
   useEffect(() => {
@@ -21,10 +26,10 @@ const Typewriter = ({ words }: { words: string[] }) => {
         words[currentWordIndex].slice(0, currentCharIndex + direction)
       );
       setCurrentCharIndex((prevIndex) => prevIndex + direction);
-    }, 100); // animate every 0.5s
+    }, speed); // animate every 0.5s
 
     return () => clearTimeout(timeoutId.current); // clean up on unmount
-  }, [currentWordIndex, currentCharIndex, direction, wait]);
+  }, [currentWordIndex, speed, currentCharIndex, direction, wait]);
 
   useEffect(() => {
     if (
