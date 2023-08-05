@@ -164,7 +164,7 @@ export default function Home() {
                 </Solution>
                 <Solution icon={HashIcon} title="Social Media" order={2}>
                   AI-driven Experior transforms social media content. Engage
-                  LinkedIn, Facebook, Instagram, TikTok with tailored, engaging
+                  LinkedIn, Facebook and Instagram with tailored, engaging
                   posts. Elevate your online presence easily.
                 </Solution>
                 <Solution icon={FillAudioIcon} title="Text to Audio" order={3}>
