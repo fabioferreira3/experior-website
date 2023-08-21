@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Suspense } from "react";
 
@@ -22,11 +21,6 @@ const avenir = localFont({
   ],
   variable: "--font-avenir",
 });
-
-export const metadata: Metadata = {
-  title: "Experior AI",
-  description: "The next step on content generation",
-};
 
 export default function RootLayout({
   children,
