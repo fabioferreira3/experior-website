@@ -28,14 +28,14 @@ export const Header = () => {
   return (
     <>
       <header className="flex items-center justify-between p-8">
-        <div className="">
+        <a href="/">
           <Image
             alt="Experior logo"
             width={180}
             height={50}
             src={"/logo.png"}
           />
-        </div>
+        </a>
         <nav>
           <div className="hidden md:flex items-center gap-8">
             <a href="/blog" className="font-bold">
