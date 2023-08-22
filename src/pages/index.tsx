@@ -25,6 +25,7 @@ import { PainPoint } from "@/components/PainPoint";
 import { Solution } from "@/components/Solution";
 import MainLayout from "@/components/MainLayout";
 import getURL from "@/utils/url";
+import Link from "next/link";
 
 const Page = () => {
   const { pathname } = useRouter();
@@ -71,12 +72,12 @@ const Page = () => {
         <div className="w-full md:m-auto md:w-1/3 flex justify-center ">
           <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
-            <a
+            <Link
               href="https://go.experior.ai/login"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
               Join the private beta!
-            </a>
+            </Link>
           </button>
         </div>
       </div>
@@ -210,13 +211,13 @@ const Page = () => {
         <div className="md:p-12 flex justify-center">
           <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
-            <a
+            <Link
               href="https://go.experior.ai/login"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
               <Typewriter speed={70} words={["Join", "Try", "Experiment"]} />{" "}
               the private beta!
-            </a>
+            </Link>
           </button>
         </div>
       </div>

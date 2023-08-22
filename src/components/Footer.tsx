@@ -7,6 +7,7 @@ import {
   FaTwitter as TwitterIcon,
 } from "react-icons/fa6";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -20,16 +21,19 @@ const Footer = () => {
             src={"/logo.png"}
           />
           <div className="flex items-center ml-6 mt-4 gap-4">
-            <a target="_blank" href="https://linkedin.com/company/experior-ai">
+            <Link
+              target="_blank"
+              href="https://linkedin.com/company/experior-ai"
+            >
               <LinkedinIcon className="text-gray-400 text-2xl" />
-            </a>
+            </Link>
             <FacebookIcon className="text-gray-400 text-2xl" />
-            <a target="_blank" href="https://twitter.com/experior_ai">
+            <Link target="_blank" href="https://twitter.com/experior_ai">
               <TwitterIcon className="text-gray-400 text-2xl" />
-            </a>
-            <a target="_blank" href="https://www.instagram.com/experior.ai/">
+            </Link>
+            <Link target="_blank" href="https://www.instagram.com/experior.ai/">
               <InstagramIcon className="text-gray-400 text-2xl" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

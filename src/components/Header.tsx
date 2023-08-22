@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
   RxHamburgerMenu as HamburgerIcon,
@@ -28,25 +29,25 @@ export const Header = () => {
   return (
     <>
       <header className="flex items-center justify-between p-8">
-        <a href="/">
+        <Link href="/">
           <Image
             alt="Experior logo"
             width={180}
             height={50}
             src={"/logo.png"}
           />
-        </a>
+        </Link>
         <nav>
           <div className="hidden md:flex items-center gap-8">
-            <a href="/blog" className="font-bold">
+            <Link href="/blog" className="font-bold">
               Blog
-            </a>
+            </Link>
             {/* <a href="/contact" className="font-bold">
               Contact
             </a> */}
-            <a href={"https://go.experior.ai"} className="font-bold">
+            <Link href={"https://go.experior.ai"} className="font-bold">
               Sign-in
-            </a>
+            </Link>
           </div>
           <HamburgerIcon
             className="text-3xl cursor-pointer block md:hidden"
@@ -80,20 +81,26 @@ export const Header = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <a href="/blog" className="text-gray-700">
+            <Link href="/blog" className="text-gray-700">
               Blog
-            </a>
+            </Link>
             {/* <a href="/" className="text-gray-700">
               Contact
             </a> */}
           </div>
           <div className="flex items-center justify-between gap-4 p-4">
-            <div className="bg-main py-2 px-8 rounded-lg w-1/2 text-center">
+            <Link
+              href="https://go.experior.ai"
+              className="bg-main py-2 px-8 rounded-lg w-1/2 text-center"
+            >
               Sign in
-            </div>
-            <div className="bg-secondary py-2 px-8 rounded-lg w-1/2 text-center">
+            </Link>
+            <Link
+              href="https://go.experior.ai/register"
+              className="bg-secondary py-2 px-8 rounded-lg w-1/2 text-center"
+            >
               Sign up
-            </div>
+            </Link>
           </div>
         </div>
       )}

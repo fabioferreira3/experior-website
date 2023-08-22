@@ -12,6 +12,7 @@ import getURL from "../../utils/url";
 import "../../assets/blog.css";
 
 import Related from "./Related";
+import Link from "next/link";
 
 export default function PostView({
   title,
@@ -76,7 +77,7 @@ export default function PostView({
           <div className="px-4 md:px-20 flex justify-center items-center text-xl font-bold">
             <div className="flex justify-center items-center gap-3 py-20 border-t-2 border-zinc-500 w-full">
               <div>Share article:</div>
-              <a
+              <Link
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${getURL(
                   pathname
                 )}`}
@@ -84,8 +85,8 @@ export default function PostView({
                 target="_blank"
               >
                 <LinkedinIcon />
-              </a>
-              <a
+              </Link>
+              <Link
                 href={`https://www.facebook.com/sharer/sharer.php?u=${getURL(
                   pathname
                 )}`}
@@ -93,8 +94,8 @@ export default function PostView({
                 className="p-3 rounded-full bg-[#1977F2]"
               >
                 <FacebookIcon />
-              </a>
-              <a
+              </Link>
+              <Link
                 href={`https://twitter.com/intent/tweet?text=${title}&url=${getURL(
                   pathname
                 )}`}
@@ -102,7 +103,7 @@ export default function PostView({
                 target="_blank"
               >
                 <TwitterIcon />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-4 items-center bg-[#12154f] rounded-lg p-8">
@@ -122,15 +123,18 @@ export default function PostView({
               <p>Constantly building.</p>
             </div>
             <div className="flex items-center gap-3">
-              <a href="https://www.linkedin.com/in/fabioferr/" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/fabioferr/"
+                target="_blank"
+              >
                 <LinkedinIcon className="text-xl" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/_fabioferreira_cj"
                 target="_blank"
               >
                 <InstagramIcon className="text-xl" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

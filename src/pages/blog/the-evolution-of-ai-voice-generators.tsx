@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import PostView from "@/components/Blog/PostView";
 import MainLayout from "@/components/MainLayout";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -250,9 +251,9 @@ const Page = () => {
       </p>
       <p>
         You may try our AI voice generator{" "}
-        <a className="text-secondary" href="https://go.experior.ai">
+        <Link className="text-secondary" href="https://go.experior.ai">
           here
-        </a>
+        </Link>
       </p>
     </div>
   );
