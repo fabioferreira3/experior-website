@@ -53,7 +53,7 @@ const Page = () => {
       </Head>
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
         <h1 className="text-4xl font-bold">Blog</h1>
-        <div className="grid grid-cols-3 mt-8 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-8">
           <PostPreview
             title="The Evolution of AI Voice Generators: Mirroring Humanity"
             image="/imgs/ai-voice-generator.jpg"
