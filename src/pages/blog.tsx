@@ -55,22 +55,9 @@ const Page = () => {
         <h1 className="text-4xl font-bold">Blog</h1>
         <div className="grid grid-cols-3 mt-8 gap-8">
           <PostPreview
-            title="Post 1"
-            description="Description"
-            image="https://media.licdn.com/dms/image/D4D03AQGq8FKWQjQm3g/profile-displayphoto-shrink_400_400/0/1673667166925?e=1698278400&v=beta&t=wAsp7Sd_wEYl5CC4XviQHuOnUlWcJnnRzzSSIvaI35s"
-            link="/blog"
-          />
-          <PostPreview
-            title="Post 2"
-            description="Description"
-            image="https://media.licdn.com/dms/image/D4D03AQGq8FKWQjQm3g/profile-displayphoto-shrink_400_400/0/1673667166925?e=1698278400&v=beta&t=wAsp7Sd_wEYl5CC4XviQHuOnUlWcJnnRzzSSIvaI35s"
-            link="/blog"
-          />
-          <PostPreview
-            title="Post 3"
-            description="Description"
-            image="https://media.licdn.com/dms/image/D4D03AQGq8FKWQjQm3g/profile-displayphoto-shrink_400_400/0/1673667166925?e=1698278400&v=beta&t=wAsp7Sd_wEYl5CC4XviQHuOnUlWcJnnRzzSSIvaI35s"
-            link="/blog"
+            title="The Evolution of AI Voice Generators: Mirroring Humanity"
+            image="/imgs/ai-voice-generator.jpg"
+            link="/blog/the-evolution-of-ai-voice-generators"
           />
         </div>
       </div>

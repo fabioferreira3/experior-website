@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import { useRouter } from "next/router";
 import getURL from "../../utils/url";
+import "../../assets/blog.css";
 
 import Related from "./Related";
 
@@ -41,19 +42,20 @@ export default function PostView({
         <meta property="twitter:image" content={heroImg} />
         <meta name="author" content={author}></meta>
       </Head>
-      <div className="px-12 grid grid-cols-3 bg-[#191b51]">
-        <div className="p-8 col-span-2">
+      <div className="post-view text-justify md:text-left px-2 md:px-12 grid grid-cols-1 md:grid-cols-3 bg-[#191b51]">
+        <div className="p-4 md:p-8 col-span-2">
           <div>
             <Image
               className="rounded-lg"
               alt=""
-              width={1024}
+              width={700}
               height={1}
               src={heroImg}
             />
           </div>
           <div>
-            <div className="flex items-center gap-8 py-8">
+            <h1 className="text-4xl font-bold mt-8">{title}</h1>
+            <div className="flex justify-between md:justify-start md:items-center md:gap-8 py-6">
               <div className="flex items-center gap-4">
                 <Image
                   alt=""
@@ -69,10 +71,9 @@ export default function PostView({
                 {date}
               </div>
             </div>
-            <h1 className="text-4xl font-bold">{title}</h1>
           </div>
-          <div className="py-8">{children}</div>
-          <div className="px-20 flex justify-center items-center text-xl font-bold">
+          <div className="mb-8">{children}</div>
+          <div className="px-4 md:px-20 flex justify-center items-center text-xl font-bold">
             <div className="flex justify-center items-center gap-3 py-20 border-t-2 border-zinc-500 w-full">
               <div>Share article:</div>
               <a
@@ -133,9 +134,9 @@ export default function PostView({
             </div>
           </div>
         </div>
-        <div className="p-8">
+        {/* <div className="p-8">
           <Related />
-        </div>
+        </div> */}
       </div>
     </>
   );
