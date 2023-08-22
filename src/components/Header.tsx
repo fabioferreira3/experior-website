@@ -41,9 +41,9 @@ export const Header = () => {
             <a href="/blog" className="font-bold">
               Blog
             </a>
-            <a href="/contact" className="font-bold">
+            {/* <a href="/contact" className="font-bold">
               Contact
-            </a>
+            </a> */}
             <a href={"https://go.experior.ai"} className="font-bold">
               Sign-in
             </a>
@@ -83,10 +83,9 @@ export const Header = () => {
             <a href="/blog" className="text-gray-700">
               Blog
             </a>
-            <a href="/" className="text-gray-700">
+            {/* <a href="/" className="text-gray-700">
               Contact
-            </a>
-            {/* <div className="text-gray-700">Item 2</div> */}
+            </a> */}
           </div>
           <div className="flex items-center justify-between gap-4 p-4">
             <div className="bg-main py-2 px-8 rounded-lg w-1/2 text-center">
