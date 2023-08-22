@@ -1,4 +1,5 @@
 .post-view h2 {
+  color: #f9f9f9;
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -7,6 +8,7 @@
 }
 
 .post-view h3 {
+  color: #f9f9f9;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -14,6 +16,7 @@
 }
 
 .post-view p {
+  color: #f9f9f9;
   font-size: 1rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;

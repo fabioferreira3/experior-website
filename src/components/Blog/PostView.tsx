@@ -55,7 +55,9 @@ export default function PostView({
             />
           </div>
           <div>
-            <h1 className="text-4xl font-bold mt-8">{title}</h1>
+            <h1 className="text-4xl text-start font-bold mt-8 text-gray-100">
+              {title}
+            </h1>
             <div className="flex justify-between md:justify-start md:items-center md:gap-8 py-6">
               <div className="flex items-center gap-4">
                 <Image
