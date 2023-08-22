@@ -36,14 +36,25 @@ export const Header = () => {
             src={"/logo.png"}
           />
         </div>
-        {/* <nav>
+        <nav>
+          <div className="hidden md:flex items-center gap-8">
+            <a href="/blog" className="font-bold">
+              Blog
+            </a>
+            <a href="/contact" className="font-bold">
+              Contact
+            </a>
+            <a href={"https://go.experior.ai"} className="font-bold">
+              Sign-in
+            </a>
+          </div>
           <HamburgerIcon
-            className="text-3xl cursor-pointer"
+            className="text-3xl cursor-pointer block md:hidden"
             onClick={() => setOpenMenu(true)}
           />
-        </nav> */}
+        </nav>
       </header>
-      {/* {openMenu && (
+      {openMenu && (
         <div
           ref={menuRef}
           className={`p-8 flex flex-col justify-between bg-white fixed top-0 right-0 inset-0 w-full z-40 ${
@@ -63,14 +74,19 @@ export const Header = () => {
             </div>
             <div>
               <CrossIcon
-                className="text-gray-700 text-3xl"
+                className="text-gray-700 text-3xl cursor-pointer"
                 onClick={handleCloseMenu}
               />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <div className="text-gray-700">Item 1</div>
-            <div className="text-gray-700">Item 2</div>
+            <a href="/blog" className="text-gray-700">
+              Blog
+            </a>
+            <a href="/" className="text-gray-700">
+              Contact
+            </a>
+            {/* <div className="text-gray-700">Item 2</div> */}
           </div>
           <div className="flex items-center justify-between gap-4 p-4">
             <div className="bg-main py-2 px-8 rounded-lg w-1/2 text-center">
@@ -81,7 +97,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-      )} */}
+      )}
     </>
   );
 };
