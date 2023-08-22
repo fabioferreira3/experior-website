@@ -58,7 +58,7 @@ export default function PostView({
             <h1 className="text-4xl text-start font-bold mt-8 text-gray-100">
               {title}
             </h1>
-            <div className="flex justify-between md:justify-start md:items-center md:gap-8 py-6">
+            <div className="flex text-gray-100 justify-between md:justify-start md:items-center md:gap-8 py-6">
               <div className="flex items-center gap-4">
                 <Image
                   alt=""
@@ -80,6 +80,7 @@ export default function PostView({
             <div className="flex justify-center items-center gap-3 py-20 border-t-2 border-zinc-500 w-full">
               <div>Share article:</div>
               <Link
+                title="Share on Linkedin"
                 href={`https://www.linkedin.com/sharing/share-offsite/?url=${getURL(
                   pathname
                 )}`}
@@ -89,6 +90,7 @@ export default function PostView({
                 <LinkedinIcon />
               </Link>
               <Link
+                title="Share on Facebook"
                 href={`https://www.facebook.com/sharer/sharer.php?u=${getURL(
                   pathname
                 )}`}
@@ -98,6 +100,7 @@ export default function PostView({
                 <FacebookIcon />
               </Link>
               <Link
+                title="Share on Twitter"
                 href={`https://twitter.com/intent/tweet?text=${title}&url=${getURL(
                   pathname
                 )}`}
@@ -126,12 +129,14 @@ export default function PostView({
             </div>
             <div className="flex items-center gap-3">
               <Link
+                title="Linkedin"
                 href="https://www.linkedin.com/in/fabioferr/"
                 target="_blank"
               >
                 <LinkedinIcon className="text-xl" />
               </Link>
               <Link
+                title="Instagram"
                 href="https://www.instagram.com/_fabioferreira_cj"
                 target="_blank"
               >

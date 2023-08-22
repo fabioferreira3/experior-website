@@ -52,7 +52,7 @@ const Page = () => {
         <meta property="twitter:image" content={getURL("/logo-color.png")} />
       </Head>
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
-        <h1 className="text-6xl font-bold text-start md:text-center">
+        <h1 className="text-6xl font-bold text-start md:text-center text-gray-100">
           Enhancing Your Digital
         </h1>
         <div className="text-5xl md:text-5xl font-bold h-12 my-6 md:mt-4 md:text-center text-secondary">
@@ -60,7 +60,7 @@ const Page = () => {
             words={["Presence", "Impact", "Reach", "Engagement", "Voice"]}
           />
         </div>
-        <div className="text-5xl font-bold text-start md:text-center md:mt-4">
+        <div className="text-5xl font-bold text-start md:text-center md:mt-4 text-gray-100">
           With AI
         </div>
         <div>
