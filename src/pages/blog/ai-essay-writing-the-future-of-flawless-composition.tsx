@@ -247,6 +247,12 @@ const Page = () => {
         future where technology and human creativity coalesce to create
         masterpieces.
       </p>
+      <p>
+        You may try our AI essay writing tool{" "}
+        <Link className="text-secondary" href="https://go.experior.ai">
+          here
+        </Link>
+      </p>
     </div>
   );
 };
