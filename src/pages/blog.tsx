@@ -59,6 +59,11 @@ const Page = () => {
             image="/imgs/ai-voice-generator.jpg"
             link="/blog/the-evolution-of-ai-voice-generators"
           />
+          <PostPreview
+            title="AI Essay Writing: The Future of Flawless Composition"
+            image="/imgs/essay.png"
+            link="/blog/ai-essay-writing-the-future-of-flawless-composition"
+          />
         </div>
       </div>
     </>
