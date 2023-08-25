@@ -1,7 +1,8 @@
 import type { ReactElement } from "react";
-import PostView from "@/components/Blog/PostView";
-import MainLayout from "@/components/MainLayout";
 import Link from "next/link";
+
+import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
+import BlogLayout from "@/components/Blog/BlogLayout";
 
 const Page = () => {
   return (
@@ -177,6 +178,7 @@ const Page = () => {
       <p>
         You may also check these{" "}
         <Link
+          className="styled"
           target="_blank"
           href="https://www.indeed.com/career-advice/career-development/essay-writing-tips"
         >
@@ -267,18 +269,12 @@ const Page = () => {
   );
 };
 Page.getLayout = function getLayout(page: ReactElement) {
+  const post = getBlogPost("ai_essay_writing") as BlogPostType;
+  const relatedPosts = [getBlogPost("ai_voice_generator")];
   return (
-    <MainLayout>
-      <PostView
-        date="Aug 25, 2023"
-        title="AI Essay Writing: The Future of Flawless Composition"
-        metaDescription="Discover what is an essay and explore the potential of AI essay writing: merging human creativity with advanced technology for unparalleled compositions"
-        author="Fabio Ferreira"
-        heroImg="/imgs/essay.png"
-      >
-        {page}
-      </PostView>
-    </MainLayout>
+    <BlogLayout post={post} relatedPosts={relatedPosts}>
+      {page}
+    </BlogLayout>
   );
 };
 

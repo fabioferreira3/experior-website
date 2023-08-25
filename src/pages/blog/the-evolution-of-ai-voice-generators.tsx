@@ -1,7 +1,8 @@
 import type { ReactElement } from "react";
-import PostView from "@/components/Blog/PostView";
-import MainLayout from "@/components/MainLayout";
 import Link from "next/link";
+
+import BlogLayout from "@/components/Blog/BlogLayout";
+import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
 
 const Page = () => {
   return (
@@ -260,18 +261,12 @@ const Page = () => {
 };
 
 Page.getLayout = function getLayout(page: ReactElement) {
+  const post = getBlogPost("ai_voice_generator") as BlogPostType;
+  const relatedPosts = [getBlogPost("ai_essay_writing")];
   return (
-    <MainLayout>
-      <PostView
-        date="Aug 22, 2023"
-        title="The Evolution of AI Voice Generators: Mirroring Humanity"
-        metaDescription="Discover the evolution of AI voice generators - from robotic to human-like quality. Experience Experior's neural voice solution."
-        author="Fabio Ferreira"
-        heroImg="/imgs/ai-voice-generator.jpg"
-      >
-        {page}
-      </PostView>
-    </MainLayout>
+    <BlogLayout post={post} relatedPosts={relatedPosts}>
+      {page}
+    </BlogLayout>
   );
 };
 

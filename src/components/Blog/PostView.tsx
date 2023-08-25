@@ -21,6 +21,7 @@ export default function PostView({
   heroImg,
   author,
   children,
+  relatedPosts,
 }: any) {
   const { pathname } = useRouter();
 
@@ -145,9 +146,9 @@ export default function PostView({
             </div>
           </div>
         </div>
-        {/* <div className="p-8">
-          <Related />
-        </div> */}
+        <div className="p-8">
+          <Related posts={relatedPosts} />
+        </div>
       </div>
     </>
   );
