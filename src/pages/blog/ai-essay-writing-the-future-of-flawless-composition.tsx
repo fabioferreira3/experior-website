@@ -174,6 +174,16 @@ const Page = () => {
         analysis, and open to refining your thoughts as you delve deeper into
         your chosen topic.
       </p>
+      <p>
+        You may also check these{" "}
+        <Link
+          target="_blank"
+          href="https://www.indeed.com/career-advice/career-development/essay-writing-tips"
+        >
+          awesome tips
+        </Link>{" "}
+        for writing excelent essays
+      </p>
       <h3>Why use AI Essay Writing tools?</h3>
       <p>
         The evolution of technology has significantly impacted the way we write
