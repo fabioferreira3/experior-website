@@ -114,7 +114,7 @@ export default function PostView({
           </div>
           <div className="flex flex-col gap-4 items-center bg-[#12154f] rounded-lg p-8">
             <Image
-              alt=""
+              alt="Fabio Ferreira"
               className="rounded-full"
               width={90}
               height={90}

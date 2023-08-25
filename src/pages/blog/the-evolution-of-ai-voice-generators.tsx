@@ -252,7 +252,11 @@ const Page = () => {
       </p>
       <p>
         You may try our AI voice generator{" "}
-        <Link className="text-secondary" href="https://go.experior.ai">
+        <Link
+          title="Experior"
+          className="text-secondary"
+          href="https://go.experior.ai"
+        >
           here
         </Link>
       </p>

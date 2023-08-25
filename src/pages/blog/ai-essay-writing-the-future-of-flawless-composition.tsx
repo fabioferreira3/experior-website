@@ -178,6 +178,7 @@ const Page = () => {
       <p>
         You may also check these{" "}
         <Link
+          title="Tips of Writing Great Essays"
           className="styled"
           target="_blank"
           href="https://www.indeed.com/career-advice/career-development/essay-writing-tips"
@@ -261,7 +262,11 @@ const Page = () => {
       </p>
       <p>
         You may try our AI essay writing tool{" "}
-        <Link className="text-secondary" href="https://go.experior.ai">
+        <Link
+          title="Experior"
+          className="text-secondary"
+          href="https://go.experior.ai"
+        >
           here
         </Link>
       </p>

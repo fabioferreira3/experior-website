@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import Link from "next/link";
 
 import { BlogPostType } from "@/utils/blog-posts";
@@ -14,6 +13,7 @@ export default function Related({ posts }: { posts: BlogPostType[] }) {
         {posts.map((post) => {
           return (
             <Link
+              title={post.title}
               href={`/blog/${post.slug}`}
               key={post.id}
               className="flex gap-4 items-center"
