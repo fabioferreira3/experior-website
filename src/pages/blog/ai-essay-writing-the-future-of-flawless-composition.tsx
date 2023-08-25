@@ -182,7 +182,7 @@ const Page = () => {
         >
           awesome tips
         </Link>{" "}
-        for writing excelent essays
+        for writing great essays.
       </p>
       <h3>Why use AI Essay Writing tools?</h3>
       <p>
