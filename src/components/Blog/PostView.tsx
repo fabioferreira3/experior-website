@@ -147,7 +147,9 @@ export default function PostView({
           </div>
         </div>
         <div className="p-8">
-          <Related posts={relatedPosts} />
+          <aside>
+            <Related posts={relatedPosts} />
+          </aside>
         </div>
       </div>
     </>
