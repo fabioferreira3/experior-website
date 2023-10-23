@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center md:justify-end py-4 font-bold text-sm">
-        © 2023 Experior. All rights reserved
+        © 2023 Experior AI. All rights reserved. A Talendor,LLC company.
       </div>
     </footer>
   );
