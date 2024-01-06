@@ -81,7 +81,7 @@ const Page = () => {
           </button>
         </div>
       </div>
-      <div className="2xl:max-w-6xl xl:m-auto mt-4">
+      <div className="mt-4 border border-gray-800">
         <TrustedBrands />
       </div>
       <div className="md:max-w-6xl m-auto">
@@ -113,7 +113,7 @@ const Page = () => {
           </div>
         </FadeInSection>
       </div>
-      <div className="md:max-w-6xl m-auto flex flex-col md:grid md:grid-cols-2 md:rounded-xl md:overflow-auto">
+      <div className="md:max-w-6xl m-auto flex flex-col gap-2 md:gap-0 md:grid md:grid-cols-2 md:rounded-xl md:overflow-auto">
         <PainPoint inverse icon={CalendarTimesIcon} title="Time Constraints">
           Maintaining a website, blog, or social media takes a lot of time due
           to tasks like research, writing, and editing.
@@ -169,7 +169,7 @@ const Page = () => {
               </div>
             </SlideInFromBottom>
             <div className="flex flex-col md:grid md:grid-cols-2 items-center md:space-y-0 md:gap-12 mt-8">
-              <Solution icon={PencilIcon} title="Blog Post" inverse order={1}>
+              <Solution icon={PencilIcon} title="Blog Post" order={1}>
                 Experior leverages the power of AI to craft SEO-optimized blog
                 posts, transforming your ideas into compelling narratives that
                 engage and captivate readers.
