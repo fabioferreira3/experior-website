@@ -191,7 +191,7 @@ const Page = () => {
               </Solution>
               <Solution
                 icon={ChatIcon}
-                title="Text Transcription"
+                title="Audio Transcription"
                 inverse
                 order={5}
               >
