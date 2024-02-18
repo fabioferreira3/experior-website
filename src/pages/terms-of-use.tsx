@@ -128,15 +128,65 @@ without paying you or asking for permission.</p>
             </ul>
           </div>
           
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Paid accounts</h2>
+          <p><span className="font-bold">Billing.</span> If you buy any Services, you 
+          must give us complete and correct billing information, including a valid way 
+          to pay. For paid subscriptions, we will automatically charge your payment 
+          method when it&apos;s time to renew until you cancel. You need to pay all taxes, 
+          and we&apos;ll add tax if we need to. If we can&apos;t process your payment, we might 
+          lower your account level or stop your access to our Services until we get 
+          the 
+          payment.</p>
+          <p><span className="font-bold">Service Credits.</span> You can pay for some 
+          Services ahead of time by buying service credits. All service credits follow 
+          our Service Credit Terms.</p>
+          
+          <p><span className="font-bold">Cancellation.</span> You can cancel your paid 
+          subscription anytime. Payments are not refundable, except where the law 
+          requires it. These Terms don&apos;t change any local laws that give you rights to 
+          cancel.</p>
+          <p><span className="font-bold">Changes.</span> We might change our prices 
+          sometimes. If we raise our subscription prices, we&apos;ll let you know at least 
+          30 days before, and the new price will start at your next renewal. This way, 
+          you can cancel if you don&apos;t agree with the price increase.</p>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Termination and Suspension</h2>
+          <p><span className="font-bold">Termination.</span> You can choose to stop 
+          using our Services whenever you want. We have the right to pause or end 
+          your access to our Services or remove your account if we find:</p>
+          <ul className="flex flex-col list-disc pl-12">
+            <li>You didn&apos;t follow these Terms or our Usage Policies.</li>
+            <li>We need to do this to obey the law.</li>
+            <li>Your use of our Services might cause danger or harm to Experior AI, our users, or anyone else.</li>
+            <li>We might also end your account if it hasn&apos;t been used for over a year and you don&apos;t have a paid account. 
+                If we decide to do this, we&apos;ll let you know in advance.</li>
+          </ul>
+          <p><span className="font-bold">Appeals.</span> If you think we&apos;ve paused or 
+          ended your account by mistake, you can appeal by reaching out to our Support team.</p>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Discontinuation of Services</h2>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Disclaimer of Warranties</h2>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Limitation of Liability</h2>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Indemnity</h2>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Dispute Resolution</h2>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Copyright Complaints</h2>
+          </div>
+          <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">General Terms</h2>
+          </div>
         </div>
       </div>``
     </>
