@@ -69,14 +69,14 @@ const Page = () => {
             transformation.
           </div>
         </div>
-        <div className="w-full md:m-auto md:w-1/3 flex justify-center ">
+        <div className="w-full text-gray-100 md:m-auto md:w-1/3 flex justify-center ">
           <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
             <Link
               href="https://go.experior.ai/login"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
-              Join the private beta!
+              Start here
             </Link>
           </button>
         </div>
@@ -208,15 +208,15 @@ const Page = () => {
         </FadeInSection>
       </div>
       <div className="md:max-w-6xl m-auto">
-        <div className="md:p-12 flex justify-center">
+        <div className="md:p-12 flex text-gray-100 justify-center">
           <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
             <Link
               href="https://go.experior.ai/login"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
-              <Typewriter speed={70} words={["Join", "Try", "Experiment"]} />{" "}
-              the private beta!
+              <Typewriter speed={70} words={["Start", "Try", "Experiment"]} />{" "}
+              here
             </Link>
           </button>
         </div>

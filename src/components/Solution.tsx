@@ -9,7 +9,7 @@ export const Solution = ({ icon: Icon, title, children, order }: any) => {
           odd
             ? "bg-secondary md:border-secondary"
             : "bg-blue-900 md:border-blue-900"
-        } border border-white p-12 md:h-96 md:rounded-xl`}
+        } border border-white p-12 md:h-96 md:rounded-xl text-gray-100`}
       >
         <div className="flex flex-col justify-center h-full gap-4">
           <div className="flex justify-center">
