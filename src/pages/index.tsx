@@ -73,7 +73,7 @@ const Page = () => {
           <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
             <Link
-              href="https://go.experior.ai/login"
+              href="https://go.experior.ai/register"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
               Start here
@@ -212,7 +212,7 @@ const Page = () => {
           <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
             <Link
-              href="https://go.experior.ai/login"
+              href="https://go.experior.ai/register"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
               <Typewriter speed={70} words={["Start", "Try", "Experiment"]} />{" "}
