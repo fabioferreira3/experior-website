@@ -27,6 +27,33 @@ import getURL from "@/utils/url";
 import Link from "next/link";
 import Testimonials from "@/components/Testimonials";
 
+const testimonials = [
+    { pic:'/testimonials/roman.jpeg', quote: 'Experior saves a lot of time on creating content.', author: 'Roman' },
+    { pic:'/testimonials/mathew.jpeg', quote: 'I see this as the go-to tool for all kinds of very useful content related AI tools.', author: 'Mathew' },
+    { pic:'/testimonials/cherie.jpg', quote: 'It allows me to put my time elsewhere and make engaging posts to help grow my business following.', author: 'Cherie' },
+    { pic:'/testimonials/nida.jpeg', quote: "I'll be using it more frequently to test with a new blog I'm creating.", author: 'Nida' },
+    { pic:'/testimonials/zakiya.jpeg', quote: 'It offers a variety of helpful tools in one platform with a very clean UI that is easy to navigate. I would use it as well as recommend it to others.', author: 'Zakiya' },
+    { pic:'/testimonials/amandalee.jpeg', quote: 'The two biggest things for me are the time saved, thus allowing me to create more content quicker, and also the fact that it feels like several apps in one.', author: 'Amanda' },
+    { pic:'/testimonials/hreedi.jpeg', quote: 'I am very happy that there are multiple services provided all under one platform.', author: 'Hreedi' },
+    { pic:'/testimonials/kayra.png', quote: 'The value provided by Experior is something that can be scaled between hobbyists and established businesses looking to ramp up their production with AI assistance.', author: 'Kayra' },
+    { pic:'/testimonials/genevieve.jpeg', quote: 'It saves a lot of time thinking up ideas for interesting content.', author: 'Genevieve' },
+    { pic:'/testimonials/karl.jpeg', quote: 'Experior makes my job of finding relavant assistance for work or leisure much more fun', author: 'Karl' },
+    { pic:'/testimonials/christine.jpeg', quote: 'I absolutely love it!', author: 'Tereza' },
+    { pic:'/testimonials/christine_t.jpeg', quote: 'The quality of blog content generated was impressive.”', author: 'Christine' }, 
+];
+
+const complaints = [
+    { pic:'/testimonials/amandalee.jpeg', quote: 'I ran a website/blog for nearly three years. While I found it fun to come up with ideas to feature, I found it a real slog to write several paragraphs of compelling writing, and have it be cohesive, not repetitive, etc.', author: 'Amanda' },
+    { pic:'/testimonials/ashita.jpeg', quote: "One challenge is maintaining consistency. A consistent tone, style and message are pivotal in building a brand's image. But in the face of deadlines and diverse projects, this can often be overlooked.", author: 'Ashita' },
+    { pic:'/testimonials/michael.jpeg', quote: "Keeping up with ever-changing SEO trends and algorithms is a never-ending learning process.", author: 'Michael' },
+    { pic:'/testimonials/jenny.jpeg', quote: "Dealing with revisions and feedback can be tough, especially when you're attached to your original copy.", author: 'Jenny' },
+    { pic:'/testimonials/bernard.jpeg', quote: "Staying creative and fresh with ideas is a constant challenge, especially when working on similar types of content repeatedly.", author: 'Bernard' },
+    { pic:'/testimonials/john.jpeg', quote: "The pressure to produce high-converting copy under tight deadlines can be stressful.", author: 'John' },
+    { pic:'/testimonials/victor.jpeg', quote: "Juggling multiple projects and deadlines can be overwhelming at times, especially when each client has unique needs and expectations.", author: 'Victor' },
+    { pic:'/testimonials/ana.jpeg', quote: "Adapting to different industries and understanding their unique jargon and audience can be a steep learning curve for each new project.", author: 'Ana' },
+    { pic:'/testimonials/julia.jpeg', quote: "Finding the right balance between creativity and clarity in messaging can be tricky, especially when dealing with complex products or services.", author: 'Julia' },
+];
+
 const Page = () => {
   const { pathname } = useRouter();
   const title = "Experior AI";
@@ -106,6 +133,11 @@ const Page = () => {
                   Content Creation Can Be a Grind...
                 </div>
               </SlideInFromBottom>
+              <SlideInFromBottom>
+              <div className="mt-12 border border-gray-800">
+                { <Testimonials duration={6000} testimonials={complaints}/>}
+                </div>
+                </SlideInFromBottom>
             </div>
           </div>
         </FadeInSection>
@@ -205,10 +237,10 @@ const Page = () => {
         </FadeInSection>
       </div>
       <div className="mt-4 text-5xl text-gray-100 text-center font-bold p-12 md:p-0">
-                Still don&apos;t belive us?
-              </div>
-      <div className="mt-12 border border-gray-800">
-                { <Testimonials/>}
+                Don&apos;t believe us?
+        </div>
+            <div className="mt-12 border border-gray-800">
+                { <Testimonials duration={5000} testimonials={testimonials}/>}
             </div>
       <div className="md:max-w-6xl m-auto">
         <div className="md:p-12 flex text-gray-100 justify-center">
