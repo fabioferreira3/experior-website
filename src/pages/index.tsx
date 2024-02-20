@@ -97,11 +97,11 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full text-gray-100 md:m-auto md:w-1/3 flex justify-center ">
-          <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
+          <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
             <Link
               href="https://go.experior.ai/register"
-              className="text-xl lg:text-2xl font-bold font-avenir"
+              className="text-2xl font-bold font-avenir"
             >
               Start here
             </Link>
@@ -236,12 +236,14 @@ const Page = () => {
           </div>
         </FadeInSection>
       </div>
-      <div className="mt-4 text-5xl text-gray-100 text-center font-bold p-12 md:p-0">
-                Don&apos;t believe us?
-        </div>
-            <div className="mt-12 border border-gray-800">
-                { <Testimonials duration={5000} testimonials={testimonials}/>}
-            </div>
+      <div className="md:max-w-6xl m-auto mt-8 p-12 md:p-0">
+            <FadeInSection>
+                <div className="text-5xl text-gray-100 text-center font-bold">Don&apos;t believe us?</div>
+                <div className="mt-12 border border-gray-800">
+                    { <Testimonials duration={5000} testimonials={testimonials}/>}
+                </div>
+            </FadeInSection>
+    </div>
       <div className="md:max-w-6xl m-auto">
         <div className="md:p-12 flex text-gray-100 justify-center">
           <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
