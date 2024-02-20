@@ -18,7 +18,6 @@ import { IoLanguage as LanguageIcon } from "react-icons/io5";
 import { MdMoneyOff as MoneyOffIcon } from "react-icons/md";
 
 import FadeInSection from "@/components/FadeInSection";
-import TrustedBrands from "@/components/TrustedBrands";
 import Typewriter from "@/components/Typewriter";
 import SlideInFromBottom from "@/components/SlideInFromBottom";
 import { PainPoint } from "@/components/PainPoint";
@@ -26,6 +25,7 @@ import { Solution } from "@/components/Solution";
 import MainLayout from "@/components/MainLayout";
 import getURL from "@/utils/url";
 import Link from "next/link";
+import Testimonials from "@/components/Testimonials";
 
 const Page = () => {
   const { pathname } = useRouter();
@@ -80,9 +80,6 @@ const Page = () => {
             </Link>
           </button>
         </div>
-      </div>
-      <div className="mt-4 border border-gray-800">
-        <TrustedBrands />
       </div>
       <div className="md:max-w-6xl m-auto">
         <FadeInSection>
@@ -162,7 +159,7 @@ const Page = () => {
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom>
-              <div className="text-center text-xl md:mt-4 md:p-0 p-4">
+              <div className="text-center text-gray-100 text-xl md:mt-4 md:p-0 p-4">
                 From SEO optimized blog posts to engaging social media content,
                 Experior takes your ideas and transforms them into captivating
                 narratives.
@@ -207,6 +204,12 @@ const Page = () => {
           </div>
         </FadeInSection>
       </div>
+      <div className="mt-4 text-5xl text-gray-100 text-center font-bold p-12 md:p-0">
+                Still don&apos;t belive us?
+              </div>
+      <div className="mt-12 border border-gray-800">
+                { <Testimonials/>}
+            </div>
       <div className="md:max-w-6xl m-auto">
         <div className="md:p-12 flex text-gray-100 justify-center">
           <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
