@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Suspense } from "react";
 
-import Analytics from "@/components/Analytics";
+//import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const avenir = localFont({
@@ -31,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${avenir.variable} font-sans`}>
-        <Suspense>
+        {/* <Suspense>
           <Analytics />
-        </Suspense>
+        </Suspense> */}
         {children}
       </body>
       <GoogleTagManager gtmId="AW-1010073663" />
