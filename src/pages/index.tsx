@@ -97,15 +97,14 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full text-gray-100 md:m-auto md:w-1/3 flex justify-center ">
-          <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5">
-            <RobotIcon className="text-4xl md:text-3xl" />
-            <Link
+          <Link
               href="https://go.experior.ai/register"
-              className="text-2xl font-bold font-avenir"
-            >
+              className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5 text-2xl font-bold font-avenir"
+            ><RobotIcon className="text-4xl md:text-3xl" />
+            
               Start here
-            </Link>
-          </button>
+            
+          </Link>
         </div>
       </div>
       <div className="md:max-w-6xl m-auto">
