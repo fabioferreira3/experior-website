@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Suspense } from "react";
 
 import Analytics from "@/components/Analytics";
@@ -35,6 +36,7 @@ export default function RootLayout({
         </Suspense>
         {children}
       </body>
+      <GoogleTagManager gtmId="GTM-KLNKJRB8" />
     </html>
   );
 }
