@@ -18,7 +18,6 @@ import { IoLanguage as LanguageIcon } from "react-icons/io5";
 import { MdMoneyOff as MoneyOffIcon } from "react-icons/md";
 
 import FadeInSection from "@/components/FadeInSection";
-import TrustedBrands from "@/components/TrustedBrands";
 import Typewriter from "@/components/Typewriter";
 import SlideInFromBottom from "@/components/SlideInFromBottom";
 import { PainPoint } from "@/components/PainPoint";
@@ -26,6 +25,34 @@ import { Solution } from "@/components/Solution";
 import MainLayout from "@/components/MainLayout";
 import getURL from "@/utils/url";
 import Link from "next/link";
+import Testimonials from "@/components/Testimonials";
+
+const testimonials = [
+    { pic:'/testimonials/roman.jpeg', quote: 'Experior saves a lot of time on creating content.', author: 'Roman' },
+    { pic:'/testimonials/mathew.jpeg', quote: 'I see this as the go-to tool for all kinds of very useful content related AI tools.', author: 'Mathew' },
+    { pic:'/testimonials/cherie.jpg', quote: 'It allows me to put my time elsewhere and make engaging posts to help grow my business following.', author: 'Cherie' },
+    { pic:'/testimonials/nida.jpeg', quote: "I'll be using it more frequently to test with a new blog I'm creating.", author: 'Nida' },
+    { pic:'/testimonials/zakiya.jpeg', quote: 'It offers a variety of helpful tools in one platform with a very clean UI that is easy to navigate. I would use it as well as recommend it to others.', author: 'Zakiya' },
+    { pic:'/testimonials/amandalee.jpeg', quote: 'The two biggest things for me are the time saved, thus allowing me to create more content quicker, and also the fact that it feels like several apps in one.', author: 'Amanda' },
+    { pic:'/testimonials/hreedi.jpeg', quote: 'I am very happy that there are multiple services provided all under one platform.', author: 'Hreedi' },
+    { pic:'/testimonials/kayra.png', quote: 'The value provided by Experior is something that can be scaled between hobbyists and established businesses looking to ramp up their production with AI assistance.', author: 'Kayra' },
+    { pic:'/testimonials/genevieve.jpeg', quote: 'It saves a lot of time thinking up ideas for interesting content.', author: 'Genevieve' },
+    { pic:'/testimonials/karl.jpeg', quote: 'Experior makes my job of finding relavant assistance for work or leisure much more fun', author: 'Karl' },
+    { pic:'/testimonials/christine.jpeg', quote: 'I absolutely love it!', author: 'Tereza' },
+    { pic:'/testimonials/christine_t.jpeg', quote: 'The quality of blog content generated was impressive.”', author: 'Christine' }, 
+];
+
+const complaints = [
+    { pic:'/testimonials/amandalee.jpeg', quote: 'I ran a website/blog for nearly three years. While I found it fun to come up with ideas to feature, I found it a real slog to write several paragraphs of compelling writing, and have it be cohesive, not repetitive, etc.', author: 'Amanda' },
+    { pic:'/testimonials/ashita.jpeg', quote: "One challenge is maintaining consistency. A consistent tone, style and message are pivotal in building a brand's image. But in the face of deadlines and diverse projects, this can often be overlooked.", author: 'Ashita' },
+    { pic:'/testimonials/michael.jpeg', quote: "Keeping up with ever-changing SEO trends and algorithms is a never-ending learning process.", author: 'Michael' },
+    { pic:'/testimonials/jenny.jpeg', quote: "Dealing with revisions and feedback can be tough, especially when you're attached to your original copy.", author: 'Jenny' },
+    { pic:'/testimonials/bernard.jpeg', quote: "Staying creative and fresh with ideas is a constant challenge, especially when working on similar types of content repeatedly.", author: 'Bernard' },
+    { pic:'/testimonials/john.jpeg', quote: "The pressure to produce high-converting copy under tight deadlines can be stressful.", author: 'John' },
+    { pic:'/testimonials/victor.jpeg', quote: "Juggling multiple projects and deadlines can be overwhelming at times, especially when each client has unique needs and expectations.", author: 'Victor' },
+    { pic:'/testimonials/ana.jpeg', quote: "Adapting to different industries and understanding their unique jargon and audience can be a steep learning curve for each new project.", author: 'Ana' },
+    { pic:'/testimonials/julia.jpeg', quote: "Finding the right balance between creativity and clarity in messaging can be tricky, especially when dealing with complex products or services.", author: 'Julia' },
+];
 
 const Page = () => {
   const { pathname } = useRouter();
@@ -69,20 +96,16 @@ const Page = () => {
             transformation.
           </div>
         </div>
-        <div className="w-full md:m-auto md:w-1/3 flex justify-center ">
-          <button className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
-            <RobotIcon className="text-4xl md:text-3xl" />
-            <Link
-              href="https://go.experior.ai/login"
-              className="text-xl lg:text-2xl font-bold font-avenir"
-            >
-              Join the private beta!
-            </Link>
-          </button>
+        <div className="w-full text-gray-100 md:m-auto md:w-1/3 flex justify-center ">
+          <Link
+              href="https://go.experior.ai/register"
+              className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5 text-2xl font-bold font-avenir"
+            ><RobotIcon className="text-4xl md:text-3xl" />
+            
+              Start here
+            
+          </Link>
         </div>
-      </div>
-      <div className="mt-4 border border-gray-800">
-        <TrustedBrands />
       </div>
       <div className="md:max-w-6xl m-auto">
         <FadeInSection>
@@ -109,6 +132,11 @@ const Page = () => {
                   Content Creation Can Be a Grind...
                 </div>
               </SlideInFromBottom>
+              <SlideInFromBottom>
+              <div className="mt-12 border border-gray-800">
+                { <Testimonials duration={6000} testimonials={complaints}/>}
+                </div>
+                </SlideInFromBottom>
             </div>
           </div>
         </FadeInSection>
@@ -162,7 +190,7 @@ const Page = () => {
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom>
-              <div className="text-center text-xl md:mt-4 md:p-0 p-4">
+              <div className="text-center text-gray-100 text-xl md:mt-4 md:p-0 p-4">
                 From SEO optimized blog posts to engaging social media content,
                 Experior takes your ideas and transforms them into captivating
                 narratives.
@@ -207,16 +235,24 @@ const Page = () => {
           </div>
         </FadeInSection>
       </div>
+      <div className="md:max-w-6xl m-auto mt-8 p-12 md:p-0">
+            <FadeInSection>
+                <div className="text-5xl text-gray-100 text-center font-bold">Don&apos;t believe us?</div>
+                <div className="mt-12 border border-gray-800">
+                    { <Testimonials duration={5000} testimonials={testimonials}/>}
+                </div>
+            </FadeInSection>
+    </div>
       <div className="md:max-w-6xl m-auto">
-        <div className="md:p-12 flex justify-center">
+        <div className="md:p-12 flex text-gray-100 justify-center">
           <button className="w-1/2 bg-secondary rounded-full md:rounded-2xl flex items-center md:justify-center gap-6 py-3 px-5 md:py-5">
             <RobotIcon className="text-4xl md:text-3xl" />
             <Link
-              href="https://go.experior.ai/login"
+              href="https://go.experior.ai/register"
               className="text-xl lg:text-2xl font-bold font-avenir"
             >
-              <Typewriter speed={70} words={["Join", "Try", "Experiment"]} />{" "}
-              the private beta!
+              <Typewriter speed={70} words={["Start", "Try", "Experiment"]} />{" "}
+              here
             </Link>
           </button>
         </div>

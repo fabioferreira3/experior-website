@@ -15,7 +15,7 @@ export const PainPoint = ({
         <div
           className={`${
             inverse ? "md:bg-zinc-500" : "md:bg-zinc-600"
-          } p-12 md:h-72 flex flex-col justify-around bg-blue-800 border-main border-2 md:border-0`}
+          } p-12 md:h-72 flex flex-col text-gray-100 justify-around bg-blue-800 border-main border-2 md:border-0`}
         >
           <h3 className="flex items-center md:gap-3">
             <Icon className="text-6xl md:text-4xl" />

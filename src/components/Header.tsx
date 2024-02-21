@@ -49,10 +49,10 @@ export const Header = () => {
               Sign-in
             </Link>
           </div>
-          <HamburgerIcon
+          {/* <HamburgerIcon
             className="text-3xl cursor-pointer block md:hidden"
             onClick={() => setOpenMenu(true)}
-          />
+          /> */}
         </nav>
       </header>
       {openMenu && (
