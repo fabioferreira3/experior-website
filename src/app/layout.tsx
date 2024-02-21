@@ -36,7 +36,7 @@ export default function RootLayout({
         </Suspense>
         {children}
       </body>
-      <GoogleTagManager gtmId="GTM-KLNKJRB8" />
+      <GoogleTagManager gtmId="AW-1010073663" />
     </html>
   );
 }
