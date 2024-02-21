@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import "../assets/globals.css";
 import { Header } from "./Header";
 import Footer from "./Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const avenir = localFont({
   src: [
@@ -43,6 +44,7 @@ export default function MainLayout({
           </div>
         </main>
       </div>
+      <GoogleTagManager gtmId="AW-1010073663" />
     </>
   );
 }
