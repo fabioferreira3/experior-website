@@ -8,6 +8,7 @@ import { FaCheck } from "react-icons/fa";
 import MainLayout from "@/components/MainLayout";
 import getURL from "@/utils/url";
 import Link from "next/link";
+import FaqSection from "@/components/faq";
 
 const tiers = [
     {
@@ -119,6 +120,9 @@ const Page = () => {
                     </div>
                 </div></div>)
             })}
+        </div>
+        <div className="mt-12">
+            <FaqSection/>
         </div>
       </div>
     </>
