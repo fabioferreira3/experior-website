@@ -42,6 +42,9 @@ export const Header = () => {
             <Link href="/blog" className="font-bold">
               Blog
             </Link>
+            <Link href="/pricing" className="font-bold">
+              Pricing
+            </Link>
             {/* <a href="/contact" className="font-bold">
               Contact
             </a> */}
