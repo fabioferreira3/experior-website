@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
-import { Suspense } from "react";
 
-import Analytics from "@/components/Analytics";
+//import Analytics from "@/components/Analytics";
 import "../assets/globals.css";
 import { Header } from "./Header";
 import Footer from "./Footer";
@@ -32,9 +31,6 @@ export default function MainLayout({
   return (
     <>
       <div className={`${avenir.variable} font-sans`}>
-        <Suspense>
-          <Analytics />
-        </Suspense>
         <main className="bg-main min-h-screen flex flex-col">
           <div>
             <Header />
