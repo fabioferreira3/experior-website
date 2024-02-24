@@ -167,28 +167,58 @@ without paying you or asking for permission.</p>
           ended your account by mistake, you can appeal by reaching out to our Support team.</p>
           </div>
           <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-medium">Discontinuation of Services</h2>
+          <h2 className="text-2xl font-medium">Termination of Services</h2>
+          <p>If we choose to terminate our Services, we will notify you in advance and provide a refund for any prepaid services that have not been used.</p>
           </div>
           <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-medium">Disclaimer of Warranties</h2>
+          <h2 className="text-2xl font-medium">Exclusion of Warranties</h2>
+          <p>Our Services are offered &quot;as is.&quot; Unless the law mandates otherwise, we, along with our affiliates and licensors, do not provide any warranties (express, implied, statutory, or otherwise) regarding the Services. We disclaim all warranties, including but not limited to, warranties of merchantability, fitness for a particular purpose, satisfactory quality, non-infringement, and quiet enjoyment, as well as any warranties arising from any course of dealing or usage in trade. We do not guarantee that the Services will be uninterrupted, accurate, or error-free, or that any content will be secure or not lost or altered.</p>
+          <p>You acknowledge and agree that using outputs from our Service is entirely at your own risk, and you should not rely on these outputs as the sole source of truth or factual information, nor as a substitute for professional advice.</p>
           </div>
           <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Limitation of Liability</h2>
-          </div>
+          <p>Neither we nor our affiliates or licensors will be responsible for any indirect, incidental, special, consequential, or exemplary damages, including damages for loss of profits, goodwill, use, or data or other losses, even if we have been informed of the possibility of such damages. Our total liability under these Terms will not exceed the greater of the amount you paid for the Service that led to the claim during the 12 months prior to the liability arising, or one hundred dollars ($100). The limitations in this section apply to the fullest extent allowed by applicable law.</p>
+          <p>Some countries and states do not permit the exclusion of certain warranties or the limitation of certain damages, so some or all of the above terms may not apply to you, and you may have additional rights. In that case, these Terms will only limit our responsibilities to the maximum extent permitted in your country of residence.</p>
+          <p>The affiliates, suppliers, licensors, and distributors of Experior are intended third-party beneficiaries of this section.</p></div>
           <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Indemnity</h2>
+          <p>If you are a business or organization, to the extent permitted by law, you will indemnify and hold us, our affiliates, and our personnel harmless from any costs, losses, liabilities, and expenses (including attorneys&apos; fees) arising from third-party claims related to your use of the Services and Content or any breach of these Terms.</p>
           </div>
           <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Dispute Resolution</h2>
+          <p>You and Experior agree to the following mandatory arbitration and class action waiver provisions:</p>
+          <p><span className="font-bold">Mandatory Arbitration:</span> You and Experior agree to resolve any claims arising from these Terms or our Services, regardless of when the claim occurred, through final and binding arbitration. You have the option to opt out of arbitration within 30 days of creating your account or within 30 days after any updates to these arbitration terms by filling out this form. If you opt out of an update, the last agreed-upon arbitration terms will apply.</p>
+          <p><span className="font-bold">Informal Dispute Resolution:</span> We prefer to address your concerns informally before taking legal action. Before either party files a claim against the other, we agree to attempt to resolve the dispute informally. You can do this by sending us notice through this form, and we will do so by contacting the email associated with your account. If we cannot resolve a dispute within 60 days, either party has the right to initiate arbitration. Both parties also agree to attend an individual settlement conference if requested during this time. Any statute of limitations will be paused during this informal resolution process.</p>
+          <p><span className="font-bold">Arbitration Forum:</span>If we cannot resolve the dispute, either party may start arbitration with National Arbitration and Mediation (&quot;NAM&quot;) under its rules (available here). Experior will not seek attorney&apos;s fees and costs in arbitration unless the arbitrator finds your claim to be frivolous. The Federal Arbitration Act will govern these arbitration terms and any arbitration since these Terms involve interstate commerce.</p>
+          <p><span className="font-bold">Arbitration Procedures:</span> Arbitration will be conducted via videoconference if possible. If an in-person hearing is necessary, the location will be mutually agreed upon, in your county of residence, or as determined by the arbitrator. The arbitration will be conducted by a single arbitrator, who will be a retired judge or an attorney licensed in California. The arbitrator has exclusive authority to resolve any dispute, except for issues related to the enforceability or validity of the class action waiver or requests for public injunctive relief, which will be determined by the state or federal courts of San Francisco, California. The arbitrator can grant motions that dispose of all or part of any dispute.</p>
+          <p><span className="font-bold">Exceptions:</span> This section does not require informal dispute resolution or arbitration for individual claims in small claims court or for injunctions to stop unauthorized use of the Services or intellectual property infringement.</p>
+          <p><span className="font-bold">Class and Jury Trial Waivers:</span> You and Experior agree that disputes must be brought individually and not as part of any class, consolidated, or representative proceeding. Class arbitrations, class actions, and representative actions are not allowed. Only individual relief is available. Any request for public injunctive relief will be litigated in court after arbitration of the underlying claim and all other claims. This does not prevent participation in a class-wide settlement. Both parties waive any right to a jury trial in any action, proceeding, or counterclaim.</p>
+          <p><span className="font-bold">Batch Arbitration:</span> If 25 or more claimants represented by the same or similar counsel file arbitration demands for substantially similar disputes within 90 days, you and Experior agree that NAM will administer them in batches of up to 50 claimants each, unless there are fewer than 50 claimants in total. Each batch will be treated as a single consolidated arbitration with one arbitrator, one set of fees, and one hearing held by videoconference or in a location decided by the arbitrator. If any part of this section is found to be invalid or unenforceable for a particular claimant or batch, it will be severed and arbitrated individually.</p>
+          <p><span className="font-bold">Severability:</span> If any part of these arbitration terms is found to be illegal or unenforceable, the rest will remain in effect. However, if the finding of partial illegality or unenforceability would allow class arbitration, class action, or representative action, then this entire dispute resolution section will be unenforceable.</p>
           </div>
           <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-medium">Copyright Complaints</h2>
+          <h2 className="text-2xl font-medium">Copyright Infringement Notices</h2>
+          <p>If you suspect that your intellectual property rights have been violated, please send a notification to the address provided below or complete this form. We reserve the right to remove or disable access to content that we believe breaches these Terms or is alleged to infringe upon copyright, and we may terminate the accounts of repeat infringers when necessary.</p>
+          <div className="flex flex-col pl-12 py-4">
+                <div>7345 W SAND LAKE RD STE 210 OFFICE</div>
+                <div>ORLANDO FL</div>
+                <div>32819</div>
+          </div>
+          <p>Your written notification of copyright infringement should include the following details:</p>
+          <ul className="flex flex-col list-disc pl-12">
+            <li>A physical or electronic signature of the individual authorized to represent the owner of the copyrighted material</li>
+            <li>A detailed description of the copyrighted work that you allege has been infringed</li>
+            <li>A description of the location of the purportedly infringing material on our website, so we can locate it</li>
+            <li>Your contact information, including address, telephone number, and email address</li>
+            <li>A statement from you asserting your good-faith belief that the disputed use of the material is not authorized by the copyright owner, their agent, or the law</li>
+            <li>A declaration from you, made under penalty of perjury, affirming that the information in your notice is accurate and that you are the copyright owner or have the authority to act on behalf of the copyright owner.</li>
+          </ul>
           </div>
           <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">General Terms</h2>
           </div>
         </div>
-      </div>``
+      </div>
     </>
   );
 };
