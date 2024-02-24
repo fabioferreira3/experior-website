@@ -80,20 +80,19 @@ const Page = () => {
       </Head>
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
         <h1 className="text-6xl font-bold text-start md:text-center text-gray-100">
-          Enhancing Your Digital
+          Struggling to Craft Content That&apos;s
         </h1>
         <div className="text-5xl md:text-5xl font-bold h-12 my-6 md:mt-4 md:text-center text-secondary">
           <Typewriter
-            words={["Presence", "Impact", "Reach", "Engagement", "Voice"]}
+            words={["Compelling?", "Captivating?", "Convincing?", "Creative?"]}
           />
         </div>
-        <div className="text-5xl font-bold text-start md:text-center md:mt-4 text-gray-100">
+        {/* <div className="text-5xl font-bold text-start md:text-center md:mt-4 text-gray-100">
           With AI
-        </div>
+        </div> */}
         <div>
-          <div className="text-center text-xl text-gray-100 my-12">
-            Your one-stop AI tool for SEO-optimized content creation and text
-            transformation.
+          <div className="text-center text-3xl text-gray-100 my-8">
+            Meet Experior, your one-stop AI platform for content creation.
           </div>
         </div>
         <div className="w-full text-gray-100 md:m-auto md:w-1/3 flex justify-center ">
@@ -143,17 +142,13 @@ const Page = () => {
       </div>
       <div className="md:max-w-6xl m-auto flex flex-col gap-2 md:gap-0 md:grid md:grid-cols-2 md:rounded-xl md:overflow-auto">
         <PainPoint inverse icon={CalendarTimesIcon} title="Time Constraints">
-          Maintaining a website, blog, or social media takes a lot of time due
-          to tasks like research, writing, and editing.
+          Keeping a website, blog, or social media page up to date is a time-gobbling monster, thanks to all the researching, writing, and nitpicking edits. 😰
         </PainPoint>
         <PainPoint fromRight icon={CropIcon} title="Content Variety and Volume">
-          The digital landscape requires a lot of diverse content, which can be
-          overwhelming to keep up with.
+          The digital world is a hungry beast that craves a smorgasbord of content, which can be a real headache to keep feeding. 😖
         </PainPoint>
         <PainPoint icon={BookmarkIcon} title="SEO Optimized?">
-          Making content isn&apos;t enough; you need to make sure the people you
-          want to see it can find it. This involves getting to grips with how
-          search engines work, which can be tough.
+          Creating content is only half the battle; you also need to play hide and seek with search engines to make sure your audience can actually find it... 😵‍💫
         </PainPoint>
         <PainPoint
           inverse
@@ -161,24 +156,17 @@ const Page = () => {
           icon={HashIcon}
           title="Social Media (In)Compatibility"
         >
-          Each social media platform has its unique audience, language, and
-          format. Crafting content that fits each platform&apos;s specific
-          requirements and resonates with its user base can be a challenging
-          task.
+          Every social media platform is its own little universe with its own language and style. Trying to tailor content for each one can feel like juggling flaming torches. 🔥
         </PainPoint>
         <PainPoint inverse icon={LanguageIcon} title="Language Barriers">
-          The web removed geographical boundaries. The challenge is to create
-          content that connects with diverse language speakers while preserving
-          its original meaning.
+          The internet has knocked down geographical barriers, but now the challenge is to create content that speaks everyone&apos;s language without losing its original flavor. 🌍
         </PainPoint>
         <PainPoint
           fromRight
           icon={MoneyOffIcon}
           title="Inadequate Pricing Models"
         >
-          Many content creation tools demand monthly subscriptions, irrespective
-          of your actual usage. This can deter smaller businesses or individuals
-          who don&apos;t require the tool regularly.
+          Many content creation tools have a &apos;pay up or shut up&apos; approach with monthly subscriptions, which can scare off small businesses or solo flyers who don&apos;t need them all the time. 💸
         </PainPoint>
       </div>
       <div className="md:max-w-6xl m-auto mt-8">
@@ -186,7 +174,7 @@ const Page = () => {
           <div className="w-full md:gap-4 flex flex-col items-center justify-center md:p-12">
             <SlideInFromBottom>
               <div className="text-5xl text-gray-100 text-center font-bold p-12 md:p-0">
-                Experience the Power of AI in Content Creation
+                Let <span className="text-secondary">Experior</span> do the heavy lifting for you
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom>
@@ -198,24 +186,16 @@ const Page = () => {
             </SlideInFromBottom>
             <div className="flex flex-col md:grid md:grid-cols-2 items-center md:space-y-0 md:gap-12 mt-8">
               <Solution icon={PencilIcon} title="Blog Post" order={1}>
-                Experior leverages the power of AI to craft SEO-optimized blog
-                posts, transforming your ideas into compelling narratives that
-                engage and captivate readers.
+                Experior uses AI smarts to whip up SEO-friendly blog posts, turning your thoughts into captivating stories that grab readers by the eyeballs!
               </Solution>
               <Solution icon={HashIcon} title="Social Media" order={2}>
-                AI-driven Experior transforms social media content. Engage
-                LinkedIn, Facebook and Instagram with tailored, engaging posts.
-                Elevate your online presence easily.
+                Jazz up your social media game. Get LinkedIn, Facebook, and Instagram buzzing with posts that are as engaging as a squirrel on a sugar rush. Boost your online vibe without breaking a sweat!
               </Solution>
               <Solution icon={FillAudioIcon} title="Text to Audio" order={3}>
-                Experior converts text to audio, enriching accessibility and
-                content variety. From blogs to social media, create immersive
-                audio experiences.
+                Turn text into audio, spicing up accessibility and mixing up your content flavors. From blogs to social media, create audio experiences that are more immersive than a dip in the ocean!
               </Solution>
               <Solution icon={SwitchIcon} title="Paraphraser" inverse order={4}>
-                Experior&apos;s AI rephrases with precision, creativity, and
-                uniqueness. Enhance readability, engage your audience
-                effectively.
+                Experior&apos;s AI gives your words a makeover with precision, creativity, and a dash of pizzazz. Make your content more readable and keep your audience hooked like a fish on a line!
               </Solution>
               <Solution
                 icon={ChatIcon}
@@ -223,13 +203,10 @@ const Page = () => {
                 inverse
                 order={5}
               >
-                Experior&apos;s advanced transcription converts audio to
-                precise, timestamped text. Unlock content potential for wider
-                audience access.
+                Experior&apos;s advanced transcription tool turns audio into spot-on, time-stamped text. Crack open the content treasure chest for a broader audience to dig in.
               </Solution>
               <Solution icon={LanguageIcon} title="Multi-language" order={6}>
-                Multilingual powerhouse, 14 languages. Break barriers, captivate
-                global audiences. Universal content creation.
+                A multilingual juggernaut speaking 14 languages. Smash through language barriers and charm audiences worldwide. Create content that&apos;s as universal as a smile! 🙂
               </Solution>
             </div>
           </div>
