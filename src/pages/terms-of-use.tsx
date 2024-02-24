@@ -216,6 +216,20 @@ without paying you or asking for permission.</p>
           </div>
           <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">General Terms</h2>
+          <p><span className="font-bold">Assignment:</span> You are not permitted to assign or transfer any rights or obligations under these Terms, and any attempt to do so will be null and void. We reserve the right to assign our rights or obligations under these Terms to any affiliate, subsidiary, or successor in interest of any business associated with our Services.</p>
+          <p>Updates to These Terms or Our Services: We are continually striving to enhance our Services. As a result, we may update these Terms or our Services from time to time. Changes may be made for reasons such as:</p>
+          <ul className="flex flex-col list-disc pl-12">
+            <li>Changes in the law or regulatory requirements.</li>
+            <li>Security or safety considerations.</li>
+            <li>Circumstances beyond our reasonable control.</li>
+            <li>Routine developments in our Services.</li>
+            <li>Adaptation to new technologies.</li>
+          </ul>
+          <p>We will provide at least 30 days&apos; advance notice of any changes to these Terms that materially adversely affect you, either via email or an in-product notification. All other changes will take effect immediately upon being posted on our website. If you disagree with the changes, you must cease using our Services.</p>
+          <p><span className="font-bold">Enforcement of These Terms: </span> Our failure to enforce a provision is not a waiver of our right to do so later. Except as specified in the dispute resolution section above, if any part of these Terms is found to be invalid or unenforceable, that part will be enforced to the maximum extent permissible, and it will not affect the enforceability of any other terms.</p>
+          <p><span className="font-bold">Trade Controls: </span> You must adhere to all applicable trade laws, including sanctions and export control laws. Our Services may not be used in or for the benefit of, or exported or re-exported to, any U.S. embargoed country or territory or any individual or entity subject to trade restrictions under applicable laws. Our Services may not be used for any purpose prohibited by trade laws, and your Input may not include material or information that requires a government license for release or export.</p>
+          <p><span className="font-bold">Entire Agreement: </span> These Terms constitute the entire agreement between you and Experior regarding the Services and supersede any prior or contemporaneous agreements between you and Experior, except for any Service-specific terms.</p>
+          <p><span className="font-bold">Governing Law: </span>The laws of Delaware, excluding its conflict of laws principles, will govern these Terms. Except as outlined in the dispute resolution section above, all claims arising out of or relating to these Terms will be brought exclusively in the federal or state courts of Dover, Delaware.</p>
           </div>
         </div>
       </div>
