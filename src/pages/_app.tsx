@@ -5,5 +5,5 @@ export default function MyApp({ Component, pageProps }: any) {
   const getLayout = Component.getLayout || ((page: any) => page);
 
   return getLayout(<><Component {...pageProps} />
-  <GoogleTagManager gtmId="AW-1010073663" /></>);
+  <GoogleTagManager gtmId="GTM-KCMH8CTR" /></>);
 }
