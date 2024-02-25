@@ -63,13 +63,13 @@ const tiers = [
 
 const Page = () => {
   const { pathname } = useRouter();
-  const title = "Pricing - Experior AI";
+  const title = "Pricing - Experior";
   const description =
     "Check out our latest articles about AI and the future of content creation";
   return (
     <>
       <Head>
-        <title>Pricing - Experior AI</title>
+        <title>Pricing - Experior</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="AI, Content Generator, AI Assistant" />

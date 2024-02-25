@@ -34,7 +34,7 @@ export default function PostView({
         <meta property="og:title" content={title} key="title" />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Experior AI" />
+        <meta property="og:site_name" content="Experior" />
         <meta property="og:image" content={heroImg} />
         <meta property="og:url" content={getURL(pathname)} />
         <meta property="twitter:card" content="summary" />

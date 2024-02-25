@@ -56,13 +56,13 @@ const complaints = [
 
 const Page = () => {
   const { pathname } = useRouter();
-  const title = "Experior AI";
+  const title = "Experior";
   const description =
     "Your one-stop AI tool for SEO-optimized content creation and text transformation.";
   return (
     <>
       <Head>
-        <title>Experior AI</title>
+        <title>Experior</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="AI, Content Generator, AI Assistant" />

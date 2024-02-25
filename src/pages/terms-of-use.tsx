@@ -8,13 +8,13 @@ import getURL from "@/utils/url";
 
 const Page = () => {
   const { pathname } = useRouter();
-  const title = "Terms of Use - Experior AI";
+  const title = "Terms of Use - Experior";
   const description =
     "Check out our latest articles about AI and the future of content creation";
   return (
     <>
       <Head>
-        <title>Terms of Use - Experior AI</title>
+        <title>Terms of Use - Experior</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="AI, Content Generator, AI Assistant" />
@@ -33,20 +33,21 @@ const Page = () => {
       <div className="md:max-w-6xl m-auto flex flex-col p-8 bg-white text-gray-700">
         <h1 className="text-4xl font-bold">Terms of Use</h1>
         <div className="flex flex-col mt-8 gap-6">
-            <p>These Terms of Use cover your use of Experior AI tool, 
-                and other services provided by Talendor, including software applications
+            <p>Experior is a trade name used by Talendor, L.L.C., a Delaware company, for its AI tools and services. 
+                These Terms of Use cover your use of Experior tools, 
+                and other services provided by Experior, including software applications
                 and websites. They form an agreement between you and Talendor, L.L.C., a 
                 Delaware company, and include important information about resolving 
                 disputes through arbitration. By using our Services, you agree to these 
                 Terms. If you live in the European Economic Area, Switzerland, or the 
-                UK, these terms apply to you. Our Business Terms apply to Experior AI and other services for businesses and developers. 
+                UK, these terms apply to you. Our Business Terms apply to Experior and other services for businesses and developers. 
                 Our Privacy Policy explains how we collect and use personal information 
                 and is an important document you should read, even though it&apos;s not part of these Terms.</p>
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-medium">About us</h2>
-          <p>Experior AI is a company focused on AI research and deployment. 
+          <p>Experior is a company focused on AI research and deployment. 
             Our goal is to ensure that artificial general intelligence benefits humanity as a whole. 
-            For more information about Experior AI, please visit https://experior.ai</p>
+            For more information about Experior, please visit https://experior.ai</p>
           </div>
           <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium">Registration and Access</h2>
@@ -73,7 +74,7 @@ or systems, unless it&apos;s allowed by law.
 Automatically collect data or Output (defined below).
 Claim that Output was created by a human when it wasn&apos;t.
 Disrupt our Services, like bypassing any limits or safety measures.
-Use Output to make models that compete with Experior AI.</p>
+Use Output to make models that compete with Experior.</p>
 <p><span className="font-bold">Software.</span> You might be able to download software 
 from our Services, like mobile apps, which might update automatically. Our software 
 might also include open source software that has its own licenses.</p>
@@ -93,7 +94,7 @@ without paying you or asking for permission.</p>
             and Output are called &quot;Content.&quot; You are in charge of making sure your Content 
             follows all laws and these Terms. You promise that you have the right to give us 
             Input for our Services.</p>
-            <p><span className="font-bold">Ownership of Content.</span> Between you and Experior AI, as allowed by law, you (a) keep your rights to the Input and (b) own the Output. 
+            <p><span className="font-bold">Ownership of Content.</span> Between you and Experior, as allowed by law, you (a) keep your rights to the Input and (b) own the Output. 
             We give you all our rights to the Output.</p>
             <p><span className="font-bold">Similarity of Content.</span> Because of how our Services and artificial 
             intelligence work, the Output might not be unique, and other users might get similar 
@@ -123,8 +124,8 @@ without paying you or asking for permission.</p>
                     employment, housing, insurance, legal matters, medical care, or 
                     other important things.</li>
                 <li>Our Services might give incomplete, incorrect, or offensive Output that 
-                    doesn&apos;t reflect Experior AI&apos;s views. If the Output mentions any third-party products or 
-                    services, it doesn&apos;t mean those third parties endorse or are connected to Experior AI.</li>
+                    doesn&apos;t reflect Experior&apos;s views. If the Output mentions any third-party products or 
+                    services, it doesn&apos;t mean those third parties endorse or are connected to Experior.</li>
             </ul>
           </div>
           
@@ -159,7 +160,7 @@ without paying you or asking for permission.</p>
           <ul className="flex flex-col list-disc pl-12">
             <li>You didn&apos;t follow these Terms or our Usage Policies.</li>
             <li>We need to do this to obey the law.</li>
-            <li>Your use of our Services might cause danger or harm to Experior AI, our users, or anyone else.</li>
+            <li>Your use of our Services might cause danger or harm to Experior, our users, or anyone else.</li>
             <li>We might also end your account if it hasn&apos;t been used for over a year and you don&apos;t have a paid account. 
                 If we decide to do this, we&apos;ll let you know in advance.</li>
           </ul>

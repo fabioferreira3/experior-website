@@ -2,40 +2,20 @@
 import { ReactElement } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { FaRobot as RobotIcon, FaCrop as CropIcon } from "react-icons/fa6";
-import {
-  FaHashtag as HashIcon,
-  FaCalendarTimes as CalendarTimesIcon,
-  FaPencilAlt as PencilIcon,
-} from "react-icons/fa";
-import { AiFillAudio as FillAudioIcon } from "react-icons/ai";
-import {
-  BsChatRightTextFill as ChatIcon,
-  BsBookmarkXFill as BookmarkIcon,
-} from "react-icons/bs";
-import { TbSwitch2 as SwitchIcon } from "react-icons/tb";
-import { IoLanguage as LanguageIcon } from "react-icons/io5";
-import { MdMoneyOff as MoneyOffIcon } from "react-icons/md";
 
-import FadeInSection from "@/components/FadeInSection";
-import TrustedBrands from "@/components/TrustedBrands";
-import Typewriter from "@/components/Typewriter";
-import SlideInFromBottom from "@/components/SlideInFromBottom";
-import { PainPoint } from "@/components/PainPoint";
-import { Solution } from "@/components/Solution";
 import MainLayout from "@/components/MainLayout";
 import getURL from "@/utils/url";
 import PostPreview from "@/components/Blog/PostPreview";
 
 const Page = () => {
   const { pathname } = useRouter();
-  const title = "Blog - Experior AI";
+  const title = "Blog - Experior";
   const description =
     "Check out our latest articles about AI and the future of content creation";
   return (
     <>
       <Head>
-        <title>Blog - Experior AI</title>
+        <title>Blog - Experior</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="AI, Content Generator, AI Assistant" />
