@@ -42,7 +42,7 @@ const Testimonials = ({testimonials, duration}: any) => {
         {testimonials.slice(currentIndex, currentIndex + testimonialsPerSlide).map((testimonial: any, index: any) => (
           <div
             key={index}
-            className={`flex-1 border border-gray-100 rounded-2xl md:flex-none w-full md:w-1/3 p-4 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+            className={`flex-1 border border-gray-800 bg-gray-900 rounded-2xl md:flex-none w-full md:w-1/3 p-4 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
           >
             <div className="flex flex-col text-center h-full justify-center gap-4">
               <p className="text-lg italic text-gray-100">{`"${testimonial.quote}"`}</p>

@@ -215,7 +215,7 @@ const Page = () => {
       <div className="md:max-w-6xl m-auto mt-8 p-12 md:p-0">
             <FadeInSection>
                 <div className="text-5xl text-gray-100 text-center font-bold">Don&apos;t believe us?</div>
-                <div className="mt-12 border border-gray-800">
+                <div className="mt-12">
                     { <Testimonials duration={5000} testimonials={testimonials}/>}
                 </div>
             </FadeInSection>
