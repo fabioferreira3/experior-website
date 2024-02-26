@@ -132,7 +132,7 @@ const Page = () => {
                 </div>
               </SlideInFromBottom>
               <SlideInFromBottom>
-              <div className="mt-12 border border-gray-800">
+              <div className="mt-12">
                 { <Testimonials duration={6000} testimonials={complaints}/>}
                 </div>
                 </SlideInFromBottom>
