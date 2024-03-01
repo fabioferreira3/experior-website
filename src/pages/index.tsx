@@ -56,7 +56,7 @@ const complaints = [
 
 const Page = () => {
   const { pathname } = useRouter();
-  const title = "Experior";
+  const title = "Experior - AI Content Creation Platform";
   const description =
     "Your one-stop AI tool for SEO-optimized content creation and text transformation.";
   return (

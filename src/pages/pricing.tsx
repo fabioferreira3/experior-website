@@ -65,7 +65,7 @@ const Page = () => {
   const { pathname } = useRouter();
   const title = "Pricing - Experior";
   const description =
-    "Check out our latest articles about AI and the future of content creation";
+    "Accessible plans with amazing discounts for you to have your personal AI assistant 24/7.";
   return (
     <>
       <Head>

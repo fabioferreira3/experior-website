@@ -10,7 +10,7 @@ const Page = () => {
   const { pathname } = useRouter();
   const title = "Terms of Use - Experior";
   const description =
-    "Check out our latest articles about AI and the future of content creation";
+    "Terms of Use for Experior AI tools and services.";
   return (
     <>
       <Head>
