@@ -58,7 +58,7 @@ const FaqSection = () => {
         {questionsAnswers.map((qa, index) => (
           <div key={index} className="bg-white rounded-xl overflow-hidden">
             <button
-              className="w-full text-left text-3xl p-4 font-bold text-secondary"
+              className="w-full text-left text-3xl p-4 font-bold text-gray-700"
               onClick={() => toggleAccordion(index)}
             >
               {qa.question}
