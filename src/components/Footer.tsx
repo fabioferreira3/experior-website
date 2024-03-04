@@ -27,7 +27,7 @@ const Footer = () => {
             >
               <LinkedinIcon className="text-gray-400 text-2xl" />
             </Link>
-            <FacebookIcon className="text-gray-400 text-2xl" />
+            {/* <FacebookIcon className="text-gray-400 text-2xl" /> */}
             <Link target="_blank" href="https://twitter.com/experior_ai">
               <TwitterIcon className="text-gray-400 text-2xl" />
             </Link>
