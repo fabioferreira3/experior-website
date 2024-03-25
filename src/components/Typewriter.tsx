@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Typewriter = ({
   words,
-  speed = 100,
+  speed = 70,
 }: {
   words: string[];
   speed?: number;
@@ -26,7 +26,7 @@ const Typewriter = ({
         words[currentWordIndex].slice(0, currentCharIndex + direction)
       );
       setCurrentCharIndex((prevIndex) => prevIndex + direction);
-    }, speed); // animate every 0.5s
+    }, speed);
 
     return () => clearTimeout(timeoutId.current); // clean up on unmount
   }, [currentWordIndex, speed, currentCharIndex, direction, wait]);

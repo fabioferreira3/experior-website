@@ -31,7 +31,7 @@ export default function MainLayout({
   return (
     <>
       <div className={`${avenir.variable} font-sans`}>
-        <main className="bg-main min-h-screen flex flex-col">
+        <main className="bg-white min-h-screen flex flex-col">
           <div>
             <Header />
             {children}

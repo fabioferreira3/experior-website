@@ -28,7 +28,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex items-center justify-between p-8">
+      <header className="flex items-center justify-between p-8 md:max-w-6xl m-auto">
         <Link href="/">
           <Image
             alt="Experior logo"
@@ -38,7 +38,7 @@ export const Header = () => {
           />
         </Link>
         <nav>
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden text-gray-700 md:flex items-center gap-8">
             <Link href="/blog" className="font-bold">
               Blog
             </Link>

@@ -79,23 +79,20 @@ const Page = () => {
         <meta property="twitter:image" content={getURL("/logo-color.png")} />
       </Head>
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
-        <h1 className="text-6xl font-bold text-start md:text-center text-gray-100">
-          Struggling to Craft Content That&apos;s
-        </h1>
-        <div className="text-5xl md:text-5xl font-bold h-12 my-6 md:mt-4 md:text-center text-secondary">
+        <div className="w-1/2">
+            <h1 className="text-7xl font-bold text-gray-800">
+            Struggling to Create Content That&apos;s
+            </h1>
+        <div className="text-5xl md:text-7xl font-bold h-12 my-6 md:mt-4 text-secondary">
           <Typewriter
             words={["Compelling?", "Captivating?", "Convincing?", "Creative?"]}
           />
         </div>
-        {/* <div className="text-5xl font-bold text-start md:text-center md:mt-4 text-gray-100">
-          With AI
-        </div> */}
-        <div>
-          <div className="text-center text-3xl text-gray-100 my-8">
-            Meet Experior, your one-stop AI platform for content creation.
-          </div>
+        <div className="text-xl font-thin text-gray-800 mb-4 mt-12">
+        Create images, blog and social media posts, summaries, audio transcriptions,
+        text-2-speech, and much more with AI.
         </div>
-        <div className="w-full text-gray-100 md:m-auto md:w-1/3 flex justify-center ">
+        <div className="w-full text-gray-100 md:w-1/2">
           <Link
               href="https://go.experior.ai/register"
               className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5 text-2xl font-bold font-avenir"
@@ -105,6 +102,8 @@ const Page = () => {
             
           </Link>
         </div>
+        </div>
+        <div className="w-1/2"></div>
       </div>
       <div className="md:max-w-6xl m-auto">
         <FadeInSection>
