@@ -39,7 +39,7 @@ export const blogPosts = [
     title: "Using AI to Stand Out in Social Media Post Feeds",
     short_name: "using_ai_social_media_posts",
     description:
-      "Discover what is an essay and explore the potential of AI essay writing: merging human creativity with advanced technology for unparalleled compositions",
+      "Learn how AI can be used to create engaging social media posts, helping you stand out amidst crowded feeds.",
     slug: "using-ai-to-stand-out-in-social-media-post-feeds",
     heroImg: "social-media-posts-generation.png",
     heroImgAlt: "Hands controlled by AI generation social media posts",
