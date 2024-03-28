@@ -38,24 +38,21 @@ export const Header = () => {
           />
         </Link>
         <nav>
-          <div className="hidden text-gray-700 md:flex items-center gap-8">
-            <Link href="/blog" className="font-bold">
+          <div className="hidden text-gray-800 text-xl md:flex items-center gap-8">
+            <Link href="/blog" className="font-bold hover:text-secondary">
               Blog
             </Link>
-            <Link href="/pricing" className="font-bold">
+            <Link href="/pricing" className="font-bold hover:text-secondary">
               Pricing
             </Link>
-            {/* <a href="/contact" className="font-bold">
-              Contact
-            </a> */}
-            <Link href={"https://go.experior.ai"} className="font-bold">
+            <Link href={"https://go.experior.ai"} className="font-bold hover:text-secondary">
               Sign-in
             </Link>
           </div>
-          {/* <HamburgerIcon
-            className="text-3xl cursor-pointer block md:hidden"
+          <HamburgerIcon
+            className="text-3xl cursor-pointer block md:hidden text-gray-800"
             onClick={() => setOpenMenu(true)}
-          /> */}
+          />
         </nav>
       </header>
       {openMenu && (
@@ -73,7 +70,7 @@ export const Header = () => {
                 alt="Experior logo"
                 width={250}
                 height={50}
-                src={"/logo-black.png"}
+                src={"/logo.png"}
               />
             </div>
             <div>
@@ -83,27 +80,28 @@ export const Header = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <Link href="/blog" className="text-gray-700">
+          <div className="flex flex-col w-2/3 items-center justify-center gap-4 m-auto">            
+            <Link href="/pricing" className="w-full bg-gray-100 text-center text-gray-700 font-bold border border-gray-300 rounded-xl py-3">
+              Pricing
+            </Link>
+            <Link href="/blog" className="w-full bg-gray-100 text-center text-gray-700 font-bold border border-gray-300 rounded-xl py-3">
               Blog
             </Link>
-            {/* <a href="/" className="text-gray-700">
-              Contact
-            </a> */}
-          </div>
-          <div className="flex items-center justify-between gap-4 p-4">
             <Link
               href="https://go.experior.ai"
-              className="bg-main py-2 px-8 rounded-lg w-1/2 text-center"
+              className="w-full bg-main py-3 rounded-lg text-center rounded-xl"
             >
               Sign in
             </Link>
             <Link
               href="https://go.experior.ai/register"
-              className="bg-secondary py-2 px-8 rounded-lg w-1/2 text-center"
+              className="w-full bg-secondary py-3 rounded-lg text-center rounded-xl"
             >
               Sign up
             </Link>
+          </div>
+          <div className="flex items-center justify-between gap-4 p-4">
+            
           </div>
         </div>
       )}

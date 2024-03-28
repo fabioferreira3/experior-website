@@ -53,10 +53,10 @@ const FaqSection = () => {
 
   return (
     <div className="faq-section">
-      <h2 className="text-4xl font-bold mb-8">Frequently Asked Questions</h2>
+      <h2 className="text-4xl text-main font-bold mb-8">Frequently Asked Questions</h2>
       <div className="flex flex-col space-y-3">
         {questionsAnswers.map((qa, index) => (
-          <div key={index} className="bg-white rounded-xl overflow-hidden">
+          <div key={index} className="border border-gray-200 rounded-xl overflow-hidden">
             <button
               className="w-full text-left text-3xl p-4 font-bold text-gray-700"
               onClick={() => toggleAccordion(index)}

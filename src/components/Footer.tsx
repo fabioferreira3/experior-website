@@ -12,7 +12,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="md:max-w-6xl m-auto p-8 md:px-12 md:py-4">
-      <div className="flex justify-center border-b border-gray-500 pb-8">
+      <div className="flex justify-center border-b border-gray-300 pb-8">
         <div className="flex flex-col gap-4">
           <Image
             alt="Experior logo"
@@ -25,19 +25,19 @@ const Footer = () => {
               target="_blank"
               href="https://linkedin.com/company/experior-ai"
             >
-              <LinkedinIcon className="text-gray-400 text-2xl" />
+              <LinkedinIcon className="text-gray-500 text-2xl" />
             </Link>
             {/* <FacebookIcon className="text-gray-400 text-2xl" /> */}
             <Link target="_blank" href="https://twitter.com/experior_ai">
-              <TwitterIcon className="text-gray-400 text-2xl" />
+              <TwitterIcon className="text-gray-500 text-2xl" />
             </Link>
             <Link target="_blank" href="https://www.instagram.com/experior.ai/">
-              <InstagramIcon className="text-gray-400 text-2xl" />
+              <InstagramIcon className="text-gray-500 text-2xl" />
             </Link>
           </div>
         </div>
       </div>
-      <div className="flex justify-between py-4 font-bold text-sm">
+      <div className="flex justify-between py-4 font-bold text-sm text-gray-600">
         <div>© 2023 Experior. All rights reserved. A Talendor,LLC company.</div>
         <Link target="_blank" href="/terms-of-use">Terms of Service</Link>
       </div>

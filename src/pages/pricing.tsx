@@ -8,7 +8,7 @@ import { FaCheck } from "react-icons/fa";
 import MainLayout from "@/components/MainLayout";
 import getURL from "@/utils/url";
 import Link from "next/link";
-import FaqSection from "@/components/faq";
+import FaqSection from "@/components/FaqSection";
 
 const tiers = [
     {
@@ -86,12 +86,12 @@ const Page = () => {
         <meta property="twitter:image" content={getURL("/logo-color.png")} />
       </Head>
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
-        <h1 className="text-center text-5xl md:text-6xl font-bold px-2">AI tools <span className="text-secondary">simplified</span></h1>
+        <h1 className="text-center text-main text-5xl md:text-6xl font-bold px-2">AI tools <span className="text-secondary">simplified</span></h1>
         <h2 className="text-3xl text-center mt-3">Transform Your Content with Our Flexible Options</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-8">
           {tiers.map((tier) => {
             return (
-                <div key={tier.name} className={`${tier.recommended == true ? 'bg-secondary rounded-xl' : ''} p-4`}>
+                <div key={tier.name} className={`${tier.recommended == true ? 'bg-main rounded-xl' : ''} p-4`}>
                     <div className="relative p-4 border border-gray-200 bg-white rounded-xl overflow-hidden">
                     <div className="absolute top-0 right-0 text-white bg-secondary p-3 rounded-full -mr-10 -mt-10 w-32 h-32">
                         <div className="flex flex-col px-4 mt-10 font-bold">

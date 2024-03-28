@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PostPreview({ title, image, link }: any) {
+export default function PostPreview({ title, image, imgAlt, link }: any) {
   return (
     <Link
       href={link}
       className="relative overflow-hidden rounded-lg h-64 w-full"
     >
       <Image
-        alt=""
+        alt={imgAlt}
         fill={true}
-        objectFit="cover"
+        style={{objectFit: "cover"}}
         className="rounded-lg"
         src={image}
       />

@@ -10,6 +10,7 @@ export default function BlogLayout({ post, relatedPosts, children }: any) {
         metaDescription={post.description}
         author="Fabio Ferreira"
         heroImg={`/imgs/${post.heroImg}`}
+        heroImgAlt={post.heroImgAlt}
         relatedPosts={relatedPosts}
       >
         {children}

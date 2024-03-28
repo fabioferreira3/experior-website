@@ -19,6 +19,7 @@ export default function PostView({
   metaDescription,
   date,
   heroImg,
+  heroImgAlt,
   author,
   children,
   relatedPosts,
@@ -48,11 +49,12 @@ export default function PostView({
         <div className="p-4 md:p-8 col-span-2">
           <div>
             <Image
-              className="rounded-lg"
-              alt=""
-              width={700}
-              height={1}
+              className="rounded-lg w-full h-64"
+              style={{ objectFit: "cover" }}
+              alt={heroImgAlt}
               src={heroImg}
+              width={600}
+              height={600}
             />
           </div>
           <div>
@@ -64,9 +66,9 @@ export default function PostView({
                 <Image
                   alt=""
                   className="rounded-full"
-                  width={50}
-                  height={50}
-                  src="https://media.licdn.com/dms/image/D4D03AQGq8FKWQjQm3g/profile-displayphoto-shrink_400_400/0/1673667166925?e=1698278400&v=beta&t=wAsp7Sd_wEYl5CC4XviQHuOnUlWcJnnRzzSSIvaI35s"
+                  width={60}
+                  height={60}
+                  src="https://1.gravatar.com/avatar/1c88fef126d379a6713b32ab26ec1e303494cf51ef4e485ab6bea62bfbb6f1fe?size=256"
                 />
                 By {author}
               </div>
@@ -118,13 +120,13 @@ export default function PostView({
               className="rounded-full"
               width={90}
               height={90}
-              src="https://media.licdn.com/dms/image/D4D03AQGq8FKWQjQm3g/profile-displayphoto-shrink_400_400/0/1673667166925?e=1698278400&v=beta&t=wAsp7Sd_wEYl5CC4XviQHuOnUlWcJnnRzzSSIvaI35s"
+              src="https://1.gravatar.com/avatar/1c88fef126d379a6713b32ab26ec1e303494cf51ef4e485ab6bea62bfbb6f1fe?size=256"
             />
             <div className="font-bold text-xl">{author}</div>
             <div className="text-center">
               <p>
-                Founder of Experior AI and a software architect for more than 20
-                years.
+                Software architect for more than 20
+                years and founder of Experior.
               </p>
               <p>Constantly building.</p>
             </div>

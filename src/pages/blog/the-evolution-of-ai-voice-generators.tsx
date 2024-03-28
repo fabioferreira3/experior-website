@@ -266,7 +266,7 @@ const Page = () => {
 
 Page.getLayout = function getLayout(page: ReactElement) {
   const post = getBlogPost("ai_voice_generator") as BlogPostType;
-  const relatedPosts = [getBlogPost("ai_essay_writing")];
+  const relatedPosts = [getBlogPost("using_ai_social_media_posts"),getBlogPost("ai_essay_writing")];
   return (
     <BlogLayout post={post} relatedPosts={relatedPosts}>
       {page}

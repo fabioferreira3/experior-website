@@ -32,15 +32,23 @@ const Page = () => {
         <meta property="twitter:image" content={getURL("/logo-color.png")} />
       </Head>
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
-        <h1 className="text-4xl font-bold">Blog</h1>
+        <h1 className="text-main text-4xl font-bold">Blog</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-8">
+        <PostPreview
+            title="Using AI to Stand Out in Social Media Post Feeds"
+            imgAlt="Hands controlled by AI generation social media posts"
+            image="/imgs/social-media-posts-generation.png"
+            link="/blog/using-ai-to-stand-out-in-social-media-post-feeds"
+          />
           <PostPreview
             title="The Evolution of AI Voice Generators: Mirroring Humanity"
+            imgAlt="Voice being generated with the use of AI"
             image="/imgs/ai-voice-generator.jpg"
             link="/blog/the-evolution-of-ai-voice-generators"
           />
           <PostPreview
             title="AI Essay Writing: The Future of Flawless Composition"
+            imgAlt="Human hands writing an essay on a paper"
             image="/imgs/essay.png"
             link="/blog/ai-essay-writing-the-future-of-flawless-composition"
           />

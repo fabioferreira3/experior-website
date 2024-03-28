@@ -2,6 +2,7 @@
 import { ReactElement } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import { FaRobot as RobotIcon, FaCrop as CropIcon } from "react-icons/fa6";
 import {
   FaHashtag as HashIcon,
@@ -29,14 +30,14 @@ import Testimonials from "@/components/Testimonials";
 
 const testimonials = [
     { pic:'/testimonials/roman.jpeg', quote: 'Experior saves a lot of time on creating content.', author: 'Roman' },
-    { pic:'/testimonials/mathew.jpeg', quote: 'I see this as the go-to tool for all kinds of very useful content related AI tools.', author: 'Mathew' },
+    { pic:'/testimonials/mathew.jpeg', quote: 'I see Experior as the go-to tool for all kinds of very useful content related AI tools.', author: 'Mathew' },
     { pic:'/testimonials/cherie.jpg', quote: 'It allows me to put my time elsewhere and make engaging posts to help grow my business following.', author: 'Cherie' },
     { pic:'/testimonials/nida.jpeg', quote: "I'll be using it more frequently to test with a new blog I'm creating.", author: 'Nida' },
-    { pic:'/testimonials/zakiya.jpeg', quote: 'It offers a variety of helpful tools in one platform with a very clean UI that is easy to navigate. I would use it as well as recommend it to others.', author: 'Zakiya' },
+    { pic:'/testimonials/zakiya.jpeg', quote: 'Experior offers a variety of helpful tools in one platform with a very clean UI that is easy to navigate. I would use it as well as recommend it to others.', author: 'Zakiya' },
     { pic:'/testimonials/amandalee.jpeg', quote: 'The two biggest things for me are the time saved, thus allowing me to create more content quicker, and also the fact that it feels like several apps in one.', author: 'Amanda' },
     { pic:'/testimonials/hreedi.jpeg', quote: 'I am very happy that there are multiple services provided all under one platform.', author: 'Hreedi' },
     { pic:'/testimonials/kayra.png', quote: 'The value provided by Experior is something that can be scaled between hobbyists and established businesses looking to ramp up their production with AI assistance.', author: 'Kayra' },
-    { pic:'/testimonials/genevieve.jpeg', quote: 'It saves a lot of time thinking up ideas for interesting content.', author: 'Genevieve' },
+    { pic:'/testimonials/genevieve.jpeg', quote: 'Experior saves a lot of time thinking up ideas for interesting content.', author: 'Genevieve' },
     { pic:'/testimonials/karl.jpeg', quote: 'Experior makes my job of finding relavant assistance for work or leisure much more fun', author: 'Karl' },
     { pic:'/testimonials/christine.jpeg', quote: 'I absolutely love it!', author: 'Tereza' },
     { pic:'/testimonials/christine_t.jpeg', quote: 'The quality of blog content generated was impressive.”', author: 'Christine' }, 
@@ -78,32 +79,40 @@ const Page = () => {
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={getURL("/logo-color.png")} />
       </Head>
-      <div className="md:max-w-6xl m-auto flex flex-col p-8">
-        <div className="w-1/2">
-            <h1 className="text-7xl font-bold text-gray-800">
+      <div className="md:max-w-6xl m-auto flex p-8">
+        <div className="w-full md:w-1/2">
+            <h1 className="text-7xl md:text-7xl font-bold text-main">
             Struggling to Create Content That&apos;s
             </h1>
-        <div className="text-5xl md:text-7xl font-bold h-12 my-6 md:mt-4 text-secondary">
-          <Typewriter
-            words={["Compelling?", "Captivating?", "Convincing?", "Creative?"]}
-          />
+            <div className="text-5xl md:text-7xl font-bold h-12 my-6 md:mt-4 text-secondary">
+            <Typewriter
+                words={["Compelling?", "Captivating?", "Convincing?", "Creative?"]}
+            />
+            </div>
+            <div className="text-2xl text-gray-700 mb-4 mt-12">
+            Create images, blog and social media posts, summaries, audio transcriptions,
+            text-2-speech, and much more with AI.
+            </div>
+            <div className="w-full text-gray-100 md:w-1/2">
+            <Link
+                href="https://go.experior.ai/register"
+                className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5 text-2xl font-bold font-avenir"
+                ><RobotIcon className="text-4xl md:text-3xl" />
+                
+                Start here
+                
+            </Link>
+            </div>
         </div>
-        <div className="text-xl font-thin text-gray-800 mb-4 mt-12">
-        Create images, blog and social media posts, summaries, audio transcriptions,
-        text-2-speech, and much more with AI.
+        <div className="hidden md:block md:w-1/2 h-full scale-x-[-1]">
+            <Player
+                autoplay
+                loop
+                src="https://lottie.host/cab7c92f-95a8-43a6-9eb9-faa943955313/UFawTK4KUD.json"
+                style={{ height: '450px', width: '450px' }}
+            >
+            </Player>
         </div>
-        <div className="w-full text-gray-100 md:w-1/2">
-          <Link
-              href="https://go.experior.ai/register"
-              className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5 text-2xl font-bold font-avenir"
-            ><RobotIcon className="text-4xl md:text-3xl" />
-            
-              Start here
-            
-          </Link>
-        </div>
-        </div>
-        <div className="w-1/2"></div>
       </div>
       <div className="md:max-w-6xl m-auto">
         <FadeInSection>
@@ -111,7 +120,7 @@ const Page = () => {
             <div className="flex flex-col items-center">
               <SlideInFromBottom>
                 <div className="flex flex-col h-24 md:h-36 text-center text-5xl md:text-7xl font-bold">
-                  <span className="text-gray-100">We feel your </span>
+                  <span className="text-gray-800">We feel your </span>
                   <span className="text-secondary">
                     <Typewriter
                       words={[
@@ -126,7 +135,7 @@ const Page = () => {
                 </div>
               </SlideInFromBottom>
               <SlideInFromBottom>
-                <div className="text-2xl font-bold md:text-3xl text-gray-100 text-center mt-5">
+                <div className="text-2xl font-bold md:text-3xl text-gray-800 text-center mt-5">
                   Content Creation Can Be a Grind...
                 </div>
               </SlideInFromBottom>
@@ -172,12 +181,12 @@ const Page = () => {
         <FadeInSection>
           <div className="w-full md:gap-4 flex flex-col items-center justify-center md:p-12">
             <SlideInFromBottom>
-              <div className="text-5xl text-gray-100 text-center font-bold p-12 md:p-0">
+              <div className="text-5xl md:text-7xl text-main text-center font-bold p-12 md:p-0">
                 Let <span className="text-secondary">Experior</span> do the heavy lifting for you
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom>
-              <div className="text-center text-gray-100 text-xl md:mt-4 md:p-0 p-4">
+              <div className="text-center text-gray-800 text-xl md:mt-4 md:p-0 p-4">
                 From SEO optimized blog posts to engaging social media content,
                 Experior takes your ideas and transforms them into captivating
                 narratives.
@@ -213,7 +222,7 @@ const Page = () => {
       </div>
       <div className="md:max-w-6xl m-auto mt-8 p-12 md:p-0">
             <FadeInSection>
-                <div className="text-5xl text-gray-100 text-center font-bold">Don&apos;t believe us?</div>
+                <div className="text-5xl text-main text-center font-bold">Still don&apos;t believe us?</div>
                 <div className="mt-12">
                     { <Testimonials duration={5000} testimonials={testimonials}/>}
                 </div>
@@ -232,7 +241,7 @@ const Page = () => {
             </Link>
           </button>
         </div>
-      </div>
+      </div>      
     </>
   );
 };
