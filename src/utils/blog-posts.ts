@@ -45,6 +45,17 @@ export const blogPosts = [
     heroImgAlt: "Hands controlled by AI generation social media posts",
     date: "Mar 28, 2024",
   },
+  {
+    id: 4,
+    title: "Why should your content strategy include AI generated blogs?",
+    short_name: "why_should_use_ai_generated_blogs",
+    description:
+      "----",
+    slug: "using-ai-to-stand-out-in-social-media-post-feeds",
+    heroImg: "social-media-posts-generation.png",
+    heroImgAlt: "Hands controlled by AI generation social media posts",
+    date: "Apr 04, 2024",
+  },
 ] as BlogPostType[];
 
 export const getBlogPost = (shortName: string) => {

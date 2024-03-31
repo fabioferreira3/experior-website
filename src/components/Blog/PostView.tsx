@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import { AiOutlineCalendar as CalendarIcon } from "react-icons/ai";
 import {
   FaLinkedinIn as LinkedinIcon,
@@ -8,11 +9,10 @@ import {
   FaInstagram as InstagramIcon,
 } from "react-icons/fa6";
 import { useRouter } from "next/router";
+
 import getURL from "../../utils/url";
 import "../../assets/blog.css";
-
 import Related from "./Related";
-import Link from "next/link";
 
 export default function PostView({
   title,
@@ -42,7 +42,7 @@ export default function PostView({
         <meta property="twitter:url" content={getURL(pathname)} />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={metaDescription} />
-        <meta property="twitter:image" content={heroImg} />
+        <meta property="twitter:image" content={getURL(heroImg)} />
         <meta name="author" content={author}></meta>
       </Head>
       <div className="post-view text-justify md:text-left px-2 md:px-12 grid grid-cols-1 md:grid-cols-3 bg-[#191b51]">
