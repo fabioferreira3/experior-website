@@ -36,13 +36,13 @@ export default function PostView({
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Experior" />
-        <meta property="og:image" content={heroImg} />
+        <meta property="og:image" content={getURL(heroImg)} />
         <meta property="og:url" content={getURL(pathname)} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:url" content={getURL(pathname)} />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={metaDescription} />
-        <meta property="twitter:image" content={heroImg} />
+        <meta property="twitter:image" content={getURL(heroImg)} />
         <meta name="author" content={author}></meta>
       </Head>
       <div className="post-view text-justify md:text-left px-2 md:px-12 grid grid-cols-1 md:grid-cols-3 bg-[#191b51]">
