@@ -5,7 +5,7 @@ import { AiOutlineCalendar as CalendarIcon } from "react-icons/ai";
 import {
   FaLinkedinIn as LinkedinIcon,
   FaFacebookF as FacebookIcon,
-  FaTwitter as TwitterIcon,
+  FaXTwitter as TwitterIcon,
   FaInstagram as InstagramIcon,
 } from "react-icons/fa6";
 import { useRouter } from "next/router";
@@ -36,7 +36,7 @@ export default function PostView({
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Experior" />
-        <meta property="og:image" content={heroImg} />
+        <meta property="og:image" content={getURL(heroImg)} />
         <meta property="og:url" content={getURL(pathname)} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:url" content={getURL(pathname)} />
@@ -107,7 +107,7 @@ export default function PostView({
                 href={`https://twitter.com/intent/tweet?text=${title}&url=${getURL(
                   pathname
                 )}`}
-                className="p-3 rounded-full bg-[#1AA1F1]"
+                className="p-3 rounded-full bg-black"
                 target="_blank"
               >
                 <TwitterIcon />
@@ -144,6 +144,13 @@ export default function PostView({
                 target="_blank"
               >
                 <InstagramIcon className="text-xl" />
+              </Link>
+              <Link
+                title="X"
+                href="https://twitter.com/fabioferreira_h"
+                target="_blank"
+              >
+                <TwitterIcon className="text-xl" />
               </Link>
             </div>
           </div>

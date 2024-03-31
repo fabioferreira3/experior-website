@@ -1,10 +1,8 @@
 import {
-  FaRobot as RobotIcon,
-  FaCrop as CropIcon,
+  FaXTwitter as TwitterIcon,
   FaInstagram as InstagramIcon,
   FaSquareFacebook as FacebookIcon,
   FaLinkedinIn as LinkedinIcon,
-  FaTwitter as TwitterIcon,
 } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,20 +23,22 @@ const Footer = () => {
               target="_blank"
               href="https://linkedin.com/company/experior-ai"
             >
-              <LinkedinIcon className="text-gray-500 text-2xl" />
+              <LinkedinIcon className="text-gray-500 text-2xl hover:text-secondary" />
             </Link>
-            {/* <FacebookIcon className="text-gray-400 text-2xl" /> */}
+            <Link target="_blank" href="https://www.facebook.com/experiorai/">
+              <FacebookIcon className="text-gray-500 text-2xl hover:text-secondary" />
+            </Link>
             <Link target="_blank" href="https://twitter.com/experior_ai">
-              <TwitterIcon className="text-gray-500 text-2xl" />
+              <TwitterIcon className="text-gray-500 text-2xl hover:text-secondary" />
             </Link>
             <Link target="_blank" href="https://www.instagram.com/experior.ai/">
-              <InstagramIcon className="text-gray-500 text-2xl" />
+              <InstagramIcon className="text-gray-500 text-2xl hover:text-secondary" />
             </Link>
           </div>
         </div>
       </div>
       <div className="flex justify-between py-4 font-bold text-sm text-gray-600">
-        <div>© 2023 Experior. All rights reserved. A Talendor,LLC company.</div>
+        <div>© 2024 Experior. All rights reserved. A Talendor,LLC company.</div>
         <Link target="_blank" href="/terms-of-use">Terms of Service</Link>
       </div>
     </footer>
