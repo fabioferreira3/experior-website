@@ -81,8 +81,9 @@ It wasn’t a walk in the park. There were no automated AI tools at that time an
 Page.getLayout = function getLayout(page: ReactElement) {
   const post = getBlogPost("using_ai_social_media_posts") as BlogPostType;
   const relatedPosts = [
+    getBlogPost("why_should_use_ai_generated_blogs"),
+    getBlogPost("ai_essay_writing"),
     getBlogPost("ai_voice_generator"),
-    getBlogPost("ai_essay_writing")
   ];
   return (
     <BlogLayout post={post} relatedPosts={relatedPosts}>

@@ -34,7 +34,13 @@ const Page = () => {
       <div className="md:max-w-6xl m-auto flex flex-col p-8">
         <h1 className="text-main text-4xl font-bold">Blog</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-8">
-        <PostPreview
+          <PostPreview
+            title="Why should your content strategy include AI-generated blogs?"
+            imgAlt="People and robots gather around a table to discuss AI-generated content strategies.People and robots gathering around a table to discuss AI generated content strategies"
+            image="/imgs/ai-gathering.png"
+            link="/blog/why-should-your-content-strategy-include-ai-generated-blogs"
+          />
+          <PostPreview
             title="Using AI to Stand Out in Social Media Post Feeds"
             imgAlt="Hands controlled by AI generation social media posts"
             image="/imgs/social-media-posts-generation.png"

@@ -47,13 +47,13 @@ export const blogPosts = [
   },
   {
     id: 4,
-    title: "Why should your content strategy include AI generated blogs?",
+    title: "Why should your content strategy include AI-generated blogs?",
     short_name: "why_should_use_ai_generated_blogs",
     description:
-      "----",
-    slug: "using-ai-to-stand-out-in-social-media-post-feeds",
-    heroImg: "social-media-posts-generation.png",
-    heroImgAlt: "Hands controlled by AI generation social media posts",
+      "Explore the pros and cons of integrating AI into your blogging. Learn how AI-generated blogs are produced and how to incorporate them into your writing process.",
+    slug: "why-should-your-content-strategy-include-ai-generated-blogs",
+    heroImg: "ai-gathering.png",
+    heroImgAlt: "People and robots gather around a table to discuss AI-generated content strategies.People and robots gathering around a table to discuss AI generated content strategies",
     date: "Apr 04, 2024",
   },
 ] as BlogPostType[];
