@@ -45,7 +45,7 @@ export default function PostView({
         <meta property="twitter:image" content={getURL(heroImg)} />
         <meta name="author" content={author}></meta>
       </Head>
-      <div className="post-view text-justify md:text-left px-2 md:px-12 grid grid-cols-1 md:grid-cols-3 bg-[#191b51]">
+      <div className="post-view text-justify md:text-left px-2 grid grid-cols-1 md:grid-cols-3 bg-[#191b51]">
         <div className="p-4 md:p-8 col-span-2">
           <div>
             <Image

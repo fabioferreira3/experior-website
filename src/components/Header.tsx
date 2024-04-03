@@ -28,8 +28,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex items-center justify-between p-8 md:max-w-6xl m-auto">
-        <Link href="/">
+      <header className="bg-white">
+        <div className="flex items-center bg-white justify-between p-8 md:max-w-6xl m-auto">
+            <Link href="/">
           <Image
             alt="Experior logo"
             width={180}
@@ -54,6 +55,7 @@ export const Header = () => {
             onClick={() => setOpenMenu(true)}
           />
         </nav>
+        </div>
       </header>
       {openMenu && (
         <div
