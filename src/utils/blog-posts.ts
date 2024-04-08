@@ -56,6 +56,17 @@ export const blogPosts = [
     heroImgAlt: "People and robots gather around a table to discuss AI-generated content strategies.People and robots gathering around a table to discuss AI generated content strategies",
     date: "Apr 04, 2024",
   },
+  {
+    id: 5,
+    title: "How AI Can Inspire Visual Content Ideas for Your Blogs?",
+    short_name: "how_ai_can_inspire",
+    description:
+      "",
+    slug: "how-ai-can-inspire-visual-content-ideas-for-your-blogs",
+    heroImg: "chocolate-dragon.png",
+    heroImgAlt: "",
+    date: "Apr 11, 2024",
+  },
 ] as BlogPostType[];
 
 export const getBlogPost = (shortName: string) => {
