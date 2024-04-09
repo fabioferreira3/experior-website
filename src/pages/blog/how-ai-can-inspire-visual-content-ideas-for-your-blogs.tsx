@@ -1,120 +1,164 @@
 import type { ReactElement } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
 import BlogLayout from "@/components/Blog/BlogLayout";
+import Subheader from "@/components/Blog/Subheader";
+import FirstP from "@/components/Blog/FirstP";
 
 const Page = () => {
   return (
     <div>
+      <FirstP>
+        You&apos;ve got this killer blog post ready to go, and it&apos;s feeling like a total winner. But now, you need 
+        some awesome visuals to make it pop. Finding the perfect images for your blog can sometimes feel like you&apos;re 
+        on a wild goose chase.
+      </FirstP>
+      <p>Using good visual content in a blog post is like adding the perfect seasoning to a dish. It&apos;s not just about 
+        making your post look pretty; it&apos;s about grabbing your reader&apos;s attention and keeping them hooked. Good 
+        visuals can break up long chunks of text, making your post more digestible and engaging.</p>
+      <p>They can also help convey your message more effectively, as people remember information better when paired with 
+        an image. Plus, eye-catching images can make your post more shareable on social media, boosting your reach and 
+        engagement.</p>
+      <p>And today, we&apos;re seeing a log of AI image-generation tools coming out. The hype is real. But how can you 
+        effectively use those visual content generation tools the &quot;right way&quot;?</p>
+      <Subheader value='AI for Visual Content Inspiration'/>
       <p>
-        You&apos;ve got this killer blog post ready to go, and it&apos;s feeling like a total winner. But now, you need some awesome visuals to make it pop. Finding the perfect images for your blog can sometimes feel like you&apos;re on a wild goose chase.
-      </p>
-      
-      <h2>Differences between an essay and a blog post</h2>
-      <p>
-        When I think about essays, they&apos;re like this perfect blend of personal insights and informative stuff. You get to share your own take on things while backing it up with some solid research. 
-        It&apos;s a bit different from a blog post. Blog posts are usually more casual, shorter, and get straight to the point. 
-        They&apos;re great for online readers who love quick reads with bullet points and maybe some cool videos or images thrown in. 
-        Essays, on the other hand, are all about going deep, exploring ideas, and really making you think.
+        Even the most creative people hit a wall when it comes to inspiration at some point. Have you ever stared 
+        at your computer screen, waiting for a cool idea to pop into your head?
       </p>      
-      
-    
-      <p>
-        You may also check these{" "}
-        <Link
-          title="Tips of Writing Great Essays"
+      <p>AI tools have now become sophisticated enough to understand the scope of your content and propose visual 
+        content ideas that organically complement your words.</p>
+      <p>With the introduction of neural networks and deep learning, AI created more complex and realistic images. 
+        Generative Adversarial Networks (GANs) marked a significant milestone, enabling AI to generate highly 
+        realistic images by pitting two neural networks against each other.</p>
+      <p>Over time, these algorithms have become more sophisticated, leading to the development of models like 
+        DALL-E and StyleGAN, which can generate stunningly detailed and creative images from textual descriptions 
+        or by manipulating existing images.</p>
+      <p>Today, AI image generation algorithms are used in various applications, from art and design to medical 
+        imaging, showcasing their versatility and the incredible progress in this field.</p>
+      <Subheader value='Generating Blog Visual Ideas with AI'/>
+      <p>Traditionally, writers would need to outsource to obtain incredible visuals. This might include hiring a 
+        freelance designer, using paid design websites, or picking an image from <Link
+          title="Shutterstock"
           className="styled"
           target="_blank"
-          href="https://www.indeed.com/career-advice/career-development/essay-writing-tips"
+          href="https://www.shutterstock.com"
         >
-          awesome tips
-        </Link>{" "}
-        for writing great essays.
+          Shutterstock
+        </Link> or <Link
+          title="Unsplash"
+          className="styled"
+          target="_blank"
+          href="https://unsplash.com/"
+        >
+          Unsplash
+        </Link>.</p>
+      <p>However, those images are usually generic and not precisely tailored to the particular content they are 
+        referencing. With these new AI image generation tools, writers can access hundreds (or thousands) of unique images.</p>
+      <p>Imagine typing a few keywords related to your blog post into an AI tool and, voila, you&apos;re presented with 
+        various visual content ideas ranging from infographics and illustrations to custom blog graphics.</p>
+      <p>For example:</p>
+      <p className="italic text-center">&quot;A majestic golden castle on the top of a mountain as high as the sky.&quot;</p>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/castle1.png"} alt="A majestic golden castle on the top of a mountain" className="rounded-lg border border-gray-300" />           
+        </div>
+        <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/castle2.png"} alt="A majestic golden castle on the top of a mountain" className="rounded-lg border border-gray-300" />                  
+        </div>
+      </div>
+      <p className="mt-8">Or you may even provide crazy prompts like:</p>
+      <p className="italic text-center">&quot;A chocolate dragon fighting a massive army of angry lollipops.&quot;</p>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/chocolate-dragon.png"} alt="A chocolate dragon fighting a massive army of angry lollipops." className="rounded-lg border border-gray-300" />           
+        </div>
+        <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/chocolate-dragon2.png"} alt="A chocolate dragon fighting a massive army of angry lollipops." className="rounded-lg border border-gray-300" />                  
+        </div>
+      </div>
+      <p className="mt-8">A good AI tool should also deliver unique visual content. In theory, generating 
+        the same image using the same text prompt is impossible.</p>
+      <p>When I started working on the Experior app, an image generator tool was always 
+        on my plate. Although AI image generation is not new, it has dramatically evolved 
+        in the past five years. In Experior we&apos;re currently using a mix of 3 Large Language 
+        models (LLMs) to produce authentic and creative images based on simple text prompts.
       </p>
-      <h3>Why use AI Essay Writing tools?</h3>
+      <p>But we didn&apos;t want to stop there, so I decided to add its functionality inside 
+        our own blog generation tool. The idea is to let our AI bot analyze both the 
+        context of the blog post and the image prompt to generate high-quality hero images 
+        for your post. You may try our AI image generation tool free of charge here.</p>
+      <Subheader value="Fitting Visual Appeal in Your Content Strategies"/>
+      <p>Coming up with a content strategy solid enough that your blog not only gets 
+        read but remembered requires more than just compelling writing—it needs visual 
+        appeal. AI can guide you on what types of visuals engage your audience the most, 
+        whether it&apos;s interactive content, video, or static images, by analyzing relevant 
+        data and trends. This kind of insight is a powerful way to learn more about your 
+        audience and keep them returning.</p>
+      <p>Another way that AI can help improve your visual content strategy is by simply 
+        being strategic. Yes, that sounds redundant. But in my experience as a software 
+        developer and writer, the reality is that humans are imperfect, and we only 
+        sometimes think long-term when feeding into our creative minds.</p>
+      <p>It doesn&apos;t mean we should let AI do all the work for us. AI represents and 
+        will continue representing a long-term partnership with humans, helping us 
+        carry heavy lifts, giving us ideas to start a project, or leverage our own 
+        abilities to do what we love.</p>
+      <p>I believe AI can help us stay on track to stay consistent with our brand and 
+        message. Instead, the content will remain aligned, making everything seamless 
+        and organic.</p>
+      <Subheader value="Creating Impactful Blog Graphics with AI Tools"/>
       <p>
-        The evolution of technology has significantly impacted the way we write
-        and research. Among these advancements, ai tools stand out as
-        revolutionary in reshaping the writing landscape. AI-driven writing
-        assistants are now available at our fingertips, offering a plethora of
-        benefits to both novice and experienced essay writers.
+        Now, the most exciting part is turning those AI-inspired ideas into reality. 
+        AI tools are making it easier for bloggers and copywriters to create gorgeous 
+        graphics without needing a degree in design. Tools like our AI Image generator 
+        use AI to simplify the design process, allowing you to customize and create 
+        visuals that only complement your content. Here are a few ways that AI can 
+        generate blog graphics:
       </p>
-      <p>
-        Firstly, AI essay writing tools bring the advantage of speed.
-        Traditionally, crafting an essay requires considerable time – from
-        research to drafting and then editing. AI tools can expedite this
-        process by providing instant suggestions, generating content based on
-        prompts, or even highlighting areas of improvement. For students or
-        professionals facing tight deadlines, these tools can be game changers.
-      </p>
-      <p>
-        Secondly, consistency and accuracy are hallmarks of AI essay writing
-        tools. While human writers may overlook certain errors or
-        inconsistencies, AI systems are trained on vast datasets, allowing them
-        to catch grammatical mistakes, improve sentence structures, or even
-        suggest more apt vocabulary. This doesn&apos;t just refine the essay but
-        also makes it more academically rigorous.
-      </p>
-      <p>
-        However, the most significant benefit might be the democratization of
-        knowledge. Not every individual has access to elite education or
-        resources to hone their writing skills. AI essay writing tools level the
-        playing field, offering guidance, suggestions, and insights that might
-        be otherwise reserved for a select few. They serve as personal writing
-        assistants, helping users articulate their thoughts more effectively.
-      </p>
-      <h2>How Experior&apos;s AI essay writing tool can help</h2>
-      <p>
-        In the realm of essay writing, where the blank screen cursor can often
-        be a writer&apos;s most formidable adversary, Experior emerges as a
-        groundbreaking tool, equally beneficial for both novices and seasoned
-        professionals.
-      </p>
-      <p>
-        For beginners, the journey of essay writing can be riddled with
-        uncertainties: How to begin? What structure to follow? What tone is
-        appropriate? Here, Experior&apos;s AI essay writing tool guidance acts
-        as a compass, providing structure, suggesting thematic paths, and even
-        generating content snippets based on prompts. It seamlessly bridges the
-        gap between intent and expression, ensuring that beginners don&apos;t
-        just start, but they start strong.
-      </p>
-      <p>
-        On the other hand, for professional writers, Experior isn&apos;t just
-        about getting past writer&apos;s block; it&apos;s about refining,
-        enhancing, and accelerating the writing process. It offers fresh
-        perspectives, ensures grammatical precision, and can even provide
-        data-driven insights, making the crafting of a meticulously researched
-        and well-structured essay smoother than ever before.
-      </p>
-      <p>
-        However, we always highlight the fact that Experior isn&apos;t here to
-        replace the human touch in writing. The authenticity, emotional
-        resonance, and unique perspectives that human writers bring to the table
-        remain unparalleled.
-      </p>
-      <p>
-        What Experior does is amplify these qualities. It is the symbiotic ally
-        every writer needs, ensuring that the daunting emptiness of a blank page
-        transforms into a canvas of possibilities.
-      </p>
-      <p>
-        By acting as the best writer companion, Experior ensures that the
-        age-old art of essay writing is not just preserved but propelled into a
-        future where technology and human creativity coalesce to create
-        masterpieces.
-      </p>
-      <p>
-        You may try our AI essay writing tool{" "}
-        <Link
+      <ul className="list-disc flex flex-col gap-4 px-8">
+        <li><span className="font-bold">Image Generation from Text Descriptions:</span> Some newer tools can generate 
+            incredibly detailed images from textual descriptions. If you&apos;re looking 
+            for a specific scene or concept but can&apos;t find an exact match, AI can 
+            create it as the examples you saw in the beginning.</li>
+        <li><span className="font-bold">Photo Manipulation:</span> AI can enhance photos, 
+            suggest edits, or even create complex manipulations like changing the weather or 
+            time of day in an image. It can also use an image as a base and generate variations 
+            based on a text prompt.</li>
+        <li><span className="font-bold">Interactive Design Tools:</span> AI-driven design 
+            tools can offer real-time suggestions and modifications as you work so that they&apos;re 
+            co-creating with you.</li>
+        <li><span className="font-bold">Idea Generation:</span> AI tools analyze current 
+            trends and popular themes across social media, blogs, and online galleries to 
+            suggest unique and timely content ideas. For instance, AI can scan Pinterest and 
+            Instagram and design blogs to identify patterns and themes, suggesting new concepts 
+            for your next project.</li>
+        <li><span className="font-bold">Image Style Transfer:</span> AI can take the style 
+            of one image (like a painting or a specific art style) and apply it to another, 
+            creating a fusion of the two. This can inspire new visual designs that blend 
+            modern photography with classic art styles, such as turning a standard photo into 
+            something resembling an Impressionist painting.</li>
+      </ul>
+      <Subheader value="Conclusion"/>
+      <p>Integrating AI into your visual content creation process is all about harnessing 
+        what&apos;s right in front of you and using it to your advantage. Whether you&apos;re a 
+        blogger, a copywriter, or just someone who appreciates the art of visual content, 
+        AI has something to offer you. </p>
+      <p>From the initial inception of ideas to revamping your content strategy with new 
+        visual content, you should start considering using AI image generation tools for 
+        your visual content strategy. They are not perfect yet; they might produce images 
+        with some flaws, but as time passes, they are getting smarter and better.</p>
+      <p>Here at Experior, we have been working hard to constantly fine-tune our AI models 
+        to produce authentic, beautiful, and creative images.</p>
+      <p>Want to give it a try, free of charge? Just click <Link
           title="Experior"
-          className="text-secondary"
+          className="styled"
+          target="_blank"
           href="https://go.experior.ai"
         >
           here
-        </Link>
-      </p>
+        </Link>.</p>
     </div>
   );
 };
@@ -123,7 +167,8 @@ Page.getLayout = function getLayout(page: ReactElement) {
   const relatedPosts = [
     getBlogPost("why_should_use_ai_generated_blogs"),
     getBlogPost("using_ai_social_media_posts"), 
-    getBlogPost("ai_voice_generator")
+    getBlogPost("ai_essay_writing"),
+    getBlogPost("ai_voice_generator"),
 ];
   return (
     <BlogLayout post={post} relatedPosts={relatedPosts}>

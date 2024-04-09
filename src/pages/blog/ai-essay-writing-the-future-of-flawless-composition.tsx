@@ -3,16 +3,19 @@ import Link from "next/link";
 
 import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
 import BlogLayout from "@/components/Blog/BlogLayout";
+import FirstP from "@/components/Blog/FirstP";
+import Subheader from "@/components/Blog/Subheader";
+import SubheaderH3 from "@/components/Blog/SubheaderH3";
 
 const Page = () => {
   return (
     <div>
-      <p>
+      <FirstP>
         Essay, derived from the French word “essayer” which means “to try” or
         “to attempt,” is a genre of writing that offers a thoughtful exploration
         of a particular subject or topic. The question is: in today&apos;s age
         of AI, can AI essay writing tools help? Or are they just a gimmick?
-      </p>
+      </FirstP>
       <p>
         Unlike other forms of writing, an essay often marries personal
         perspective with informative content, diving deep into the nuances of a
@@ -20,14 +23,14 @@ const Page = () => {
         of writing typically relies on structured argumentation, cohesive
         organization, and thorough research.
       </p>
-      <h2>Differences between an essay and a blog post</h2>
+      <Subheader value="Differences between an essay and a blog post"/>
       <p>
         When I think about essays, they&apos;re like this perfect blend of personal insights and informative stuff. You get to share your own take on things while backing it up with some solid research. 
         It&apos;s a bit different from a blog post. Blog posts are usually more casual, shorter, and get straight to the point. 
         They&apos;re great for online readers who love quick reads with bullet points and maybe some cool videos or images thrown in. 
         Essays, on the other hand, are all about going deep, exploring ideas, and really making you think.
-      </p>      
-      <h2>Why people write essays?</h2>
+      </p>
+      <Subheader value="Why people write essays?"/>
       <p>
         So, why do people even bother writing essays? 
         Well, they&apos;re super popular in schools because they&apos;re a great way to see how well students understand a topic. But that&apos;s not all. 
@@ -38,7 +41,7 @@ const Page = () => {
         to personal to professional. Here&apos;s a deeper look into why essays
         are such a prevalent form of expression:
       </p>
-      <h3>Learning</h3>
+      <SubheaderH3 value="Learning"/>
       <p>
         They&apos;re a fantastic way to check out how much someone knows about a subject.
         One of the primary reasons essays are assigned in schools and colleges
@@ -48,14 +51,14 @@ const Page = () => {
         thought process, helping them gauge comprehension, analysis, synthesis,
         and evaluation skills.
       </p>
-      <h3>Making a point</h3>
+      <SubheaderH3 value="Making a point"/>
       <p>
         Essays, especially argumentative or persuasive ones, are an effective
         way to present a viewpoint. Through structured argumentation, a writer
         can convince the reader of a certain stance or perspective, making it a
         potent tool in advocacy and change-making. So if you&apos;ve got an opinion, an essay is a perfect way to share it and maybe even convince others.
       </p>
-      <h3>Self-Reflection</h3>
+      <SubheaderH3 value="Self-Reflection"/>
       <p>
         They&apos;re a great way to think about your own experiences and what they mean.
         Personal essays offer writers an avenue to introspect and explore
@@ -63,40 +66,40 @@ const Page = () => {
         for a deep dive into personal growth, experiences, and realizations,
         often leading to new insights for both the writer and the reader.
       </p>
-      <h3>Inform and Educate</h3>
+      <SubheaderH3 value="Inform and Educate"/>
       <p>
         Informative essays aim to enlighten the reader about a particular
         subject. Writers use essays to break down complex ideas into
         understandable chunks, guiding the reader through a topic and ensuring
         they walk away more knowledgeable.
       </p>
-      <h3>Professional use</h3>
+      <SubheaderH3 value="Professional use"/>
       <p>
         In many professions, the ability to articulate thoughts, propose
         solutions, or analyze situations in essay form is crucial. Whether
         it&apos;s a research paper, a case study, or a policy recommendation,
         essays play a pivotal role in many professional spheres.
       </p>
-      <h3>Engaging with Literature or Art</h3>
+      <SubheaderH3 value="Engaging with Literature or Art"/>
       <p>
         Critical essays allow writers to engage with literature, art, movies, or
         other forms of media. They offer critiques, analyses, and
         interpretations, enriching the discourse around these works.
       </p>
-      <h3>Personal Growth</h3>
+      <SubheaderH3 value="Personal Growth"/>
       <p>
         The process of writing an essay can lead to personal growth and skill
         enhancement. It encourages critical thinking, research skills, and the
         ability to articulate thoughts coherently.
       </p>
-      <h3>Leaving a mark</h3>
+      <SubheaderH3 value="Leaving a mark"/>
       <p>
         Many writers pen essays to leave a legacy, communicate their thoughts to
         a wider audience, or contribute to a discourse or field of study. Essays
         serve as a lasting record of ideas, perspectives, and arguments.
       </p>
-      <h2>Different types of Essays</h2>
-      <h3>Narrative Essay</h3>
+      <Subheader value="Different types of Essays"/>
+      <SubheaderH3 value="Narrative Essay"/>
       <p>
         A narrative essay, as the name implies, is a genre of essay writing that
         tells a story from a specific point of view – usually the author&apos;s.
@@ -108,7 +111,7 @@ const Page = () => {
         demanding professional literary skills for effective storytelling and
         characterization.
       </p>
-      <h3>Descriptive Essay</h3>
+      <SubheaderH3 value="Descriptive Essay"/>
       <p>
         A descriptive essay requires the author to describe a person, place,
         object, or event in a detailed and vivid manner. The fundamental
@@ -120,7 +123,7 @@ const Page = () => {
         metaphors, similes, and personifications are paramount to the successful
         crafting of a descriptive essay.
       </p>
-      <h3>Argumentative Essay</h3>
+      <SubheaderH3 value="Argumentative Essay"/>
       <p>
         An argumentative essay, quite predictably, necessitates a strong
         argument or a debatable thesis. The author is required to present a
@@ -132,7 +135,7 @@ const Page = () => {
         construction of an argumentative essay thus hinges on a writer&apos;s
         ability to persuade and convince the reader.
       </p>
-      <h3>Expository Essay</h3>
+      <SubheaderH3 value="Expository Essay"/>
       <p>
         An expository essay is a genre that aims at presenting a balanced
         analysis of a particular subject based on facts rather than personal
@@ -144,7 +147,7 @@ const Page = () => {
         and unbiased exposition are vital elements in the successful crafting of
         an expository essay.
       </p>
-      <h3>Other Types of Essays</h3>
+      <SubheaderH3 value="Other Types of Essays"/>
       <p>
         Besides these common essay types, there are also other genres of essays
         that demand unique approaches and writing skills. Examples of such
@@ -154,7 +157,7 @@ const Page = () => {
         highlighting the necessity for flexible and diverse writing skills
         within professional essay writing services.
       </p>
-      <h2>How to start writing a good essay?</h2>
+      <Subheader value="How to start writing a good essay?"/>
       <p>
         Begin with research, gather your thoughts, and outline your main
         arguments. Remember, the heart of an essay lies in its depth and
@@ -174,7 +177,7 @@ const Page = () => {
         </Link>{" "}
         for writing great essays.
       </p>
-      <h3>Why use AI Essay Writing tools?</h3>
+      <SubheaderH3 value="Why use AI Essay Writing tools?"/>
       <p>
         The evolution of technology has significantly impacted the way we write
         and research. Among these advancements, ai tools stand out as
@@ -206,7 +209,7 @@ const Page = () => {
         be otherwise reserved for a select few. They serve as personal writing
         assistants, helping users articulate their thoughts more effectively.
       </p>
-      <h2>How Experior&apos;s AI essay writing tool can help</h2>
+      <Subheader value="How Experior&apos;s AI essay writing tool can help"/>
       <p>
         In the realm of essay writing, where the blank screen cursor can often
         be a writer&apos;s most formidable adversary, Experior emerges as a
@@ -263,6 +266,7 @@ const Page = () => {
 Page.getLayout = function getLayout(page: ReactElement) {
   const post = getBlogPost("ai_essay_writing") as BlogPostType;
   const relatedPosts = [
+    getBlogPost("how_ai_can_inspire"),
     getBlogPost("why_should_use_ai_generated_blogs"),
     getBlogPost("using_ai_social_media_posts"), 
     getBlogPost("ai_voice_generator")

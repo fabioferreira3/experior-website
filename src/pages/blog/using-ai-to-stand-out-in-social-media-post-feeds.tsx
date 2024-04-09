@@ -3,14 +3,16 @@ import Link from "next/link";
 
 import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
 import BlogLayout from "@/components/Blog/BlogLayout";
+import Subheader from "@/components/Blog/Subheader";
+import FirstP from "@/components/Blog/FirstP";
 
 const Page = () => {
   return (
     <div>
-      <p>
+      <FirstP>
         I&apos;ve seen firsthand how AI can transform and boost social media posts in ways that were once thought impossible. In this blog post, I&apos;ll be sharing my experience and insights on how using AI can help you stand out in the crowded world of social media posts.
-      </p>      
-      <h2>Generating Social Media Posts with AI</h2>
+      </FirstP>
+      <Subheader value="Generating Social Media Posts with AI"/>
       <p>
         Remember the days when creating a social media post meant just slapping together a catchy caption and a decent photo? Well, those days are long gone! The game has completely changed. With AI, you can now add stunning visual effects, create custom graphics and animations, and even generate captions and hashtags for your posts automatically.
       </p>
@@ -30,7 +32,7 @@ const Page = () => {
         <li><span className="font-bold">Natural Language Processing (NLP):</span> NLP technologies analyze social media conversations, identify critical entities and relationships, and provide insights into customer sentiment and preferences.</li>
         <li><span className="font-bold">Sentiment Analysis:</span> AI algorithms evaluate the tone and intent behind comments, enabling you to gauge audience reception and tailor your content strategy accordingly.</li>
       </ul>
-      <h2>Maximizing Engagement with AI-generated Social Media Content</h2>
+      <Subheader value="Maximizing Engagement with AI-generated Social Media Content"/>
       <p>
         Creating content that captures attention and encourages interaction is essential for social media success. AI-generated social media content provides data-driven insights and personalized recommendations, helping you develop posts that draw attention from your target audience and drive meaningful engagement.
       </p>
@@ -40,7 +42,7 @@ const Page = () => {
         <li><span className="font-bold">Data-driven Insights:</span> AI algorithms analyze vast amounts of social media data to identify the types of content that works best, allowing you to tailor your posts accordingly.</li>
         <li><span className="font-bold">Cost Optimization for Scalable Content Production:</span> By reducing the need to expand your team as you scale up content production, AI offers a cost-effective solution for businesses of all sizes. This is particularly beneficial for smaller organizations or individual creators with limited resources.</li>
       </ul>
-      <h2>Social Media Content Algorithm with AI Strategies</h2>
+      <Subheader value="Social Media Content Algorithm with AI Strategies"/>
       <p>
         I have spent years studying and developing algorithms that can help businesses and individuals maximize their social media presence. One of my most successful stories involves a small startup company called Clashed Mix that was struggling to gain traction on social media.
       </p>
@@ -52,7 +54,7 @@ It wasn’t a walk in the park. There were no automated AI tools at that time an
         Nevertheless the results were impressive. We delivered personalized content to individual users, which significantly increased the chances of their posts appearing in users&apos; feeds and encouraged engagement. Our predictive analytics and trend forecasting tools also allowed us to stay ahead of the curve and adapt the company&apos;s content strategy accordingly. The results were impressive – within just a few months, the startup&apos;s social media presence exploded, with their posts reaching far more people than ever before.
       </p>
       <p>I decided to condense this knowledge and AI tools we created back then and transform it into what is today Experior’s social media posts <Link className="underline text-secondary" target="_blank" href="https://go.experior.ai/social-media-post">creation tool</Link>.</p>
-      <h2>Driving Social Media Engagement Through AI Content</h2>
+      <Subheader value="Driving Social Media Engagement Through AI Content"/>
       <p>
         Now, truth be said: One thing is to generate content with AI, and another one is make sure this content is interesting enough so people engage with it.
         I truly believe that AI-powered content creation tools enable you to build deeper, more meaningful connections with your audience. Creating interactive and personalized experiences can encourage your followers to actively participate in your brand&apos;s story and foster a sense of community. 
@@ -63,7 +65,7 @@ It wasn’t a walk in the park. There were no automated AI tools at that time an
         <li><span className="font-bold">Interactive Experiences:</span> AI-powered chatbots and quizzes engage users in one-on-one conversations, providing instant responses and personalized suggestions that encourage participation and build loyalty.</li>
         <li><span className="font-bold">User-generated Content Campaigns:</span> AI can help you create and manage dynamic user-generated content campaigns that showcase your followers&apos; creativity and enthusiasm for your brand.</li>
         </ul>
-      <h2>Social media posts with a human touch</h2>
+      <Subheader value="Social media posts with a human touch"/>
       <p>
         It&apos;s important to strike a balance and ensure that your AI-enhanced posts still maintain an authentic, human touch. After all, social media is all about fostering genuine connections and conversations.
       </p>      
@@ -81,6 +83,7 @@ It wasn’t a walk in the park. There were no automated AI tools at that time an
 Page.getLayout = function getLayout(page: ReactElement) {
   const post = getBlogPost("using_ai_social_media_posts") as BlogPostType;
   const relatedPosts = [
+    getBlogPost("how_ai_can_inspire"),
     getBlogPost("why_should_use_ai_generated_blogs"),
     getBlogPost("ai_essay_writing"),
     getBlogPost("ai_voice_generator"),
