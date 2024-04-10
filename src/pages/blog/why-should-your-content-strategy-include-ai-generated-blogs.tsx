@@ -3,14 +3,16 @@ import Link from "next/link";
 
 import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
 import BlogLayout from "@/components/Blog/BlogLayout";
+import FirstP from "@/components/Blog/FirstP";
+import Subheader from "@/components/Blog/Subheader";
 
 const Page = () => {
   return (
     <div>
-      <p>
+      <FirstP>
         I&apos;ve always heard people say, &apos;Content is King.&apos; 
         But now, with so much content everywhere, it&apos;s no wonder that AI has found its way into the world of creativity.
-      </p>
+      </FirstP>
       <p>
         Having a blog created by AI isn&apos;t just something from a sci-fi movie anymore. 
         From predicting trends to chatbots that talk like humans, <Link className="underline text-secondary" target="_blank" href="https://mitsloan.mit.edu/ideas-made-to-matter/study-gauges-how-people-perceive-ai-created-content">AI-Generated content</Link> is changing how we connect with our customers online. 
@@ -18,7 +20,7 @@ const Page = () => {
       </p>
       <p>The short answer: yes. Combining creativity with technology opens up so many possibilities. 
         But with every new technology, there&apos;s a need to think carefully about how to use it and really understand the &apos;whats&apos;, &apos;whys&apos;, and &apos;hows&apos;.</p>
-      <h2>Human Content vs. AI Automation</h2>
+      <Subheader value="Human Content vs. AI Automation"/>
       <p>
         When I think about AI blogging, there&apos;s something special about the human touch that AI can&apos;t deliver. 
         That unique charm in a story about your cat keeps readers coming back for more. It feels personal, and that&apos;s 
@@ -46,7 +48,7 @@ const Page = () => {
             At the same time, AI can be a powerful helper, offering speed, consistency, and the ability to handle a lot 
             of work. Looking at it this way, it&apos;s not about choosing between human or AI-generated content. 
             It&apos;s about how we can combine both to create efficient and impactful content.</p>
-        <h2>Understanding AI Blogging</h2>
+        <Subheader value="Understanding AI Blogging"/>
         <p>AI blogging is like giving a robot a pen and telling it to start writing. 
             But how does it work? First, let me briefly explain an AI-generated blog.</p>
         <p>When you use a tool like <Link className="underline text-secondary" target="_blank" href="https://go.experior.ai">Experior</Link>, for example, to produce blog articles, you need to provide some parameters for the AI to create your drafts, such as the overall subject, keywords, style of writing, and tone. 
@@ -71,14 +73,14 @@ const Page = () => {
         your life as a content creator easier. They are not replacements for human creativity.</p>
         <p>But truthfully, AI tools are getting better and better over time. Sure, AI alone won&apos;t win a 
             Pulitzer anytime soon, but it&apos;s getting impressively good.</p>
-        <h2>Integrating AI Content Creation into Your Strategy</h2>
-        <p>Using AI to create content doesn&apos;t mean letting a robot take over your blog and hoping for the best. 
+      <Subheader value="Integrating AI Content Creation into Your Strategy"/>
+      <p>Using AI to create content doesn&apos;t mean letting a robot take over your blog and hoping for the best. 
             It&apos;s more about teaming up with AI to enhance what you&apos;re already doing.</p>
-        <p>Adding AI-generated blogs to your content strategy is like adding a new team member without needing more office space. 
+      <p>Adding AI-generated blogs to your content strategy is like adding a new team member without needing more office space. 
             It&apos;s about using AI wisely and finding areas where it can help.</p>
-        <p>For instance, AI can handle the heavy lifting, leaving you more time for opinion pieces, heartfelt 
+      <p>For instance, AI can handle the heavy lifting, leaving you more time for opinion pieces, heartfelt 
             stories, and creative ideas.</p>
-        <p>Before diving in, check if the AI tool fits with your content strategy. Start by trying it out in 
+      <p>Before diving in, check if the AI tool fits with your content strategy. Start by trying it out in 
             parts of your content where AI can help, not take over.</p>
         <ul className="list-disc flex flex-col gap-4 px-8">
             <li><span className="font-bold">Assess Your Content Needs:</span> Look at your current content and see where AI could fit in. 
@@ -111,7 +113,7 @@ const Page = () => {
             performance, and iterate faster than traditional methods. It&apos;s a dynamic learning loop, constantly refining to 
             hit the sweet spot with your audience.</li>
         </ul>
-        <h2>Final Thoughts</h2>
+        <Subheader value="Final Thoughts"/>
         <p>Every modern-day digital creator wonders whether to use AI. I created <Link className="underline text-secondary" target="_blank" href="https://go.experior.ai">Experior</Link> as a partner for 
             content creators, a shortcut for them to deliver more quickly. By no means was it my intention for 
             people to use our content generation tools to flood the internet with unrevised AI-generated content. 
@@ -134,6 +136,7 @@ const Page = () => {
 Page.getLayout = function getLayout(page: ReactElement) {
   const post = getBlogPost("why_should_use_ai_generated_blogs") as BlogPostType;
   const relatedPosts = [
+    getBlogPost("how_ai_can_inspire"),
     getBlogPost("using_ai_social_media_posts"),
     getBlogPost("ai_essay_writing"),
     getBlogPost("ai_voice_generator"),

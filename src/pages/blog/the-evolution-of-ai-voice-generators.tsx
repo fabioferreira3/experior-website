@@ -3,15 +3,18 @@ import Link from "next/link";
 
 import BlogLayout from "@/components/Blog/BlogLayout";
 import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
+import FirstP from "@/components/Blog/FirstP";
+import Subheader from "@/components/Blog/Subheader";
+import SubheaderH3 from "@/components/Blog/SubheaderH3";
 
 const Page = () => {
   return (
     <div>
-      <p>
+      <FirstP>
         AI voice generators have a pretty cool job: turn written text into
         speech. This makes them excellent tools for various applications where
         voiced output is needed.
-      </p>
+      </FirstP>
       <p>
         The creation of AI voice generators has blossomed from the smart blend
         of computer programming and large collections of voice data. This mixing
@@ -19,7 +22,7 @@ const Page = () => {
         in technology has given us unique tools that can perfectly copy the
         sound of a human voice.
       </p>
-      <h2>Mimicking Humanity: AI Voice Generators</h2>
+      <Subheader value="Mimicking Humanity: AI Voice Generators"/>
       <p>
         The primary purpose of such AI voice generators is to produce a voice
         that mirrors the rich tonal qualities of human speech. They aim to
@@ -41,7 +44,7 @@ const Page = () => {
         become increasingly nuanced, enveloping the myriad dimensions of human
         speech since their inception.
       </p>
-      <h2 className="text-left">AI Voice Generators and Music</h2>
+      <Subheader value="AI Voice Generators and Music"/>
       <p>
         In recent years, technology has grown leaps and bounds, leaving no stone
         unturned in its path of innovation. The world of music is no exception
@@ -55,7 +58,7 @@ const Page = () => {
         technological advancements we are witnessing. AI&apos;s contribution is
         becoming a pivotal element in the creation of music.
       </p>
-      <h3 className="text-left">The Unique Blend of Tunes from AI</h3>
+      <SubheaderH3 value="The Unique Blend of Tunes from AI"/>
       <p>
         AI doesn&apos;t just replicate or reinvent existing styles of music. It
         pushes the boundaries further, paving the way for a unique blend of
@@ -70,7 +73,7 @@ const Page = () => {
         itself in an unheard harmony, opening up endless possibilities in
         melodies and arrangements.
       </p>
-      <h3 className="text-left">Influence on the Music Industry</h3>
+      <SubheaderH3 value="Influence on the Music Industry"/>
       <p>
         The influence of AI technology on the modern music industry is crystal
         clear. More and more music creators are turning to AI software to assist
@@ -86,9 +89,7 @@ const Page = () => {
         innovation, potentially unveiling new genres of music waiting to be
         explored.
       </p>
-      <h2 className="text-left">
-        The Increasing Accuracy of AI Voice Generators
-      </h2>
+      <Subheader value="The Increasing Accuracy of AI Voice Generators"/>
       <p>
         In today&apos;s progressive era, the standard for a truly
         &apos;accurate&apos; AI voice generator is skyrocketing. Such a
@@ -98,7 +99,7 @@ const Page = () => {
         speech. This monumentally elevated expectation marks a new high in the
         ongoing evolution of speech synthesis.
       </p>
-      <h3 className="text-left">Surpassing the Era of Robotic Voices</h3>
+      <SubheaderH3 value="Surpassing the Era of Robotic Voices"/>
       <p>
         The trajectory of AI voice generators has been an upward curve of
         advancement and improvement. The long past is when AI voices were
@@ -133,7 +134,7 @@ const Page = () => {
         robotic to impressively human-like, and they continue to evolve with
         promising prospects for the future.
       </p>
-      <h2>Applications of AI Voice Generators</h2>
+      <Subheader value="Applications of AI Voice Generators"/>
       <p>
         You must be wondering, where exactly do we use these AI Voice
         Generators? Well, you&apos;ll find them in some pretty ordinary places.
@@ -166,7 +167,7 @@ const Page = () => {
         reach and improvement in output they bring to different sectors and
         applications.
       </p>
-      <h3 className="text-left">Pitfalls of AI Voice Generation</h3>
+      <SubheaderH3 value="Pitfalls of AI Voice Generation"/>
       <p>
         AI Voice Generators are quite handy, don&apos;t get us wrong. But
         they&apos;re not perfect. Sometimes, they can produce speech that just
@@ -203,9 +204,7 @@ const Page = () => {
         our interactions. They&apos;re reshaping how we look at technology and
         its possibilities.
       </p>
-      <h2 className="text-left">
-        Experior&rsquo;s AI Voice Generator: A Solution for Neural Voices
-      </h2>
+      <Subheader value="Experior&rsquo;s AI Voice Generator: A Solution for Neural Voices"/>
       <p>
         Designed to revitalize the interaction between text and voice, Experior
         has found its footing as a leader in its field. Its distinctive feature?
@@ -226,7 +225,7 @@ const Page = () => {
         need to feed your text into our AI voice generator and pick the type of
         voice that best suits your needs.
       </p>
-      <h3 className="text-left">Customizing our AI Voice Generator</h3>
+      <SubheaderH3 value="Customizing our AI Voice Generator"/>
       <p>
         Experior caters to your preferences, allowing you to select from various
         voice types. So, whether you prefer a particular accent, a specific
@@ -267,6 +266,7 @@ const Page = () => {
 Page.getLayout = function getLayout(page: ReactElement) {
   const post = getBlogPost("ai_voice_generator") as BlogPostType;
   const relatedPosts = [
+    getBlogPost("how_ai_can_inspire"),
     getBlogPost("why_should_use_ai_generated_blogs"),
     getBlogPost("using_ai_social_media_posts"),
     getBlogPost("ai_essay_writing")

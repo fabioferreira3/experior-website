@@ -1,5 +1,3 @@
-import { StringLiteral } from "typescript";
-
 export interface BlogPostType {
   id: number;
   title: string;
@@ -55,6 +53,17 @@ export const blogPosts = [
     heroImg: "ai-gathering.png",
     heroImgAlt: "People and robots gather around a table to discuss AI-generated content strategies.People and robots gathering around a table to discuss AI generated content strategies",
     date: "Apr 04, 2024",
+  },
+  {
+    id: 5,
+    title: "How AI Can Inspire Visual Content Ideas for Your Blogs?",
+    short_name: "how_ai_can_inspire",
+    description:
+      "Why should you consider using AI generated images on the visual content of your blog? Learn how AI can inspire visual content ideas for your blogs.",
+    slug: "how-ai-can-inspire-visual-content-ideas-for-your-blogs",
+    heroImg: "chocolate-dragon.png",
+    heroImgAlt: "A chocolate dragon fighting a massive army of angry lollipops",
+    date: "Apr 10, 2024",
   },
 ] as BlogPostType[];
 
