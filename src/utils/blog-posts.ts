@@ -63,7 +63,7 @@ export const blogPosts = [
     slug: "how-ai-can-inspire-visual-content-ideas-for-your-blogs",
     heroImg: "chocolate-dragon.png",
     heroImgAlt: "A chocolate dragon fighting a massive army of angry lollipops",
-    date: "Apr 11, 2024",
+    date: "Apr 10, 2024",
   },
 ] as BlogPostType[];
 
