@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import Link from "next/link";
 
-import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
+import { BlogPostType, getBlogPost, listRecentPosts } from "@/utils/blog-posts";
 import BlogLayout from "@/components/Blog/BlogLayout";
 import FirstP from "@/components/Blog/FirstP";
 import Subheader from "@/components/Blog/Subheader";
@@ -134,18 +134,15 @@ const Page = () => {
   );
 };
 Page.getLayout = function getLayout(page: ReactElement) {
-  const post = getBlogPost("why_should_use_ai_generated_blogs") as BlogPostType;
-  const relatedPosts = [
-    getBlogPost("how_ai_can_inspire"),
-    getBlogPost("using_ai_social_media_posts"),
-    getBlogPost("ai_essay_writing"),
-    getBlogPost("ai_voice_generator"),
-];
-  return (
-    <BlogLayout post={post} relatedPosts={relatedPosts}>
-      {page}
-    </BlogLayout>
-  );
+    const postShortName = "why_should_use_ai_generated_blogs";
+    const post = getBlogPost(postShortName) as BlogPostType;
+    const relatedPosts = listRecentPosts(postShortName) as BlogPostType[];    
+  
+    return (
+        <BlogLayout post={post} relatedPosts={relatedPosts}>
+        {page}
+        </BlogLayout>
+    );
 };
 
 export default Page;

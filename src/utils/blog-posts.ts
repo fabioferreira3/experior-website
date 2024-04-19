@@ -12,7 +12,7 @@ export interface BlogPostType {
 export const blogPosts = [
   {
     id: 1,
-    title: "The Evolution of AI Voice Generators: Mirroring Humanity",
+    title: "The Evolution of AI Voice Generators",
     short_name: "ai_voice_generator",
     description:
       "Discover the evolution of AI voice generators - from robotic to human-like quality. Experience Experior's neural voice solution.",
@@ -65,7 +65,23 @@ export const blogPosts = [
     heroImgAlt: "A chocolate dragon fighting a massive army of angry lollipops",
     date: "Apr 10, 2024",
   },
+  {
+    id: 6,
+    title: "7 Tips to Structure Your Content Creation Process",
+    short_name: "7_tips_for_structuring",
+    description:
+      "Explore tips to organize your content creation process and how to plan content workflow to ensure smooth progress from idea to publication",
+    slug: "7-tips-for-structuring-your-content-creation-process",
+    heroImg: "writer-stairs.jpeg",
+    heroImgAlt: "A writer following steps on a huge staircase to reach the top of a golden mountain",
+    date: "Apr 19, 2024",
+  },
 ] as BlogPostType[];
+
+export const listRecentPosts = (exception: string | null = null) => {
+  return blogPosts.filter((post) => post.short_name !== exception)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+};
 
 export const getBlogPost = (shortName: string) => {
   return blogPosts.find((post) => post.short_name === shortName);

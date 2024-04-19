@@ -35,9 +35,15 @@ const Page = () => {
         <h1 className="text-main text-4xl font-bold">Blog</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-8">
           <PostPreview
+            title="7 Tips to Structure Your Content Creation Process"
+            imgAlt="A writer following steps on a huge staircase to reach the top of a golden mountain"
+            image="/imgs/writer-stairs.jpeg"
+            link="/blog/7-tips-for-structuring-your-content-creation-process"
+          />
+          <PostPreview
             title="How AI Can Inspire Visual Content Ideas for Your Blogs"
             imgAlt="A chocolate dragon fighting an army of angry lollipops"
-            image="/imgs/chocolate-dragon.png"
+            image="/imgs/chocolate-dragon.jpeg"
             link="/blog/how-ai-can-inspire-visual-content-ideas-for-your-blogs"
           />
           <PostPreview
@@ -53,7 +59,7 @@ const Page = () => {
             link="/blog/using-ai-to-stand-out-in-social-media-post-feeds"
           />
           <PostPreview
-            title="The Evolution of AI Voice Generators: Mirroring Humanity"
+            title="The Evolution of AI Voice Generators"
             imgAlt="Voice being generated with the use of AI"
             image="/imgs/ai-voice-generator.jpg"
             link="/blog/the-evolution-of-ai-voice-generators"

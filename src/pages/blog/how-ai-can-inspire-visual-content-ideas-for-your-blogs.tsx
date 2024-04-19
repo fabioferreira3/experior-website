@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { BlogPostType, getBlogPost } from "@/utils/blog-posts";
+import { BlogPostType, getBlogPost, listRecentPosts } from "@/utils/blog-posts";
 import BlogLayout from "@/components/Blog/BlogLayout";
 import Subheader from "@/components/Blog/Subheader";
 import FirstP from "@/components/Blog/FirstP";
@@ -63,20 +63,20 @@ const Page = () => {
       <p className="italic text-center">&quot;A majestic golden castle on the top of a mountain as high as the sky.&quot;</p>
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
-            <Image fill style={{objectFit: "cover"}} src={"/imgs/castle1.png"} alt="A majestic golden castle on the top of a mountain" className="rounded-lg border border-gray-300" />           
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/castle1.jpeg"} alt="A majestic golden castle on the top of a mountain" className="rounded-lg border border-gray-300" />           
         </div>
         <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
-            <Image fill style={{objectFit: "cover"}} src={"/imgs/castle2.png"} alt="A majestic golden castle on the top of a mountain" className="rounded-lg border border-gray-300" />                  
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/castle2.jpeg"} alt="A majestic golden castle on the top of a mountain" className="rounded-lg border border-gray-300" />                  
         </div>
       </div>
       <p className="mt-8">Or you may even provide crazy prompts like:</p>
       <p className="italic text-center">&quot;A chocolate dragon fighting a massive army of angry lollipops.&quot;</p>
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
-            <Image fill style={{objectFit: "cover"}} src={"/imgs/chocolate-dragon.png"} alt="A chocolate dragon fighting a massive army of angry lollipops." className="rounded-lg border border-gray-300" />           
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/chocolate-dragon.jpeg"} alt="A chocolate dragon fighting a massive army of angry lollipops." className="rounded-lg border border-gray-300" />           
         </div>
         <div className="flex flex-col gap-2 w-full md:w-1/2 relative h-[300px] xl:h-[450px]">
-            <Image fill style={{objectFit: "cover"}} src={"/imgs/chocolate-dragon2.png"} alt="A chocolate dragon fighting a massive army of angry lollipops." className="rounded-lg border border-gray-300" />                  
+            <Image fill style={{objectFit: "cover"}} src={"/imgs/chocolate-dragon2.jpeg"} alt="A chocolate dragon fighting a massive army of angry lollipops." className="rounded-lg border border-gray-300" />                  
         </div>
       </div>
       <p className="mt-8">A good AI tool should also deliver unique visual content. In theory, generating 
@@ -163,18 +163,14 @@ const Page = () => {
   );
 };
 Page.getLayout = function getLayout(page: ReactElement) {
-  const post = getBlogPost("how_ai_can_inspire") as BlogPostType;
-  const relatedPosts = [
-    getBlogPost("why_should_use_ai_generated_blogs"),
-    getBlogPost("using_ai_social_media_posts"), 
-    getBlogPost("ai_essay_writing"),
-    getBlogPost("ai_voice_generator"),
-];
-  return (
-    <BlogLayout post={post} relatedPosts={relatedPosts}>
-      {page}
-    </BlogLayout>
-  );
+    const postShortName = "how_ai_can_inspire";
+    const post = getBlogPost(postShortName) as BlogPostType;
+    const relatedPosts = listRecentPosts(postShortName) as BlogPostType[]
+    return (
+        <BlogLayout post={post} relatedPosts={relatedPosts}>
+        {page}
+        </BlogLayout>
+    );
 };
 
 export default Page;
