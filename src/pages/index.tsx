@@ -97,10 +97,9 @@ const Page = () => {
             <Link
                 href="https://go.experior.ai/register"
                 className="w-full bg-secondary rounded-full md:rounded-2xl flex items-center justify-center gap-6 py-3 px-5 md:py-5 text-2xl font-bold font-avenir"
-                ><RobotIcon className="text-4xl md:text-3xl" />
-                
-                Start here
-                
+                >
+                    <RobotIcon className="text-4xl md:text-3xl" />
+                    <div>Start here</div>
             </Link>
             </div>
         </div>
